@@ -1,0 +1,12 @@
+[
+{
+  "modid": "mathmod",
+  "name": "Math Mod",
+  "description": "A mod for in class use focusing on basic math operations (+, - , * . / )",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/jhowrez/MathMod-1.11",
+  "authors": [ "Jhonatas Rezende (Joarez)" ],
+  "credits": "\nCreator: Jhonatas Rezende"
+}
+]
