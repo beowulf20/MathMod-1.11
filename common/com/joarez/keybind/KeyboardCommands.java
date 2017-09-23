@@ -23,7 +23,7 @@ public class KeyboardCommands {
 	@SideOnly(Side.CLIENT)
 	public void onKeyEvent(InputEvent event) {
 		if (keys[0].isPressed()) {
-			//System.out.println("KEY F12 PRESSED!");
+			System.out.println("KEY F12 PRESSED!");
 		}
 	}
 }
