@@ -6,7 +6,7 @@
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "https://github.com/jhowrez/MathMod-1.11",
-  "authors": [ "Jhonatas Rezende (Joarez)" ],
-  "credits": "\nCreator: Jhonatas Rezende"
+  "authors": [ "Beowulf (Jhonatas Rezende)" ],
+  "credits": "\nCreator: Beowulf (Jhonatas Rezende) "
 }
 ]

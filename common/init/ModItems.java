@@ -19,7 +19,12 @@ public class ModItems {
 	public static void init() {
 		tutorialItem = new ItemTutorial();
 		tutorialItem.setRegistryName(new ResourceLocation(MathMod.MOD_ID,Names.TUTORIAL_ITEM));
+		
 		GameRegistry.register(tutorialItem);
+	}
+	
+	public static void initRecipes() {
+		tutorialItem.addRecipes();
 	}
 	
 	@SideOnly(Side.CLIENT)

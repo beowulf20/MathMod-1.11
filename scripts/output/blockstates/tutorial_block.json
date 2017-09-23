@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "mathmod:tutorial_block" }
+  }
+}

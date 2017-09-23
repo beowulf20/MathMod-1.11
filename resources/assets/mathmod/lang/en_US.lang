@@ -1,0 +1,16 @@
+#BLOCKS
+tile.mathmod:tutorial_block.name=Tutorial Block
+
+
+#
+
+#ITEMS
+item.mathmod:tutorial_item.name=Tutorial Item
+
+#
+
+
+
+#CREATIVE TAB
+
+itemGroup.mathmod:tab_tutorial=Math Tab
