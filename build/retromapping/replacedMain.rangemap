@@ -1,0 +1,406 @@
+Symbol range map extraction starting
+Processing 8 files
+startProcessing "blocks\BlockTutorial.java" md5: a6c3df6db50a78c24c1438987a6a0f54
+Cache Hit!
+@|blocks\BlockTutorial.java|8|14|blocks|package|blocks|(file)
+Class Start: blocks.BlockTutorial
+   @|blocks\BlockTutorial.java|455|468|BlockTutorial|class|blocks.BlockTutorial
+   @|blocks\BlockTutorial.java|477|482|Block|class|net.minecraft.block.Block
+   Method Start: BlockTutorial()V
+      @|blocks\BlockTutorial.java|494|507|BlockTutorial|method|blocks.BlockTutorial|BlockTutorial|()V
+      @|blocks\BlockTutorial.java|522|530|Material|class|net.minecraft.block.material.Material
+      @|blocks\BlockTutorial.java|531|535|ROCK|field|net.minecraft.block.material.Material|ROCK
+      @|blocks\BlockTutorial.java|540|551|setHardness|method|net.minecraft.block.Block|setHardness|(F)Lnet/minecraft/block/Block;
+      @|blocks\BlockTutorial.java|561|574|setResistance|method|net.minecraft.block.Block|setResistance|(F)Lnet/minecraft/block/Block;
+      @|blocks\BlockTutorial.java|585|597|setSoundType|method|net.minecraft.block.Block|setSoundType|(Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;
+      @|blocks\BlockTutorial.java|598|607|SoundType|class|net.minecraft.block.SoundType
+      @|blocks\BlockTutorial.java|608|614|LADDER|field|net.minecraft.block.SoundType|LADDER
+      @|blocks\BlockTutorial.java|619|634|setHarvestLevel|method|net.minecraft.block.Block|setHarvestLevel|(Ljava/lang/String;I)V
+      @|blocks\BlockTutorial.java|651|665|setCreativeTab|method|net.minecraft.block.Block|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;
+      @|blocks\BlockTutorial.java|666|673|MathMod|class|com.joarez.mathmod.MathMod
+      @|blocks\BlockTutorial.java|674|685|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
+   Method End: BlockTutorial()V
+   Method Start: getUnlocalizedName()Ljava/lang/String;
+      @|blocks\BlockTutorial.java|694|702|Override|class|java.lang.Override
+      @|blocks\BlockTutorial.java|711|717|String|class|java.lang.String
+      @|blocks\BlockTutorial.java|718|736|getUnlocalizedName|method|net.minecraft.block.Block|getUnlocalizedName|()Ljava/lang/String;
+      @|blocks\BlockTutorial.java|760|767|MathMod|class|com.joarez.mathmod.MathMod
+      @|blocks\BlockTutorial.java|768|783|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|blocks\BlockTutorial.java|786|791|Names|class|com.joarez.mathmod.items.Names
+      @|blocks\BlockTutorial.java|792|806|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
+   Method End: getUnlocalizedName()Ljava/lang/String;
+   Method Start: addRecipes()V
+      @|blocks\BlockTutorial.java|856|866|addRecipes|method|blocks.BlockTutorial|addRecipes|()V
+      @|blocks\BlockTutorial.java|873|885|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|blocks\BlockTutorial.java|886|901|addShapedRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapedRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)Lnet/minecraft/item/crafting/IRecipe;
+      @|blocks\BlockTutorial.java|906|915|ItemStack|class|net.minecraft.item.ItemStack
+      @|blocks\BlockTutorial.java|946|952|Blocks|class|net.minecraft.init.Blocks
+      @|blocks\BlockTutorial.java|953|959|LADDER|field|net.minecraft.init.Blocks|LADDER
+      @|blocks\BlockTutorial.java|968|977|ItemStack|class|net.minecraft.item.ItemStack
+      @|blocks\BlockTutorial.java|978|984|Blocks|class|net.minecraft.init.Blocks
+      @|blocks\BlockTutorial.java|985|989|WOOL|field|net.minecraft.init.Blocks|WOOL
+      @|blocks\BlockTutorial.java|990|1003|OreDictionary|class|net.minecraftforge.oredict.OreDictionary
+      @|blocks\BlockTutorial.java|1004|1018|WILDCARD_VALUE|field|net.minecraftforge.oredict.OreDictionary|WILDCARD_VALUE
+      @|blocks\BlockTutorial.java|1024|1036|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|blocks\BlockTutorial.java|1037|1046|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/crafting/IRecipe;)V
+      @|blocks\BlockTutorial.java|1051|1066|ShapedOreRecipe|class|net.minecraftforge.oredict.ShapedOreRecipe
+      @|blocks\BlockTutorial.java|1071|1080|ItemStack|class|net.minecraft.item.ItemStack
+      @|blocks\BlockTutorial.java|1104|1110|Blocks|class|net.minecraft.init.Blocks
+      @|blocks\BlockTutorial.java|1111|1117|LADDER|field|net.minecraft.init.Blocks|LADDER
+      @|blocks\BlockTutorial.java|1122|1128|Blocks|class|net.minecraft.init.Blocks
+      @|blocks\BlockTutorial.java|1129|1133|WOOL|field|net.minecraft.init.Blocks|WOOL
+   Method End: addRecipes()V
+Class End  : blocks.BlockTutorial
+endProcessing "blocks\BlockTutorial.java"
+
+startProcessing "com\joarez\mathmod\ClientProxy.java" md5: 391e77a678f68c00b0caa948727d6e8a
+Cache Hit!
+@|com\joarez\mathmod\ClientProxy.java|8|26|com.joarez.mathmod|package|com.joarez.mathmod|(file)
+Class Start: com.joarez.mathmod.ClientProxy
+   @|com\joarez\mathmod\ClientProxy.java|389|400|ClientProxy|class|com.joarez.mathmod.ClientProxy
+   @|com\joarez\mathmod\ClientProxy.java|409|420|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|483|488|event|param|com.joarez.mathmod.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|427|435|Override|class|java.lang.Override
+      @|com\joarez\mathmod\ClientProxy.java|449|456|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|457|482|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\joarez\mathmod\ClientProxy.java|503|510|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|511|516|event|param|com.joarez.mathmod.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|574|579|event|param|com.joarez.mathmod.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|524|532|Override|class|java.lang.Override
+      @|com\joarez\mathmod\ClientProxy.java|546|550|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|551|573|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\joarez\mathmod\ClientProxy.java|594|598|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|599|604|event|param|com.joarez.mathmod.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|612|627|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
+      @|com\joarez\mathmod\ClientProxy.java|637|646|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\mathmod\ClientProxy.java|647|659|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\mathmod\ClientProxy.java|662|675|getRenderItem|method|net.minecraft.client.Minecraft|getRenderItem|()Lnet/minecraft/client/renderer/RenderItem;
+      @|com\joarez\mathmod\ClientProxy.java|678|696|getItemModelMesher|method|net.minecraft.client.renderer.RenderItem|getItemModelMesher|()Lnet/minecraft/client/renderer/ItemModelMesher;
+      @|com\joarez\mathmod\ClientProxy.java|702|711|ModBlocks|class|init.ModBlocks
+      @|com\joarez\mathmod\ClientProxy.java|712|722|initClient|method|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|com\joarez\mathmod\ClientProxy.java|734|742|ModItems|class|init.ModItems
+      @|com\joarez\mathmod\ClientProxy.java|743|753|initClient|method|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|826|831|event|param|com.joarez.mathmod.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|768|776|Override|class|java.lang.Override
+      @|com\joarez\mathmod\ClientProxy.java|790|798|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|799|825|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\joarez\mathmod\ClientProxy.java|846|854|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|855|860|event|param|com.joarez.mathmod.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.joarez.mathmod.ClientProxy
+endProcessing "com\joarez\mathmod\ClientProxy.java"
+
+startProcessing "com\joarez\mathmod\CommonProxy.java" md5: 86f7d2ea506daf2bed6ec380a84564f0
+Cache Hit!
+@|com\joarez\mathmod\CommonProxy.java|8|26|com.joarez.mathmod|package|com.joarez.mathmod|(file)
+Class Start: com.joarez.mathmod.CommonProxy
+   @|com\joarez\mathmod\CommonProxy.java|296|307|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|357|362|event|param|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\CommonProxy.java|323|330|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|331|356|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\joarez\mathmod\CommonProxy.java|368|377|ModBlocks|class|init.ModBlocks
+      @|com\joarez\mathmod\CommonProxy.java|378|382|init|method|init.ModBlocks|init|()V
+      @|com\joarez\mathmod\CommonProxy.java|388|396|ModItems|class|init.ModItems
+      @|com\joarez\mathmod\CommonProxy.java|397|401|init|method|init.ModItems|init|()V
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|451|456|event|param|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\CommonProxy.java|423|427|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|428|450|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\joarez\mathmod\CommonProxy.java|462|471|ModBlocks|class|init.ModBlocks
+      @|com\joarez\mathmod\CommonProxy.java|472|483|initRecipes|method|init.ModBlocks|initRecipes|()V
+      @|com\joarez\mathmod\CommonProxy.java|489|497|ModItems|class|init.ModItems
+      @|com\joarez\mathmod\CommonProxy.java|498|509|initRecipes|method|init.ModItems|initRecipes|()V
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|567|572|event|param|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\CommonProxy.java|531|539|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|540|566|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+Class End  : com.joarez.mathmod.CommonProxy
+endProcessing "com\joarez\mathmod\CommonProxy.java"
+
+startProcessing "com\joarez\mathmod\MathMod.java" md5: 6ce49aee21ec37656de6cb1622e9ada9
+Cache Hit!
+@|com\joarez\mathmod\MathMod.java|8|26|com.joarez.mathmod|package|com.joarez.mathmod|(file)
+Class Start: com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|568|571|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com\joarez\mathmod\MathMod.java|572|577|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|580|587|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|588|594|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\MathMod.java|596|600|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|603|610|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|611|619|MOD_NAME|field|com.joarez.mathmod.MathMod|MOD_NAME
+   @|com\joarez\mathmod\MathMod.java|621|628|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|631|638|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|639|646|VERSION|field|com.joarez.mathmod.MathMod|VERSION
+   @|com\joarez\mathmod\MathMod.java|648|660|dependencies|method|net.minecraftforge.fml.common.Mod|dependencies|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|663|670|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|671|683|DEPENDENCIES|field|com.joarez.mathmod.MathMod|DEPENDENCIES
+   @|com\joarez\mathmod\MathMod.java|698|705|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|742|748|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|742|748|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|749|755|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID|
+   @|com\joarez\mathmod\MathMod.java|790|796|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|790|796|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|797|805|MOD_NAME|field|com.joarez.mathmod.MathMod|MOD_NAME|
+   @|com\joarez\mathmod\MathMod.java|841|847|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|841|847|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|848|855|VERSION|field|com.joarez.mathmod.MathMod|VERSION|
+   @|com\joarez\mathmod\MathMod.java|892|898|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|892|898|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|899|911|DEPENDENCIES|field|com.joarez.mathmod.MathMod|DEPENDENCIES|
+   @|com\joarez\mathmod\MathMod.java|975|981|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|975|981|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|982|997|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX|
+   @|com\joarez\mathmod\MathMod.java|1000|1006|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\MathMod.java|1007|1018|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|1061|1067|Random|class|java.util.Random
+   @|com\joarez\mathmod\MathMod.java|1061|1067|Random|class|java.util.Random
+   @|com\joarez\mathmod\MathMod.java|1068|1074|random|field|com.joarez.mathmod.MathMod|random|
+   @|com\joarez\mathmod\MathMod.java|1081|1087|Random|class|java.util.Random
+   @|com\joarez\mathmod\MathMod.java|1129|1136|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|1097|1105|Instance|class|net.minecraftforge.fml.common.Mod.Instance
+   @|com\joarez\mathmod\MathMod.java|1106|1112|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\MathMod.java|1129|1136|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|1137|1145|instance|field|com.joarez.mathmod.MathMod|instance|
+   @|com\joarez\mathmod\MathMod.java|1271|1282|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   @|com\joarez\mathmod\MathMod.java|1151|1161|SidedProxy|class|net.minecraftforge.fml.common.SidedProxy
+   @|com\joarez\mathmod\MathMod.java|1162|1172|clientSide|method|net.minecraftforge.fml.common.SidedProxy|clientSide|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|1209|1219|serverSide|method|net.minecraftforge.fml.common.SidedProxy|serverSide|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|1271|1282|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   @|com\joarez\mathmod\MathMod.java|1283|1288|proxy|field|com.joarez.mathmod.MathMod|proxy|
+   Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1354|1359|event|param|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1294|1306|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\joarez\mathmod\MathMod.java|1320|1327|preInit|method|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1328|1353|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\joarez\mathmod\MathMod.java|1365|1370|proxy|field|com.joarez.mathmod.MathMod|proxy
+      @|com\joarez\mathmod\MathMod.java|1371|1378|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1379|1384|event|param|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+   Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+   Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1448|1453|event|param|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1394|1406|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\joarez\mathmod\MathMod.java|1420|1424|init|method|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1425|1447|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\joarez\mathmod\MathMod.java|1459|1464|proxy|field|com.joarez.mathmod.MathMod|proxy
+      @|com\joarez\mathmod\MathMod.java|1465|1469|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1470|1475|event|param|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+   Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+   Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1547|1552|event|param|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1485|1497|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\joarez\mathmod\MathMod.java|1511|1519|postInit|method|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1520|1546|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\joarez\mathmod\MathMod.java|1558|1563|proxy|field|com.joarez.mathmod.MathMod|proxy
+      @|com\joarez\mathmod\MathMod.java|1564|1572|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1573|1578|event|param|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+   Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+   @|com\joarez\mathmod\MathMod.java|1603|1615|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\joarez\mathmod\MathMod.java|1603|1615|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\joarez\mathmod\MathMod.java|1616|1627|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial|
+   @|com\joarez\mathmod\MathMod.java|1634|1646|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\joarez\mathmod\MathMod.java|1647|1654|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|1655|1670|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+   Anon Class Start: com.joarez.mathmod.MathMod$1
+      Method Start: getTabIconItem()Lnet/minecraft/item/ItemStack;
+         @|com\joarez\mathmod\MathMod.java|1692|1700|Override|class|java.lang.Override
+         @|com\joarez\mathmod\MathMod.java|1710|1719|ItemStack|class|net.minecraft.item.ItemStack
+         @|com\joarez\mathmod\MathMod.java|1720|1734|getTabIconItem|method|net.minecraft.creativetab.CreativeTabs|getTabIconItem|()Lnet/minecraft/item/ItemStack;
+         @|com\joarez\mathmod\MathMod.java|1753|1762|ItemStack|class|net.minecraft.item.ItemStack
+         @|com\joarez\mathmod\MathMod.java|1763|1771|ModItems|class|init.ModItems
+         @|com\joarez\mathmod\MathMod.java|1772|1784|tutorialItem|field|init.ModItems|tutorialItem
+      Method End: getTabIconItem()Lnet/minecraft/item/ItemStack;
+   Anon Class End: com.joarez.mathmod.MathMod$1
+Class End  : com.joarez.mathmod.MathMod
+endProcessing "com\joarez\mathmod\MathMod.java"
+
+startProcessing "com\joarez\mathmod\items\ItemTutorial.java" md5: 7d0482dc3937f729cf893c9d7d18690f
+Cache Hit!
+@|com\joarez\mathmod\items\ItemTutorial.java|8|32|com.joarez.mathmod.items|package|com.joarez.mathmod.items|(file)
+Class Start: com.joarez.mathmod.items.ItemTutorial
+   @|com\joarez\mathmod\items\ItemTutorial.java|492|504|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+   @|com\joarez\mathmod\items\ItemTutorial.java|513|517|Item|class|net.minecraft.item.Item
+   Method Start: ItemTutorial()V
+      @|com\joarez\mathmod\items\ItemTutorial.java|532|544|ItemTutorial|method|com.joarez.mathmod.items.ItemTutorial|ItemTutorial|()V
+      @|com\joarez\mathmod\items\ItemTutorial.java|551|566|setMaxStackSize|method|net.minecraft.item.Item|setMaxStackSize|(I)Lnet/minecraft/item/Item;
+      @|com\joarez\mathmod\items\ItemTutorial.java|574|588|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
+      @|com\joarez\mathmod\items\ItemTutorial.java|589|596|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\mathmod\items\ItemTutorial.java|597|608|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
+   Method End: ItemTutorial()V
+   Method Start: addRecipes()V
+      @|com\joarez\mathmod\items\ItemTutorial.java|665|675|addRecipes|method|com.joarez.mathmod.items.ItemTutorial|addRecipes|()V
+      @|com\joarez\mathmod\items\ItemTutorial.java|682|694|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\mathmod\items\ItemTutorial.java|695|713|addShapelessRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapelessRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com\joarez\mathmod\items\ItemTutorial.java|718|727|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|735|740|Items|class|net.minecraft.init.Items
+      @|com\joarez\mathmod\items\ItemTutorial.java|741|745|BONE|field|net.minecraft.init.Items|BONE
+      @|com\joarez\mathmod\items\ItemTutorial.java|746|751|Items|class|net.minecraft.init.Items
+      @|com\joarez\mathmod\items\ItemTutorial.java|752|756|BONE|field|net.minecraft.init.Items|BONE
+      @|com\joarez\mathmod\items\ItemTutorial.java|762|771|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|772|778|Blocks|class|net.minecraft.init.Blocks
+      @|com\joarez\mathmod\items\ItemTutorial.java|779|782|LOG|field|net.minecraft.init.Blocks|LOG
+   Method End: addRecipes()V
+   Method Start: getUnlocalizedName(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;
+      @|com\joarez\mathmod\items\ItemTutorial.java|854|859|stack|param|com.joarez.mathmod.items.ItemTutorial|getUnlocalizedName|(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;|stack|0
+      @|com\joarez\mathmod\items\ItemTutorial.java|801|809|Override|class|java.lang.Override
+      @|com\joarez\mathmod\items\ItemTutorial.java|818|824|String|class|java.lang.String
+      @|com\joarez\mathmod\items\ItemTutorial.java|825|843|getUnlocalizedName|method|net.minecraft.item.Item|getUnlocalizedName|(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;
+      @|com\joarez\mathmod\items\ItemTutorial.java|844|853|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|883|890|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\mathmod\items\ItemTutorial.java|891|906|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\mathmod\items\ItemTutorial.java|909|914|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\mathmod\items\ItemTutorial.java|915|928|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
+   Method End: getUnlocalizedName(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;
+   Method Start: onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\joarez\mathmod\items\ItemTutorial.java|1001|1006|world|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|world|0
+      @|com\joarez\mathmod\items\ItemTutorial.java|1021|1027|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
+      @|com\joarez\mathmod\items\ItemTutorial.java|1038|1042|hand|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|hand|2
+      @|com\joarez\mathmod\items\ItemTutorial.java|937|945|Override|class|java.lang.Override
+      @|com\joarez\mathmod\items\ItemTutorial.java|954|966|ActionResult|class|net.minecraft.util.ActionResult
+      @|com\joarez\mathmod\items\ItemTutorial.java|967|976|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|978|994|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\joarez\mathmod\items\ItemTutorial.java|995|1000|World|class|net.minecraft.world.World
+      @|com\joarez\mathmod\items\ItemTutorial.java|1008|1020|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\joarez\mathmod\items\ItemTutorial.java|1029|1037|EnumHand|class|net.minecraft.util.EnumHand
+      @|com\joarez\mathmod\items\ItemTutorial.java|1050|1056|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
+      @|com\joarez\mathmod\items\ItemTutorial.java|1057|1068|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\joarez\mathmod\items\ItemTutorial.java|1073|1092|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\joarez\mathmod\items\ItemTutorial.java|1134|1150|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\joarez\mathmod\items\ItemTutorial.java|1151|1156|world|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|world|0
+      @|com\joarez\mathmod\items\ItemTutorial.java|1158|1164|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
+      @|com\joarez\mathmod\items\ItemTutorial.java|1166|1170|hand|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|hand|2
+   Method End: onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+Class End  : com.joarez.mathmod.items.ItemTutorial
+endProcessing "com\joarez\mathmod\items\ItemTutorial.java"
+
+startProcessing "com\joarez\mathmod\items\Names.java" md5: 7fc50ebe387cc90c84889f58407b8abf
+Cache Hit!
+@|com\joarez\mathmod\items\Names.java|8|32|com.joarez.mathmod.items|package|com.joarez.mathmod.items|(file)
+Class Start: com.joarez.mathmod.items.Names
+   @|com\joarez\mathmod\items\Names.java|48|53|Names|class|com.joarez.mathmod.items.Names
+   @|com\joarez\mathmod\items\Names.java|77|83|String|class|java.lang.String
+   @|com\joarez\mathmod\items\Names.java|77|83|String|class|java.lang.String
+   @|com\joarez\mathmod\items\Names.java|84|97|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM|
+   @|com\joarez\mathmod\items\Names.java|138|144|String|class|java.lang.String
+   @|com\joarez\mathmod\items\Names.java|138|144|String|class|java.lang.String
+   @|com\joarez\mathmod\items\Names.java|145|159|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK|
+Class End  : com.joarez.mathmod.items.Names
+endProcessing "com\joarez\mathmod\items\Names.java"
+
+startProcessing "init\ModBlocks.java" md5: 7cad00e847d2b23859e6aec71c45de72
+Cache Hit!
+@|init\ModBlocks.java|8|12|init|package|init|(file)
+Class Start: init.ModBlocks
+   @|init\ModBlocks.java|582|591|ModBlocks|class|init.ModBlocks
+   @|init\ModBlocks.java|611|624|BlockTutorial|class|blocks.BlockTutorial
+   @|init\ModBlocks.java|611|624|BlockTutorial|class|blocks.BlockTutorial
+   @|init\ModBlocks.java|625|638|tutorialBlock|field|init.ModBlocks|tutorialBlock|
+   Method Start: init()V
+      @|init\ModBlocks.java|660|664|init|method|init.ModBlocks|init|()V
+      @|init\ModBlocks.java|674|690|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|init\ModBlocks.java|706|722|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|init\ModBlocks.java|723|730|MathMod|class|com.joarez.mathmod.MathMod
+      @|init\ModBlocks.java|731|737|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+      @|init\ModBlocks.java|739|744|Names|class|com.joarez.mathmod.items.Names
+      @|init\ModBlocks.java|745|759|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
+      @|init\ModBlocks.java|767|780|tutorialBlock|field|init.ModBlocks|tutorialBlock
+      @|init\ModBlocks.java|787|800|BlockTutorial|class|blocks.BlockTutorial
+      @|init\ModBlocks.java|806|819|tutorialBlock|field|init.ModBlocks|tutorialBlock
+      @|init\ModBlocks.java|820|835|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
+      @|init\ModBlocks.java|849|861|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|init\ModBlocks.java|862|870|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|init\ModBlocks.java|871|884|tutorialBlock|field|init.ModBlocks|tutorialBlock
+      @|init\ModBlocks.java|889|901|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|init\ModBlocks.java|902|910|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;Lnet/minecraft/util/ResourceLocation;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|init\ModBlocks.java|915|924|ItemBlock|class|net.minecraft.item.ItemBlock
+      @|init\ModBlocks.java|925|938|tutorialBlock|field|init.ModBlocks|tutorialBlock
+   Method End: init()V
+   Method Start: initRecipes()V
+      @|init\ModBlocks.java|976|987|initRecipes|method|init.ModBlocks|initRecipes|()V
+      @|init\ModBlocks.java|994|1007|tutorialBlock|field|init.ModBlocks|tutorialBlock
+      @|init\ModBlocks.java|1008|1018|addRecipes|method|blocks.BlockTutorial|addRecipes|()V
+   Method End: initRecipes()V
+   Method Start: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|init\ModBlocks.java|1098|1104|mesher|param|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|init\ModBlocks.java|1029|1037|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|init\ModBlocks.java|1038|1042|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|init\ModBlocks.java|1043|1049|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|init\ModBlocks.java|1071|1081|initClient|method|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|init\ModBlocks.java|1082|1097|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
+      @|init\ModBlocks.java|1113|1117|Item|class|net.minecraft.item.Item
+      @|init\ModBlocks.java|1125|1129|Item|class|net.minecraft.item.Item
+      @|init\ModBlocks.java|1130|1146|getItemFromBlock|method|net.minecraft.item.Item|getItemFromBlock|(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+      @|init\ModBlocks.java|1147|1160|tutorialBlock|field|init.ModBlocks|tutorialBlock
+      @|init\ModBlocks.java|1165|1186|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|init\ModBlocks.java|1199|1220|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|init\ModBlocks.java|1221|1228|MathMod|class|com.joarez.mathmod.MathMod
+      @|init\ModBlocks.java|1229|1244|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|init\ModBlocks.java|1247|1252|Names|class|com.joarez.mathmod.items.Names
+      @|init\ModBlocks.java|1253|1267|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
+      @|init\ModBlocks.java|1285|1296|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
+      @|init\ModBlocks.java|1297|1317|registerItemVariants|method|net.minecraft.client.renderer.block.model.ModelBakery|registerItemVariants|(Lnet/minecraft/item/Item;[Lnet/minecraft/util/ResourceLocation;)V
+      @|init\ModBlocks.java|1334|1340|mesher|param|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|init\ModBlocks.java|1341|1349|register|method|net.minecraft.client.renderer.ItemModelMesher|register|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
+   Method End: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+Class End  : init.ModBlocks
+endProcessing "init\ModBlocks.java"
+
+startProcessing "init\ModItems.java" md5: 5e0c1f41952009590d7c31dcdb402afc
+Cache Hit!
+@|init\ModItems.java|8|12|init|package|init|(file)
+Class Start: init.ModItems
+   @|init\ModItems.java|530|538|ModItems|class|init.ModItems
+   @|init\ModItems.java|558|570|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+   @|init\ModItems.java|558|570|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+   @|init\ModItems.java|571|583|tutorialItem|field|init.ModItems|tutorialItem|
+   Method Start: init()V
+      @|init\ModItems.java|607|611|init|method|init.ModItems|init|()V
+      @|init\ModItems.java|618|630|tutorialItem|field|init.ModItems|tutorialItem
+      @|init\ModItems.java|637|649|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+      @|init\ModItems.java|655|667|tutorialItem|field|init.ModItems|tutorialItem
+      @|init\ModItems.java|668|683|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
+      @|init\ModItems.java|688|704|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|init\ModItems.java|705|712|MathMod|class|com.joarez.mathmod.MathMod
+      @|init\ModItems.java|713|719|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+      @|init\ModItems.java|720|725|Names|class|com.joarez.mathmod.items.Names
+      @|init\ModItems.java|726|739|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
+      @|init\ModItems.java|748|760|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|init\ModItems.java|761|769|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|init\ModItems.java|770|782|tutorialItem|field|init.ModItems|tutorialItem
+   Method End: init()V
+   Method Start: initRecipes()V
+      @|init\ModItems.java|810|821|initRecipes|method|init.ModItems|initRecipes|()V
+      @|init\ModItems.java|828|840|tutorialItem|field|init.ModItems|tutorialItem
+      @|init\ModItems.java|841|851|addRecipes|method|com.joarez.mathmod.items.ItemTutorial|addRecipes|()V
+   Method End: initRecipes()V
+   Method Start: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|init\ModItems.java|931|937|mesher|param|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|init\ModItems.java|862|870|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|init\ModItems.java|871|875|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|init\ModItems.java|876|882|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|init\ModItems.java|904|914|initClient|method|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|init\ModItems.java|915|930|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
+      @|init\ModItems.java|946|967|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|init\ModItems.java|980|1001|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|init\ModItems.java|1002|1009|MathMod|class|com.joarez.mathmod.MathMod
+      @|init\ModItems.java|1010|1025|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|init\ModItems.java|1026|1031|Names|class|com.joarez.mathmod.items.Names
+      @|init\ModItems.java|1032|1045|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
+      @|init\ModItems.java|1063|1074|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
+      @|init\ModItems.java|1075|1095|registerItemVariants|method|net.minecraft.client.renderer.block.model.ModelBakery|registerItemVariants|(Lnet/minecraft/item/Item;[Lnet/minecraft/util/ResourceLocation;)V
+      @|init\ModItems.java|1096|1108|tutorialItem|field|init.ModItems|tutorialItem
+      @|init\ModItems.java|1120|1126|mesher|param|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|init\ModItems.java|1127|1135|register|method|net.minecraft.client.renderer.ItemModelMesher|register|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
+      @|init\ModItems.java|1136|1148|tutorialItem|field|init.ModItems|tutorialItem
+   Method End: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+Class End  : init.ModItems
+endProcessing "init\ModItems.java"
+
