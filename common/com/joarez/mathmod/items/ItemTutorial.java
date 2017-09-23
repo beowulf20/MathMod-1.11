@@ -1,5 +1,6 @@
 package com.joarez.mathmod.items;
 
+import com.joarez.gui.DoMathGUI;
 import com.joarez.mathmod.MathMod;
 
 import net.minecraft.client.Minecraft;

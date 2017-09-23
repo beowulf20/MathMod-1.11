@@ -48,7 +48,7 @@ public class ModItems {
 		
 		
 		registerModel(mesher,tutorialPickaxe,Names.TUTORIAL_PICKAXE);
-		register(tutorialPickaxe, Names.TUTORIAL_PICKAXE);
+		//register(tutorialPickaxe, Names.TUTORIAL_PICKAXE);
 	}
 	
 	@SideOnly(Side.CLIENT)
