@@ -2,7 +2,8 @@ package com.joarez.mathmod;
 
 import java.util.Random;
 
-import init.ModItems;
+import com.joarez.init.ModItems;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;

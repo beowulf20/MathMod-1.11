@@ -1,4 +1,4 @@
-package blocks;
+package com.joarez.blocks;
 
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.items.Names;

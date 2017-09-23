@@ -1,9 +1,9 @@
-package init;
+package com.joarez.init;
 
+import com.joarez.blocks.BlockTutorial;
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.items.Names;
 
-import blocks.BlockTutorial;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -38,5 +38,9 @@ public class ModBlocks {
 		ModelResourceLocation model = new ModelResourceLocation(MathMod.RESOURCE_PREFIX + Names.TUTORIAL_BLOCK, "inventory");
 		ModelLoader.registerItemVariants(item, model);
 		mesher.register(item, 0, model);
+		
+		
 	}
+	
+	
 }

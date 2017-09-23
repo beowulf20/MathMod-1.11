@@ -1,6 +1,0 @@
-{
-  "parent": "mathmod:block/tutorial_block",
-  "textures": {
-    "layer0": "mathmod:blocks/tutorial_block"
-  }
-}

@@ -2,6 +2,7 @@ package com.joarez.mathmod.items;
 
 import com.joarez.mathmod.MathMod;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -35,7 +36,7 @@ public class ItemTutorial extends Item {
 	public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand){
 		
 		player.sendMessage(new TextComponentString("You used my item!"));
-		
+		Minecraft.getMinecraft().displayGuiScreen(new DoMathGUI());
 		return super.onItemRightClick(world, player, hand);
 	}
 	
