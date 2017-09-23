@@ -14,7 +14,7 @@ public class ItemTutorial extends Item {
 	
 	@Override
 	public String getUnlocalizedName(ItemStack stack) {
-		return "Item."+ MathMod.RESOURCE_PREFIX + Names.TUTORIAL_ITEM;
+		return "item."+ MathMod.RESOURCE_PREFIX + Names.TUTORIAL_ITEM;
 	}
 	
 	@Override
