@@ -2,6 +2,9 @@ package com.joarez.mathmod;
 
 import java.util.Random;
 
+import init.ModItems;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -45,4 +48,11 @@ public class MathMod {
 		proxy.postInit(event);
 	}
 	
+	
+	public static CreativeTabs tabTutorial = new CreativeTabs(MathMod.RESOURCE_PREFIX+"tab_tutorial") {
+		@Override
+		public ItemStack getTabIconItem() {
+			return new ItemStack(ModItems.tutorialItem);
+		}
+	};
 }
