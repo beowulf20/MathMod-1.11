@@ -14,3 +14,9 @@ item.mathmod:tutorial_pickaxe.name=Tutorial Pickaxe
 #CREATIVE TAB
 
 itemGroup.mathmod:tab_tutorial=Math Tab
+
+
+#YEAR SELECTION
+
+year.mathmod:easy=EASY
+year.mathmod:hard=HARD

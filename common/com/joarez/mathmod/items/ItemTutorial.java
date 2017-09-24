@@ -1,6 +1,6 @@
 package com.joarez.mathmod.items;
 
-import com.joarez.gui.DoMathGUI;
+import com.joarez.gui.YearSelectionGUI;
 import com.joarez.mathmod.MathMod;
 
 import net.minecraft.client.Minecraft;
@@ -37,7 +37,7 @@ public class ItemTutorial extends Item {
 	public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand){
 		
 		player.sendMessage(new TextComponentString("You used my item!"));
-		Minecraft.getMinecraft().displayGuiScreen(new DoMathGUI());
+		Minecraft.getMinecraft().displayGuiScreen(new YearSelectionGUI());
 		return super.onItemRightClick(world, player, hand);
 	}
 	
