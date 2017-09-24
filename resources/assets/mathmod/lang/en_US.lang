@@ -20,3 +20,13 @@ itemGroup.mathmod:tab_tutorial=Math Tab
 
 year.mathmod:easy=EASY
 year.mathmod:hard=HARD
+year.mathmod:add=ADDITION
+year.mathmod:sub=SUBTRACTION
+year.mathmod:mul=MULTIPLICATION
+year.mathmod:div=DIVISION
+
+
+#KEYBINDING
+
+key.openyear_key=Open Year Selection
+key.categories.mod=Math Mod

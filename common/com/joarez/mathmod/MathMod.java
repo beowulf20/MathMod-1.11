@@ -4,8 +4,14 @@ import java.util.Random;
 
 import com.joarez.init.ModItems;
 
+import Keybinding.KeyInputHandler;
+import Keybinding.KeybindingMath;
+import events.TutorialEventHandler;
+import net.minecraft.client.Minecraft;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.World;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -37,15 +43,23 @@ public class MathMod {
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
 		proxy.preInit(event);
+		
+		KeybindingMath.register();
+		MinecraftForge.EVENT_BUS.register(new KeyInputHandler());
 	}
 	
 	@EventHandler
 	public void init(FMLInitializationEvent event) {
+		TimeBasedEventHandler.InitialTime = Minecraft.getSystemTime();
+		//MinecraftForge.EVENT_BUS.register(new TimeBasedEventHandler());
 		proxy.init(event);
 	}
 	
+	
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
+		MinecraftForge.EVENT_BUS.register(new TutorialEventHandler());
+		
 		proxy.postInit(event);
 	}
 	
