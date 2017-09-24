@@ -4,11 +4,17 @@ public class  MathMethods {
 	public static int A = 63;
 	public static int B = 32;
 	private static int RESULT = 0;
-	public static String SINAL = "+";
+	public static String OPERATION = "+";
 	public static int DIF = 1;
 	
+	
+	public static int TOTAL = 3;
+	public static int ACTUAL = 1;
+	
+	public static int CURRENCY = 9;
+	
 	public static int GetResult() {
-		switch(SINAL){
+		switch(OPERATION){
 		case "+":
 			RESULT = A + B;
 			break;
@@ -19,6 +25,9 @@ public class  MathMethods {
 			RESULT = A*B;
 			break;
 		case "/":
+			if(B == 0) {
+				B = 1;
+			}
 			RESULT = A/B;
 			break;
 		}
@@ -56,11 +65,17 @@ public class  MathMethods {
        if(DIF == 7){ //DIV EASY
           int r = (int) (Math.random() * 11);
           b = (int) (Math.random() * 11);
+          if(b == 0) {
+        	  b =1;
+          }
           a = r*b;
        }
        if(DIF == 8){ //DIV HARD
           int r = (int) (Math.random() * 31);
           b = (int) (Math.random() * 31);
+          if(b == 0) {
+        	  b =1;
+          }
           a = r*b;
        }
        

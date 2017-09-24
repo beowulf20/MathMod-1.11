@@ -22,7 +22,7 @@ public class DoMathGUI extends GuiScreen {
 	GuiTextField expression_textfield;
 	GuiButton bt_check;
 	int bgW,bgH,bgX,bgY;
-	float titleX, titleY;
+	int titleX, titleY;
 	int expX, expY;
 	int textW = 170, textH = 20, textX, textY;
 	int btX, btY;
@@ -42,25 +42,19 @@ public class DoMathGUI extends GuiScreen {
 		
 		//DRAW TITLE
 		String title = "Realize a Conta!";
-		titleX =(width)/1.5F - this.fontRendererObj.getStringWidth(title);
+		titleX =(width)/2 - this.fontRendererObj.getStringWidth(title)/2;
 		titleY = bgY+10;
-		GlStateManager.pushMatrix();
-		{
-			GlStateManager.translate(titleX, titleY, 0);
-			GlStateManager.scale(1.5, 1.5, 1);
-			this.fontRendererObj.drawString(title, 0 ,0,  0x000000);
-		}
-		GlStateManager.popMatrix();
+		this.fontRendererObj.drawString(title, titleX ,titleY,  0x000000);
 		
-		
-		//DRAW EXPRESSION		
-		String expression =  MathMethods.A + " " + MathMethods.SINAL + " " + MathMethods.B;		
-		expX = (width - 2*this.fontRendererObj.getStringWidth(expression))/2;
+		//DRAW EXPRESSION
+		int s = 3;
+		String expression =  MathMethods.A + " " + MathMethods.OPERATION + " " + MathMethods.B;		
+		expX = (width - s*this.fontRendererObj.getStringWidth(expression))/2;
 		expY = (int)titleY + 40;		
 		GlStateManager.pushMatrix();
 		{
 			GlStateManager.translate(expX, expY, 0);
-			GlStateManager.scale(2, 2, 1);			
+			GlStateManager.scale(s, s, 1);			
 			this.fontRendererObj.drawString(expression, 0 ,0,  0xff0000);
 		}
 		GlStateManager.popMatrix();
@@ -76,6 +70,14 @@ public class DoMathGUI extends GuiScreen {
 		bt_check = new GuiButton(1,btX,btY,100,20,bt_text);
 		this.buttonList.clear();
 		this.buttonList.add(bt_check);
+		
+		//DRAW REMAIN.
+		String remain = MathMethods.ACTUAL + "/" + MathMethods.TOTAL;
+		int rX = width/2 - bgW/2 + 2;
+		int rY = height/2 + bgH/2 - this.fontRendererObj.FONT_HEIGHT - 2;		
+		this.fontRendererObj.drawString(remain, rX, rY, 0xff0000);
+		
+		
 		
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
@@ -108,6 +110,10 @@ public class DoMathGUI extends GuiScreen {
 						expression_textfield.setText("");
 						expression_textfield.setFocused(true);
 						MathMethods.Randomize();
+						
+						if(MathMethods.ACTUAL < MathMethods.TOTAL) {
+							MathMethods.ACTUAL++;
+						}
 					}
 				}catch(Exception e) {
 					r = 0;
@@ -122,7 +128,7 @@ public class DoMathGUI extends GuiScreen {
 	@Override
 	public boolean doesGuiPauseGame() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 
@@ -146,6 +152,10 @@ public class DoMathGUI extends GuiScreen {
 		expression_textfield.updateCursorCounter();
 		super.updateScreen();
 	}
+
+
+
+	
 
 	
 

@@ -37,7 +37,7 @@ public class ItemTutorial extends Item {
 	public ActionResult<ItemStack> onItemRightClick(World world, EntityPlayer player, EnumHand hand){
 		
 		player.sendMessage(new TextComponentString("You used my item!"));
-		Minecraft.getMinecraft().displayGuiScreen(new YearSelectionGUI());
+		
 		return super.onItemRightClick(world, player, hand);
 	}
 	
