@@ -1,7 +1,9 @@
 package com.joarez.mathmod;
 
-import init.ModBlocks;
-import init.ModItems;
+import com.joarez.init.ModBlocks;
+import com.joarez.init.ModItems;
+import com.joarez.keybind.KeyboardCommands;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -23,6 +25,9 @@ public class ClientProxy extends CommonProxy {
 		ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 		ModBlocks.initClient(mesher);
 		ModItems.initClient(mesher);
+		
+		
+		
 	}
 	@Override
 	public void postInit(FMLPostInitializationEvent event) {

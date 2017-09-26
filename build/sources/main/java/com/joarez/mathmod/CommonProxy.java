@@ -1,7 +1,8 @@
 package com.joarez.mathmod;
 
-import init.ModBlocks;
-import init.ModItems;
+import com.joarez.init.ModBlocks;
+import com.joarez.init.ModItems;
+
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;

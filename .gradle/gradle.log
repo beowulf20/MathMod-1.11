@@ -17,31 +17,23 @@ This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril
 :apiClasses UP-TO-DATE
 :sourceMainJava UP-TO-DATE
 :compileJavawarning: [options] bootstrap class path not set in conjunction with -source 1.6
+C:\Users\John\Desktop\MDK Forge 1.11.2\source\MathMod\build\sources\main\java\com\joarez\gui\MathMethods.java:17: error: strings in switch are not supported in -source 1.6
+		switch(OPERATION){
+		      ^
+  (use -source 7 or higher to enable strings in switch)
+1 error
 1 warning
+ FAILED
 
-:processResources UP-TO-DATE
-:classes
-:jar
-:sourceTestJava UP-TO-DATE
-:compileTestJava UP-TO-DATE
-:processTestResources UP-TO-DATE
-:testClasses UP-TO-DATE
-:test UP-TO-DATE
-:extractMcpData SKIPPED
-:extractMcpMappings SKIPPED
-:getVersionJson
-:extractUserdev UP-TO-DATE
-:genSrgs SKIPPED
-:reobfJar
-:extractRangemapReplacedMain
-C:\Users\John\Desktop\MDK Forge 1.11.2\source\MathMod\build\sources\main\java
-:retromapReplacedMain
-remapping source...
-:sourceJar
-:assemble
-:check UP-TO-DATE
-:build
+FAILURE: Build failed with an exception.
 
-BUILD SUCCESSFUL
+* What went wrong:
+Execution failed for task ':compileJava'.
+> Compilation failed; see the compiler error output for details.
 
-Total time: 8.873 secs
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 7.021 secs
