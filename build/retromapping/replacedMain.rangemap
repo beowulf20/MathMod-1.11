@@ -1,288 +1,1423 @@
 Symbol range map extraction starting
-Processing 8 files
-startProcessing "blocks\BlockTutorial.java" md5: a6c3df6db50a78c24c1438987a6a0f54
-Cache Hit!
-@|blocks\BlockTutorial.java|8|14|blocks|package|blocks|(file)
-Class Start: blocks.BlockTutorial
-   @|blocks\BlockTutorial.java|455|468|BlockTutorial|class|blocks.BlockTutorial
-   @|blocks\BlockTutorial.java|477|482|Block|class|net.minecraft.block.Block
+Processing 21 files
+startProcessing "Keybinding\KeyInputHandler.java" md5: eb4b3fe97c6d2f99cd061af987cd4fb8
+@|Keybinding\KeyInputHandler.java|8|18|Keybinding|package|Keybinding|(file)
+Class Start: Keybinding.KeyInputHandler
+   @|Keybinding\KeyInputHandler.java|254|269|KeyInputHandler|class|Keybinding.KeyInputHandler
+   Method Start: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|Keybinding\KeyInputHandler.java|327|332|event|param|Keybinding.KeyInputHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V|event|0
+      @|Keybinding\KeyInputHandler.java|274|288|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|Keybinding\KeyInputHandler.java|302|312|onKeyInput|method|Keybinding.KeyInputHandler|onKeyInput|(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+      @|Keybinding\KeyInputHandler.java|313|326|KeyInputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent
+      @|Keybinding\KeyInputHandler.java|341|355|KeybindingMath|class|Keybinding.KeybindingMath
+      @|Keybinding\KeyInputHandler.java|356|368|openyear_key|field|Keybinding.KeybindingMath|openyear_key
+      @|Keybinding\KeyInputHandler.java|369|378|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|Keybinding\KeyInputHandler.java|387|396|Minecraft|class|net.minecraft.client.Minecraft
+      @|Keybinding\KeyInputHandler.java|397|409|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|Keybinding\KeyInputHandler.java|412|428|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|Keybinding\KeyInputHandler.java|433|449|YearSelectionGUI|class|com.joarez.gui.YearSelectionGUI
+   Method End: onKeyInput(Lnet/minecraftforge/fml/common/gameevent/InputEvent$KeyInputEvent;)V
+Class End  : Keybinding.KeyInputHandler
+endProcessing "Keybinding\KeyInputHandler.java"
+
+startProcessing "Keybinding\KeybindingMath.java" md5: 9b4c7659cbf7b9965aa6d9c6c45e2aeb
+@|Keybinding\KeybindingMath.java|8|18|Keybinding|package|Keybinding|(file)
+Class Start: Keybinding.KeybindingMath
+   @|Keybinding\KeybindingMath.java|358|372|KeybindingMath|class|Keybinding.KeybindingMath
+   @|Keybinding\KeybindingMath.java|390|400|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|Keybinding\KeybindingMath.java|390|400|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|Keybinding\KeybindingMath.java|401|413|openyear_key|field|Keybinding.KeybindingMath|openyear_key|
+   Method Start: register()V
+      @|Keybinding\KeybindingMath.java|437|445|register|method|Keybinding.KeybindingMath|register|()V
+      @|Keybinding\KeybindingMath.java|452|464|openyear_key|field|Keybinding.KeybindingMath|openyear_key
+      @|Keybinding\KeybindingMath.java|471|481|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+      @|Keybinding\KeybindingMath.java|501|509|Keyboard|class|org.lwjgl.input.Keyboard
+      @|Keybinding\KeybindingMath.java|510|517|KEY_F12|field|org.lwjgl.input.Keyboard|KEY_F12
+      @|Keybinding\KeybindingMath.java|543|557|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|Keybinding\KeybindingMath.java|558|576|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+      @|Keybinding\KeybindingMath.java|577|589|openyear_key|field|Keybinding.KeybindingMath|openyear_key
+   Method End: register()V
+Class End  : Keybinding.KeybindingMath
+endProcessing "Keybinding\KeybindingMath.java"
+
+startProcessing "com\joarez\blocks\BlockTutorial.java" md5: 38a60fe8c29e80d9b7adc432c33c1e18
+@|com\joarez\blocks\BlockTutorial.java|8|25|com.joarez.blocks|package|com.joarez.blocks|(file)
+Class Start: com.joarez.blocks.BlockTutorial
+   @|com\joarez\blocks\BlockTutorial.java|466|479|BlockTutorial|class|com.joarez.blocks.BlockTutorial
+   @|com\joarez\blocks\BlockTutorial.java|488|493|Block|class|net.minecraft.block.Block
    Method Start: BlockTutorial()V
-      @|blocks\BlockTutorial.java|494|507|BlockTutorial|method|blocks.BlockTutorial|BlockTutorial|()V
-      @|blocks\BlockTutorial.java|522|530|Material|class|net.minecraft.block.material.Material
-      @|blocks\BlockTutorial.java|531|535|ROCK|field|net.minecraft.block.material.Material|ROCK
-      @|blocks\BlockTutorial.java|540|551|setHardness|method|net.minecraft.block.Block|setHardness|(F)Lnet/minecraft/block/Block;
-      @|blocks\BlockTutorial.java|561|574|setResistance|method|net.minecraft.block.Block|setResistance|(F)Lnet/minecraft/block/Block;
-      @|blocks\BlockTutorial.java|585|597|setSoundType|method|net.minecraft.block.Block|setSoundType|(Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;
-      @|blocks\BlockTutorial.java|598|607|SoundType|class|net.minecraft.block.SoundType
-      @|blocks\BlockTutorial.java|608|614|LADDER|field|net.minecraft.block.SoundType|LADDER
-      @|blocks\BlockTutorial.java|619|634|setHarvestLevel|method|net.minecraft.block.Block|setHarvestLevel|(Ljava/lang/String;I)V
-      @|blocks\BlockTutorial.java|651|665|setCreativeTab|method|net.minecraft.block.Block|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;
-      @|blocks\BlockTutorial.java|666|673|MathMod|class|com.joarez.mathmod.MathMod
-      @|blocks\BlockTutorial.java|674|685|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
+      @|com\joarez\blocks\BlockTutorial.java|505|518|BlockTutorial|method|com.joarez.blocks.BlockTutorial|BlockTutorial|()V
+      @|com\joarez\blocks\BlockTutorial.java|533|541|Material|class|net.minecraft.block.material.Material
+      @|com\joarez\blocks\BlockTutorial.java|542|546|ROCK|field|net.minecraft.block.material.Material|ROCK
+      @|com\joarez\blocks\BlockTutorial.java|551|562|setHardness|method|net.minecraft.block.Block|setHardness|(F)Lnet/minecraft/block/Block;
+      @|com\joarez\blocks\BlockTutorial.java|572|585|setResistance|method|net.minecraft.block.Block|setResistance|(F)Lnet/minecraft/block/Block;
+      @|com\joarez\blocks\BlockTutorial.java|596|608|setSoundType|method|net.minecraft.block.Block|setSoundType|(Lnet/minecraft/block/SoundType;)Lnet/minecraft/block/Block;
+      @|com\joarez\blocks\BlockTutorial.java|609|618|SoundType|class|net.minecraft.block.SoundType
+      @|com\joarez\blocks\BlockTutorial.java|619|625|LADDER|field|net.minecraft.block.SoundType|LADDER
+      @|com\joarez\blocks\BlockTutorial.java|630|645|setHarvestLevel|method|net.minecraft.block.Block|setHarvestLevel|(Ljava/lang/String;I)V
+      @|com\joarez\blocks\BlockTutorial.java|662|676|setCreativeTab|method|net.minecraft.block.Block|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/block/Block;
+      @|com\joarez\blocks\BlockTutorial.java|677|684|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\blocks\BlockTutorial.java|685|696|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
    Method End: BlockTutorial()V
    Method Start: getUnlocalizedName()Ljava/lang/String;
-      @|blocks\BlockTutorial.java|694|702|Override|class|java.lang.Override
-      @|blocks\BlockTutorial.java|711|717|String|class|java.lang.String
-      @|blocks\BlockTutorial.java|718|736|getUnlocalizedName|method|net.minecraft.block.Block|getUnlocalizedName|()Ljava/lang/String;
-      @|blocks\BlockTutorial.java|760|767|MathMod|class|com.joarez.mathmod.MathMod
-      @|blocks\BlockTutorial.java|768|783|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
-      @|blocks\BlockTutorial.java|786|791|Names|class|com.joarez.mathmod.items.Names
-      @|blocks\BlockTutorial.java|792|806|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
+      @|com\joarez\blocks\BlockTutorial.java|705|713|Override|class|java.lang.Override
+      @|com\joarez\blocks\BlockTutorial.java|722|728|String|class|java.lang.String
+      @|com\joarez\blocks\BlockTutorial.java|729|747|getUnlocalizedName|method|net.minecraft.block.Block|getUnlocalizedName|()Ljava/lang/String;
+      @|com\joarez\blocks\BlockTutorial.java|771|778|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\blocks\BlockTutorial.java|779|794|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\blocks\BlockTutorial.java|797|802|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\blocks\BlockTutorial.java|803|817|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
    Method End: getUnlocalizedName()Ljava/lang/String;
    Method Start: addRecipes()V
-      @|blocks\BlockTutorial.java|856|866|addRecipes|method|blocks.BlockTutorial|addRecipes|()V
-      @|blocks\BlockTutorial.java|873|885|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|blocks\BlockTutorial.java|886|901|addShapedRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapedRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)Lnet/minecraft/item/crafting/IRecipe;
-      @|blocks\BlockTutorial.java|906|915|ItemStack|class|net.minecraft.item.ItemStack
-      @|blocks\BlockTutorial.java|946|952|Blocks|class|net.minecraft.init.Blocks
-      @|blocks\BlockTutorial.java|953|959|LADDER|field|net.minecraft.init.Blocks|LADDER
-      @|blocks\BlockTutorial.java|968|977|ItemStack|class|net.minecraft.item.ItemStack
-      @|blocks\BlockTutorial.java|978|984|Blocks|class|net.minecraft.init.Blocks
-      @|blocks\BlockTutorial.java|985|989|WOOL|field|net.minecraft.init.Blocks|WOOL
-      @|blocks\BlockTutorial.java|990|1003|OreDictionary|class|net.minecraftforge.oredict.OreDictionary
-      @|blocks\BlockTutorial.java|1004|1018|WILDCARD_VALUE|field|net.minecraftforge.oredict.OreDictionary|WILDCARD_VALUE
-      @|blocks\BlockTutorial.java|1024|1036|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|blocks\BlockTutorial.java|1037|1046|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/crafting/IRecipe;)V
-      @|blocks\BlockTutorial.java|1051|1066|ShapedOreRecipe|class|net.minecraftforge.oredict.ShapedOreRecipe
-      @|blocks\BlockTutorial.java|1071|1080|ItemStack|class|net.minecraft.item.ItemStack
-      @|blocks\BlockTutorial.java|1104|1110|Blocks|class|net.minecraft.init.Blocks
-      @|blocks\BlockTutorial.java|1111|1117|LADDER|field|net.minecraft.init.Blocks|LADDER
-      @|blocks\BlockTutorial.java|1122|1128|Blocks|class|net.minecraft.init.Blocks
-      @|blocks\BlockTutorial.java|1129|1133|WOOL|field|net.minecraft.init.Blocks|WOOL
+      @|com\joarez\blocks\BlockTutorial.java|867|877|addRecipes|method|com.joarez.blocks.BlockTutorial|addRecipes|()V
+      @|com\joarez\blocks\BlockTutorial.java|884|896|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\blocks\BlockTutorial.java|897|912|addShapedRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapedRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)Lnet/minecraft/item/crafting/IRecipe;
+      @|com\joarez\blocks\BlockTutorial.java|917|926|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\blocks\BlockTutorial.java|957|963|Blocks|class|net.minecraft.init.Blocks
+      @|com\joarez\blocks\BlockTutorial.java|964|970|LADDER|field|net.minecraft.init.Blocks|LADDER
+      @|com\joarez\blocks\BlockTutorial.java|979|988|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\blocks\BlockTutorial.java|989|995|Blocks|class|net.minecraft.init.Blocks
+      @|com\joarez\blocks\BlockTutorial.java|996|1000|WOOL|field|net.minecraft.init.Blocks|WOOL
+      @|com\joarez\blocks\BlockTutorial.java|1001|1014|OreDictionary|class|net.minecraftforge.oredict.OreDictionary
+      @|com\joarez\blocks\BlockTutorial.java|1015|1029|WILDCARD_VALUE|field|net.minecraftforge.oredict.OreDictionary|WILDCARD_VALUE
+      @|com\joarez\blocks\BlockTutorial.java|1035|1047|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\blocks\BlockTutorial.java|1048|1057|addRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addRecipe|(Lnet/minecraft/item/crafting/IRecipe;)V
+      @|com\joarez\blocks\BlockTutorial.java|1062|1077|ShapedOreRecipe|class|net.minecraftforge.oredict.ShapedOreRecipe
+      @|com\joarez\blocks\BlockTutorial.java|1082|1091|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\blocks\BlockTutorial.java|1115|1121|Blocks|class|net.minecraft.init.Blocks
+      @|com\joarez\blocks\BlockTutorial.java|1122|1128|LADDER|field|net.minecraft.init.Blocks|LADDER
+      @|com\joarez\blocks\BlockTutorial.java|1133|1139|Blocks|class|net.minecraft.init.Blocks
+      @|com\joarez\blocks\BlockTutorial.java|1140|1144|WOOL|field|net.minecraft.init.Blocks|WOOL
    Method End: addRecipes()V
-Class End  : blocks.BlockTutorial
-endProcessing "blocks\BlockTutorial.java"
+Class End  : com.joarez.blocks.BlockTutorial
+endProcessing "com\joarez\blocks\BlockTutorial.java"
 
-startProcessing "com\joarez\mathmod\ClientProxy.java" md5: 391e77a678f68c00b0caa948727d6e8a
-Cache Hit!
+startProcessing "com\joarez\gui\DoMathGUI.java" md5: 9cbf92bf5c3536935f8426eea462757d
+@|com\joarez\gui\DoMathGUI.java|8|22|com.joarez.gui|package|com.joarez.gui|(file)
+Class Start: com.joarez.gui.DoMathGUI
+   @|com\joarez\gui\DoMathGUI.java|485|494|DoMathGUI|class|com.joarez.gui.DoMathGUI
+   @|com\joarez\gui\DoMathGUI.java|503|512|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+   @|com\joarez\gui\DoMathGUI.java|517|533|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\DoMathGUI.java|517|533|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\DoMathGUI.java|534|544|bg_texture|field|com.joarez.gui.DoMathGUI|bg_texture|
+   @|com\joarez\gui\DoMathGUI.java|551|567|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\DoMathGUI.java|568|575|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\gui\DoMathGUI.java|576|582|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\gui\DoMathGUI.java|616|628|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+   @|com\joarez\gui\DoMathGUI.java|616|628|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+   @|com\joarez\gui\DoMathGUI.java|629|649|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield|
+   @|com\joarez\gui\DoMathGUI.java|652|661|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\DoMathGUI.java|652|661|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\DoMathGUI.java|662|670|bt_check|field|com.joarez.gui.DoMathGUI|bt_check|
+   @|com\joarez\gui\DoMathGUI.java|677|680|bgW|field|com.joarez.gui.DoMathGUI|bgW|
+   @|com\joarez\gui\DoMathGUI.java|681|684|bgH|field|com.joarez.gui.DoMathGUI|bgH|
+   @|com\joarez\gui\DoMathGUI.java|685|688|bgX|field|com.joarez.gui.DoMathGUI|bgX|
+   @|com\joarez\gui\DoMathGUI.java|689|692|bgY|field|com.joarez.gui.DoMathGUI|bgY|
+   @|com\joarez\gui\DoMathGUI.java|699|705|titleX|field|com.joarez.gui.DoMathGUI|titleX|
+   @|com\joarez\gui\DoMathGUI.java|707|713|titleY|field|com.joarez.gui.DoMathGUI|titleY|
+   @|com\joarez\gui\DoMathGUI.java|720|724|expX|field|com.joarez.gui.DoMathGUI|expX|
+   @|com\joarez\gui\DoMathGUI.java|726|730|expY|field|com.joarez.gui.DoMathGUI|expY|
+   @|com\joarez\gui\DoMathGUI.java|737|742|textW|field|com.joarez.gui.DoMathGUI|textW|
+   @|com\joarez\gui\DoMathGUI.java|750|755|textH|field|com.joarez.gui.DoMathGUI|textH|
+   @|com\joarez\gui\DoMathGUI.java|762|767|textX|field|com.joarez.gui.DoMathGUI|textX|
+   @|com\joarez\gui\DoMathGUI.java|769|774|textY|field|com.joarez.gui.DoMathGUI|textY|
+   @|com\joarez\gui\DoMathGUI.java|781|784|btX|field|com.joarez.gui.DoMathGUI|btX|
+   @|com\joarez\gui\DoMathGUI.java|786|789|btY|field|com.joarez.gui.DoMathGUI|btY|
+   Method Start: drawScreen(IIF)V
+      @|com\joarez\gui\DoMathGUI.java|832|838|mouseX|param|com.joarez.gui.DoMathGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\gui\DoMathGUI.java|844|850|mouseY|param|com.joarez.gui.DoMathGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\gui\DoMathGUI.java|858|870|partialTicks|param|com.joarez.gui.DoMathGUI|drawScreen|(IIF)V|partialTicks|2
+      @|com\joarez\gui\DoMathGUI.java|795|803|Override|class|java.lang.Override
+      @|com\joarez\gui\DoMathGUI.java|817|827|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\gui\DoMathGUI.java|904|925|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com\joarez\gui\DoMathGUI.java|931|934|bgW|field|com.joarez.gui.DoMathGUI|bgW
+      @|com\joarez\gui\DoMathGUI.java|944|947|bgH|field|com.joarez.gui.DoMathGUI|bgH
+      @|com\joarez\gui\DoMathGUI.java|957|960|bgX|field|com.joarez.gui.DoMathGUI|bgX
+      @|com\joarez\gui\DoMathGUI.java|964|969|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\DoMathGUI.java|972|975|bgW|field|com.joarez.gui.DoMathGUI|bgW
+      @|com\joarez\gui\DoMathGUI.java|982|985|bgY|field|com.joarez.gui.DoMathGUI|bgY
+      @|com\joarez\gui\DoMathGUI.java|989|995|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\gui\DoMathGUI.java|998|1001|bgH|field|com.joarez.gui.DoMathGUI|bgH
+      @|com\joarez\gui\DoMathGUI.java|1010|1019|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\DoMathGUI.java|1020|1032|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\DoMathGUI.java|1035|1047|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\joarez\gui\DoMathGUI.java|1048|1059|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\gui\DoMathGUI.java|1060|1070|bg_texture|field|com.joarez.gui.DoMathGUI|bg_texture
+      @|com\joarez\gui\DoMathGUI.java|1082|1103|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\joarez\gui\DoMathGUI.java|1104|1107|bgX|field|com.joarez.gui.DoMathGUI|bgX
+      @|com\joarez\gui\DoMathGUI.java|1108|1111|bgY|field|com.joarez.gui.DoMathGUI|bgY
+      @|com\joarez\gui\DoMathGUI.java|1116|1119|bgW|field|com.joarez.gui.DoMathGUI|bgW
+      @|com\joarez\gui\DoMathGUI.java|1120|1123|bgH|field|com.joarez.gui.DoMathGUI|bgH
+      @|com\joarez\gui\DoMathGUI.java|1198|1204|String|class|java.lang.String
+      @|com\joarez\gui\DoMathGUI.java|1235|1241|titleX|field|com.joarez.gui.DoMathGUI|titleX
+      @|com\joarez\gui\DoMathGUI.java|1244|1249|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\DoMathGUI.java|1260|1275|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\DoMathGUI.java|1276|1290|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\DoMathGUI.java|1303|1309|titleY|field|com.joarez.gui.DoMathGUI|titleY
+      @|com\joarez\gui\DoMathGUI.java|1312|1315|bgY|field|com.joarez.gui.DoMathGUI|bgY
+      @|com\joarez\gui\DoMathGUI.java|1327|1342|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\DoMathGUI.java|1343|1353|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\joarez\gui\DoMathGUI.java|1361|1367|titleX|field|com.joarez.gui.DoMathGUI|titleX
+      @|com\joarez\gui\DoMathGUI.java|1369|1375|titleY|field|com.joarez.gui.DoMathGUI|titleY
+      @|com\joarez\gui\DoMathGUI.java|1427|1433|String|class|java.lang.String
+      @|com\joarez\gui\DoMathGUI.java|1448|1459|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|1460|1461|A|field|com.joarez.gui.MathMethods|A
+      @|com\joarez\gui\DoMathGUI.java|1470|1481|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|1482|1491|OPERATION|field|com.joarez.gui.MathMethods|OPERATION
+      @|com\joarez\gui\DoMathGUI.java|1500|1511|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|1512|1513|B|field|com.joarez.gui.MathMethods|B
+      @|com\joarez\gui\DoMathGUI.java|1519|1523|expX|field|com.joarez.gui.DoMathGUI|expX
+      @|com\joarez\gui\DoMathGUI.java|1527|1532|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\DoMathGUI.java|1542|1557|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\DoMathGUI.java|1558|1572|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\DoMathGUI.java|1591|1595|expY|field|com.joarez.gui.DoMathGUI|expY
+      @|com\joarez\gui\DoMathGUI.java|1603|1609|titleY|field|com.joarez.gui.DoMathGUI|titleY
+      @|com\joarez\gui\DoMathGUI.java|1620|1634|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\DoMathGUI.java|1635|1645|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|com\joarez\gui\DoMathGUI.java|1656|1670|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\DoMathGUI.java|1671|1680|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|com\joarez\gui\DoMathGUI.java|1681|1685|expX|field|com.joarez.gui.DoMathGUI|expX
+      @|com\joarez\gui\DoMathGUI.java|1687|1691|expY|field|com.joarez.gui.DoMathGUI|expY
+      @|com\joarez\gui\DoMathGUI.java|1700|1714|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\DoMathGUI.java|1715|1720|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|com\joarez\gui\DoMathGUI.java|1742|1757|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\DoMathGUI.java|1758|1768|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\joarez\gui\DoMathGUI.java|1805|1819|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\DoMathGUI.java|1820|1829|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+      @|com\joarez\gui\DoMathGUI.java|1874|1894|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|1895|1906|drawTextBox|method|net.minecraft.client.gui.GuiTextField|drawTextBox|()V
+      @|com\joarez\gui\DoMathGUI.java|1935|1941|String|class|java.lang.String
+      @|com\joarez\gui\DoMathGUI.java|1966|1969|btX|field|com.joarez.gui.DoMathGUI|btX
+      @|com\joarez\gui\DoMathGUI.java|1973|1978|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\DoMathGUI.java|1989|1992|btY|field|com.joarez.gui.DoMathGUI|btY
+      @|com\joarez\gui\DoMathGUI.java|1995|2000|textY|field|com.joarez.gui.DoMathGUI|textY
+      @|com\joarez\gui\DoMathGUI.java|2009|2017|bt_check|field|com.joarez.gui.DoMathGUI|bt_check
+      @|com\joarez\gui\DoMathGUI.java|2024|2033|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\DoMathGUI.java|2036|2039|btX|field|com.joarez.gui.DoMathGUI|btX
+      @|com\joarez\gui\DoMathGUI.java|2040|2043|btY|field|com.joarez.gui.DoMathGUI|btY
+      @|com\joarez\gui\DoMathGUI.java|2068|2078|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\DoMathGUI.java|2079|2084|clear|method|java.util.Collection|clear|()V
+      @|com\joarez\gui\DoMathGUI.java|2095|2105|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\DoMathGUI.java|2106|2109|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\DoMathGUI.java|2110|2118|bt_check|field|com.joarez.gui.DoMathGUI|bt_check
+      @|com\joarez\gui\DoMathGUI.java|2143|2149|String|class|java.lang.String
+      @|com\joarez\gui\DoMathGUI.java|2159|2170|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|2171|2177|ACTUAL|field|com.joarez.gui.MathMethods|ACTUAL
+      @|com\joarez\gui\DoMathGUI.java|2186|2197|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|2198|2203|TOTAL|field|com.joarez.gui.MathMethods|TOTAL
+      @|com\joarez\gui\DoMathGUI.java|2216|2221|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\DoMathGUI.java|2226|2229|bgW|field|com.joarez.gui.DoMathGUI|bgW
+      @|com\joarez\gui\DoMathGUI.java|2248|2254|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\gui\DoMathGUI.java|2259|2262|bgH|field|com.joarez.gui.DoMathGUI|bgH
+      @|com\joarez\gui\DoMathGUI.java|2272|2287|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\DoMathGUI.java|2288|2299|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\gui\DoMathGUI.java|2314|2329|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\DoMathGUI.java|2330|2340|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\joarez\gui\DoMathGUI.java|2385|2395|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\gui\DoMathGUI.java|2396|2402|mouseX|param|com.joarez.gui.DoMathGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\gui\DoMathGUI.java|2404|2410|mouseY|param|com.joarez.gui.DoMathGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\gui\DoMathGUI.java|2412|2424|partialTicks|param|com.joarez.gui.DoMathGUI|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: initGui()V
+      @|com\joarez\gui\DoMathGUI.java|2438|2446|Override|class|java.lang.Override
+      @|com\joarez\gui\DoMathGUI.java|2460|2467|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\joarez\gui\DoMathGUI.java|2474|2485|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|2486|2495|Randomize|method|com.joarez.gui.MathMethods|Randomize|()V
+      @|com\joarez\gui\DoMathGUI.java|2501|2506|textX|field|com.joarez.gui.DoMathGUI|textX
+      @|com\joarez\gui\DoMathGUI.java|2510|2515|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\DoMathGUI.java|2516|2521|textW|field|com.joarez.gui.DoMathGUI|textW
+      @|com\joarez\gui\DoMathGUI.java|2528|2533|textY|field|com.joarez.gui.DoMathGUI|textY
+      @|com\joarez\gui\DoMathGUI.java|2537|2543|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\gui\DoMathGUI.java|2546|2551|textH|field|com.joarez.gui.DoMathGUI|textH
+      @|com\joarez\gui\DoMathGUI.java|2558|2578|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|2585|2597|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+      @|com\joarez\gui\DoMathGUI.java|2605|2620|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\DoMathGUI.java|2621|2626|textX|field|com.joarez.gui.DoMathGUI|textX
+      @|com\joarez\gui\DoMathGUI.java|2627|2632|textY|field|com.joarez.gui.DoMathGUI|textY
+      @|com\joarez\gui\DoMathGUI.java|2633|2638|textW|field|com.joarez.gui.DoMathGUI|textW
+      @|com\joarez\gui\DoMathGUI.java|2639|2644|textH|field|com.joarez.gui.DoMathGUI|textH
+      @|com\joarez\gui\DoMathGUI.java|2651|2671|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|2672|2684|setTextColor|method|net.minecraft.client.gui.GuiTextField|setTextColor|(I)V
+   Method End: initGui()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\DoMathGUI.java|2776|2782|button|param|com.joarez.gui.DoMathGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\gui\DoMathGUI.java|2725|2733|Override|class|java.lang.Override
+      @|com\joarez\gui\DoMathGUI.java|2750|2765|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\DoMathGUI.java|2766|2775|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\DoMathGUI.java|2791|2802|IOException|class|java.io.IOException
+      @|com\joarez\gui\DoMathGUI.java|2817|2823|button|param|com.joarez.gui.DoMathGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\gui\DoMathGUI.java|2824|2826|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\joarez\gui\DoMathGUI.java|2845|2853|bt_check|field|com.joarez.gui.DoMathGUI|bt_check
+      @|com\joarez\gui\DoMathGUI.java|2854|2861|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com\joarez\gui\DoMathGUI.java|2906|2913|Integer|class|java.lang.Integer
+      @|com\joarez\gui\DoMathGUI.java|2914|2922|parseInt|method|java.lang.Integer|parseInt|(Ljava/lang/String;)I
+      @|com\joarez\gui\DoMathGUI.java|2923|2943|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|2944|2951|getText|method|net.minecraft.client.gui.GuiTextField|getText|()Ljava/lang/String;
+      @|com\joarez\gui\DoMathGUI.java|2969|2980|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|2981|2990|GetResult|method|com.joarez.gui.MathMethods|GetResult|()I
+      @|com\joarez\gui\DoMathGUI.java|3041|3061|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|3062|3069|setText|method|net.minecraft.client.gui.GuiTextField|setText|(Ljava/lang/String;)V
+      @|com\joarez\gui\DoMathGUI.java|3081|3101|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|3102|3112|setFocused|method|net.minecraft.client.gui.GuiTextField|setFocused|(Z)V
+      @|com\joarez\gui\DoMathGUI.java|3126|3137|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|3138|3147|Randomize|method|com.joarez.gui.MathMethods|Randomize|()V
+      @|com\joarez\gui\DoMathGUI.java|3167|3178|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|3179|3185|ACTUAL|field|com.joarez.gui.MathMethods|ACTUAL
+      @|com\joarez\gui\DoMathGUI.java|3188|3199|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|3200|3205|TOTAL|field|com.joarez.gui.MathMethods|TOTAL
+      @|com\joarez\gui\DoMathGUI.java|3216|3227|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\DoMathGUI.java|3228|3234|ACTUAL|field|com.joarez.gui.MathMethods|ACTUAL
+      @|com\joarez\gui\DoMathGUI.java|3264|3273|Exception|class|java.lang.Exception
+      @|com\joarez\gui\DoMathGUI.java|3330|3345|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\DoMathGUI.java|3346|3352|button|param|com.joarez.gui.DoMathGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: doesGuiPauseGame()Z
+      @|com\joarez\gui\DoMathGUI.java|3361|3369|Override|class|java.lang.Override
+      @|com\joarez\gui\DoMathGUI.java|3386|3402|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+   Method Start: mouseClicked(III)V
+      @|com\joarez\gui\DoMathGUI.java|3508|3514|mouseX|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\gui\DoMathGUI.java|3520|3526|mouseY|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\gui\DoMathGUI.java|3532|3543|mouseButton|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseButton|2
+      @|com\joarez\gui\DoMathGUI.java|3466|3474|Override|class|java.lang.Override
+      @|com\joarez\gui\DoMathGUI.java|3491|3503|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\joarez\gui\DoMathGUI.java|3552|3563|IOException|class|java.io.IOException
+      @|com\joarez\gui\DoMathGUI.java|3568|3588|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|3589|3601|mouseClicked|method|net.minecraft.client.gui.GuiTextField|mouseClicked|(III)V
+      @|com\joarez\gui\DoMathGUI.java|3602|3608|mouseX|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\gui\DoMathGUI.java|3610|3616|mouseY|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\gui\DoMathGUI.java|3618|3629|mouseButton|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseButton|2
+      @|com\joarez\gui\DoMathGUI.java|3640|3652|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\joarez\gui\DoMathGUI.java|3653|3659|mouseX|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\gui\DoMathGUI.java|3661|3667|mouseY|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\gui\DoMathGUI.java|3669|3680|mouseButton|param|com.joarez.gui.DoMathGUI|mouseClicked|(III)V|mouseButton|2
+   Method End: mouseClicked(III)V
+   Method Start: keyTyped(CI)V
+      @|com\joarez\gui\DoMathGUI.java|3729|3738|typedChar|param|com.joarez.gui.DoMathGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\gui\DoMathGUI.java|3744|3751|keyCode|param|com.joarez.gui.DoMathGUI|keyTyped|(CI)V|keyCode|1
+      @|com\joarez\gui\DoMathGUI.java|3690|3698|Override|class|java.lang.Override
+      @|com\joarez\gui\DoMathGUI.java|3715|3723|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\joarez\gui\DoMathGUI.java|3760|3771|IOException|class|java.io.IOException
+      @|com\joarez\gui\DoMathGUI.java|3776|3796|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|3797|3812|textboxKeyTyped|method|net.minecraft.client.gui.GuiTextField|textboxKeyTyped|(CI)Z
+      @|com\joarez\gui\DoMathGUI.java|3813|3822|typedChar|param|com.joarez.gui.DoMathGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\gui\DoMathGUI.java|3824|3831|keyCode|param|com.joarez.gui.DoMathGUI|keyTyped|(CI)V|keyCode|1
+      @|com\joarez\gui\DoMathGUI.java|3844|3852|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\joarez\gui\DoMathGUI.java|3853|3862|typedChar|param|com.joarez.gui.DoMathGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\gui\DoMathGUI.java|3864|3871|keyCode|param|com.joarez.gui.DoMathGUI|keyTyped|(CI)V|keyCode|1
+   Method End: keyTyped(CI)V
+   Method Start: updateScreen()V
+      @|com\joarez\gui\DoMathGUI.java|3882|3890|Override|class|java.lang.Override
+      @|com\joarez\gui\DoMathGUI.java|3904|3916|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
+      @|com\joarez\gui\DoMathGUI.java|3923|3943|expression_textfield|field|com.joarez.gui.DoMathGUI|expression_textfield
+      @|com\joarez\gui\DoMathGUI.java|3944|3963|updateCursorCounter|method|net.minecraft.client.gui.GuiTextField|updateCursorCounter|()V
+      @|com\joarez\gui\DoMathGUI.java|3975|3987|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
+   Method End: updateScreen()V
+Class End  : com.joarez.gui.DoMathGUI
+endProcessing "com\joarez\gui\DoMathGUI.java"
+
+startProcessing "com\joarez\gui\GuiButtonTutorial.java" md5: 6f559be43a27abb5f3719cde9047e534
+@|com\joarez\gui\GuiButtonTutorial.java|8|22|com.joarez.gui|package|com.joarez.gui|(file)
+Class Start: com.joarez.gui.GuiButtonTutorial
+   @|com\joarez\gui\GuiButtonTutorial.java|244|261|GuiButtonTutorial|class|com.joarez.gui.GuiButtonTutorial
+   @|com\joarez\gui\GuiButtonTutorial.java|270|279|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\GuiButtonTutorial.java|303|306|btW|field|com.joarez.gui.GuiButtonTutorial|btW|
+   @|com\joarez\gui\GuiButtonTutorial.java|333|336|btH|field|com.joarez.gui.GuiButtonTutorial|btH|
+   @|com\joarez\gui\GuiButtonTutorial.java|363|364|u|field|com.joarez.gui.GuiButtonTutorial|u|
+   @|com\joarez\gui\GuiButtonTutorial.java|392|393|v|field|com.joarez.gui.GuiButtonTutorial|v|
+   @|com\joarez\gui\GuiButtonTutorial.java|408|424|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\GuiButtonTutorial.java|408|424|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\GuiButtonTutorial.java|425|435|textureLoc|field|com.joarez.gui.GuiButtonTutorial|textureLoc|
+   @|com\joarez\gui\GuiButtonTutorial.java|442|458|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\GuiButtonTutorial.java|459|466|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\gui\GuiButtonTutorial.java|467|473|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   Method Start: GuiButtonTutorial(III)V
+      @|com\joarez\gui\GuiButtonTutorial.java|532|540|buttonId|param|com.joarez.gui.GuiButtonTutorial|GuiButtonTutorial|(III)V|buttonId|0
+      @|com\joarez\gui\GuiButtonTutorial.java|546|547|x|param|com.joarez.gui.GuiButtonTutorial|GuiButtonTutorial|(III)V|x|1
+      @|com\joarez\gui\GuiButtonTutorial.java|553|554|y|param|com.joarez.gui.GuiButtonTutorial|GuiButtonTutorial|(III)V|y|2
+      @|com\joarez\gui\GuiButtonTutorial.java|510|527|GuiButtonTutorial|method|com.joarez.gui.GuiButtonTutorial|GuiButtonTutorial|(III)V
+      @|com\joarez\gui\GuiButtonTutorial.java|568|576|buttonId|param|com.joarez.gui.GuiButtonTutorial|GuiButtonTutorial|(III)V|buttonId|0
+      @|com\joarez\gui\GuiButtonTutorial.java|578|579|x|param|com.joarez.gui.GuiButtonTutorial|GuiButtonTutorial|(III)V|x|1
+      @|com\joarez\gui\GuiButtonTutorial.java|581|582|y|param|com.joarez.gui.GuiButtonTutorial|GuiButtonTutorial|(III)V|y|2
+      @|com\joarez\gui\GuiButtonTutorial.java|583|586|btW|field|com.joarez.gui.GuiButtonTutorial|btW
+      @|com\joarez\gui\GuiButtonTutorial.java|587|590|btH|field|com.joarez.gui.GuiButtonTutorial|btH
+   Method End: GuiButtonTutorial(III)V
+   Method Start: drawButton(Lnet/minecraft/client/Minecraft;II)V
+      @|com\joarez\gui\GuiButtonTutorial.java|649|651|mc|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|com\joarez\gui\GuiButtonTutorial.java|657|663|mouseX|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|com\joarez\gui\GuiButtonTutorial.java|669|675|mouseY|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|com\joarez\gui\GuiButtonTutorial.java|606|614|Override|class|java.lang.Override
+      @|com\joarez\gui\GuiButtonTutorial.java|628|638|drawButton|method|net.minecraft.client.gui.GuiButton|drawButton|(Lnet/minecraft/client/Minecraft;II)V
+      @|com\joarez\gui\GuiButtonTutorial.java|639|648|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiButtonTutorial.java|689|696|visible|field|net.minecraft.client.gui.GuiButton|visible
+      @|com\joarez\gui\GuiButtonTutorial.java|703|705|mc|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mc|0
+      @|com\joarez\gui\GuiButtonTutorial.java|706|718|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\joarez\gui\GuiButtonTutorial.java|719|730|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\gui\GuiButtonTutorial.java|731|741|textureLoc|field|com.joarez.gui.GuiButtonTutorial|textureLoc
+      @|com\joarez\gui\GuiButtonTutorial.java|747|754|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|com\joarez\gui\GuiButtonTutorial.java|758|764|mouseX|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|com\joarez\gui\GuiButtonTutorial.java|768|777|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|com\joarez\gui\GuiButtonTutorial.java|781|787|mouseX|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseX|1
+      @|com\joarez\gui\GuiButtonTutorial.java|791|800|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|com\joarez\gui\GuiButtonTutorial.java|803|808|width|field|net.minecraft.client.gui.GuiButton|width
+      @|com\joarez\gui\GuiButtonTutorial.java|812|818|mouseY|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|com\joarez\gui\GuiButtonTutorial.java|822|831|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|com\joarez\gui\GuiButtonTutorial.java|835|841|mouseY|param|com.joarez.gui.GuiButtonTutorial|drawButton|(Lnet/minecraft/client/Minecraft;II)V|mouseY|2
+      @|com\joarez\gui\GuiButtonTutorial.java|845|854|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|com\joarez\gui\GuiButtonTutorial.java|857|863|height|field|net.minecraft.client.gui.GuiButton|height
+      @|com\joarez\gui\GuiButtonTutorial.java|873|880|hovered|field|net.minecraft.client.gui.GuiButton|hovered
+      @|com\joarez\gui\GuiButtonTutorial.java|888|889|v|field|com.joarez.gui.GuiButtonTutorial|v
+      @|com\joarez\gui\GuiButtonTutorial.java|915|916|v|field|com.joarez.gui.GuiButtonTutorial|v
+      @|com\joarez\gui\GuiButtonTutorial.java|935|956|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\joarez\gui\GuiButtonTutorial.java|957|966|xPosition|field|net.minecraft.client.gui.GuiButton|xPosition
+      @|com\joarez\gui\GuiButtonTutorial.java|968|977|yPosition|field|net.minecraft.client.gui.GuiButton|yPosition
+      @|com\joarez\gui\GuiButtonTutorial.java|978|979|u|field|com.joarez.gui.GuiButtonTutorial|u
+      @|com\joarez\gui\GuiButtonTutorial.java|980|981|v|field|com.joarez.gui.GuiButtonTutorial|v
+      @|com\joarez\gui\GuiButtonTutorial.java|982|985|btW|field|com.joarez.gui.GuiButtonTutorial|btW
+      @|com\joarez\gui\GuiButtonTutorial.java|987|990|btH|field|com.joarez.gui.GuiButtonTutorial|btH
+   Method End: drawButton(Lnet/minecraft/client/Minecraft;II)V
+Class End  : com.joarez.gui.GuiButtonTutorial
+endProcessing "com\joarez\gui\GuiButtonTutorial.java"
+
+startProcessing "com\joarez\gui\GuiOverlay.java" md5: 38240f7c45a127576a7f68bca206cca7
+@|com\joarez\gui\GuiOverlay.java|8|22|com.joarez.gui|package|com.joarez.gui|(file)
+Class Start: com.joarez.gui.GuiOverlay
+   @|com\joarez\gui\GuiOverlay.java|377|387|GuiOverlay|class|com.joarez.gui.GuiOverlay
+   @|com\joarez\gui\GuiOverlay.java|396|399|Gui|class|net.minecraft.client.gui.Gui
+   @|com\joarez\gui\GuiOverlay.java|405|421|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\GuiOverlay.java|405|421|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\GuiOverlay.java|422|431|money_bag|field|com.joarez.gui.GuiOverlay|money_bag|
+   @|com\joarez\gui\GuiOverlay.java|438|454|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\GuiOverlay.java|455|462|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\gui\GuiOverlay.java|463|469|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   Method Start: renderOverlay(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+      @|com\joarez\gui\GuiOverlay.java|564|569|event|param|com.joarez.gui.GuiOverlay|renderOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|com\joarez\gui\GuiOverlay.java|499|513|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\joarez\gui\GuiOverlay.java|527|540|renderOverlay|method|com.joarez.gui.GuiOverlay|renderOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+      @|com\joarez\gui\GuiOverlay.java|541|563|RenderGameOverlayEvent|class|net.minecraftforge.client.event.RenderGameOverlayEvent
+      @|com\joarez\gui\GuiOverlay.java|587|592|event|param|com.joarez.gui.GuiOverlay|renderOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|com\joarez\gui\GuiOverlay.java|593|606|getResolution|method|net.minecraftforge.client.event.RenderGameOverlayEvent|getResolution|()Lnet/minecraft/client/gui/ScaledResolution;
+      @|com\joarez\gui\GuiOverlay.java|609|623|getScaledWidth|method|net.minecraft.client.gui.ScaledResolution|getScaledWidth|()I
+      @|com\joarez\gui\GuiOverlay.java|642|647|event|param|com.joarez.gui.GuiOverlay|renderOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|com\joarez\gui\GuiOverlay.java|648|661|getResolution|method|net.minecraftforge.client.event.RenderGameOverlayEvent|getResolution|()Lnet/minecraft/client/gui/ScaledResolution;
+      @|com\joarez\gui\GuiOverlay.java|664|679|getScaledHeight|method|net.minecraft.client.gui.ScaledResolution|getScaledHeight|()I
+      @|com\joarez\gui\GuiOverlay.java|685|691|String|class|java.lang.String
+      @|com\joarez\gui\GuiOverlay.java|707|718|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\GuiOverlay.java|719|727|CURRENCY|field|com.joarez.gui.MathMethods|CURRENCY
+      @|com\joarez\gui\GuiOverlay.java|747|756|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiOverlay.java|757|769|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\GuiOverlay.java|772|787|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|com\joarez\gui\GuiOverlay.java|788|802|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\GuiOverlay.java|837|846|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiOverlay.java|847|859|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\GuiOverlay.java|862|877|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|com\joarez\gui\GuiOverlay.java|878|889|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\gui\GuiOverlay.java|936|941|event|param|com.joarez.gui.GuiOverlay|renderOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|com\joarez\gui\GuiOverlay.java|942|949|getType|method|net.minecraftforge.client.event.RenderGameOverlayEvent|getType|()Lnet/minecraftforge/client/event/RenderGameOverlayEvent$ElementType;
+      @|com\joarez\gui\GuiOverlay.java|955|989|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType
+      @|com\joarez\gui\GuiOverlay.java|990|996|HELMET|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|HELMET
+      @|com\joarez\gui\GuiOverlay.java|1003|1012|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiOverlay.java|1013|1025|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\GuiOverlay.java|1028|1040|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\joarez\gui\GuiOverlay.java|1041|1052|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\gui\GuiOverlay.java|1053|1062|money_bag|field|com.joarez.gui.GuiOverlay|money_bag
+      @|com\joarez\gui\GuiOverlay.java|1085|1094|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiOverlay.java|1095|1107|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\GuiOverlay.java|1110|1125|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|com\joarez\gui\GuiOverlay.java|1126|1140|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\GuiOverlay.java|1182|1203|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\joarez\gui\GuiOverlay.java|1232|1237|event|param|com.joarez.gui.GuiOverlay|renderOverlay|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V|event|0
+      @|com\joarez\gui\GuiOverlay.java|1238|1245|getType|method|net.minecraftforge.client.event.RenderGameOverlayEvent|getType|()Lnet/minecraftforge/client/event/RenderGameOverlayEvent$ElementType;
+      @|com\joarez\gui\GuiOverlay.java|1251|1285|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType
+      @|com\joarez\gui\GuiOverlay.java|1286|1290|TEXT|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|TEXT
+      @|com\joarez\gui\GuiOverlay.java|1314|1323|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiOverlay.java|1324|1336|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\GuiOverlay.java|1339|1354|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|com\joarez\gui\GuiOverlay.java|1355|1369|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\GuiOverlay.java|1401|1410|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiOverlay.java|1411|1423|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\GuiOverlay.java|1426|1441|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|com\joarez\gui\GuiOverlay.java|1442|1453|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\gui\GuiOverlay.java|1470|1480|drawString|method|net.minecraft.client.gui.Gui|drawString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com\joarez\gui\GuiOverlay.java|1481|1490|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\GuiOverlay.java|1491|1503|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\GuiOverlay.java|1506|1521|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+   Method End: renderOverlay(Lnet/minecraftforge/client/event/RenderGameOverlayEvent;)V
+Class End  : com.joarez.gui.GuiOverlay
+endProcessing "com\joarez\gui\GuiOverlay.java"
+
+startProcessing "com\joarez\gui\MathMethods.java" md5: 115f67770186d8d3bc2cfd1734bc2c97
+@|com\joarez\gui\MathMethods.java|8|22|com.joarez.gui|package|com.joarez.gui|(file)
+Class Start: com.joarez.gui.MathMethods
+   @|com\joarez\gui\MathMethods.java|39|50|MathMethods|class|com.joarez.gui.MathMethods
+   @|com\joarez\gui\MathMethods.java|72|73|A|field|com.joarez.gui.MathMethods|A|
+   @|com\joarez\gui\MathMethods.java|99|100|B|field|com.joarez.gui.MathMethods|B|
+   @|com\joarez\gui\MathMethods.java|127|133|RESULT|field|com.joarez.gui.MathMethods|RESULT|
+   @|com\joarez\gui\MathMethods.java|154|160|String|class|java.lang.String
+   @|com\joarez\gui\MathMethods.java|154|160|String|class|java.lang.String
+   @|com\joarez\gui\MathMethods.java|161|170|OPERATION|field|com.joarez.gui.MathMethods|OPERATION|
+   @|com\joarez\gui\MathMethods.java|197|200|DIF|field|com.joarez.gui.MathMethods|DIF|
+   @|com\joarez\gui\MathMethods.java|229|234|TOTAL|field|com.joarez.gui.MathMethods|TOTAL|
+   @|com\joarez\gui\MathMethods.java|259|265|ACTUAL|field|com.joarez.gui.MathMethods|ACTUAL|
+   @|com\joarez\gui\MathMethods.java|292|300|CURRENCY|field|com.joarez.gui.MathMethods|CURRENCY|
+   Method Start: GetResult()I
+      @|com\joarez\gui\MathMethods.java|327|336|GetResult|method|com.joarez.gui.MathMethods|GetResult|()I
+      @|com\joarez\gui\MathMethods.java|346|355|OPERATION|field|com.joarez.gui.MathMethods|OPERATION
+      @|com\joarez\gui\MathMethods.java|369|375|RESULT|field|com.joarez.gui.MathMethods|RESULT
+      @|com\joarez\gui\MathMethods.java|378|379|A|field|com.joarez.gui.MathMethods|A
+      @|com\joarez\gui\MathMethods.java|382|383|B|field|com.joarez.gui.MathMethods|B
+      @|com\joarez\gui\MathMethods.java|397|406|OPERATION|field|com.joarez.gui.MathMethods|OPERATION
+      @|com\joarez\gui\MathMethods.java|420|426|RESULT|field|com.joarez.gui.MathMethods|RESULT
+      @|com\joarez\gui\MathMethods.java|429|430|A|field|com.joarez.gui.MathMethods|A
+      @|com\joarez\gui\MathMethods.java|431|432|B|field|com.joarez.gui.MathMethods|B
+      @|com\joarez\gui\MathMethods.java|443|452|OPERATION|field|com.joarez.gui.MathMethods|OPERATION
+      @|com\joarez\gui\MathMethods.java|466|472|RESULT|field|com.joarez.gui.MathMethods|RESULT
+      @|com\joarez\gui\MathMethods.java|475|476|A|field|com.joarez.gui.MathMethods|A
+      @|com\joarez\gui\MathMethods.java|477|478|B|field|com.joarez.gui.MathMethods|B
+      @|com\joarez\gui\MathMethods.java|489|498|OPERATION|field|com.joarez.gui.MathMethods|OPERATION
+      @|com\joarez\gui\MathMethods.java|515|516|B|field|com.joarez.gui.MathMethods|B
+      @|com\joarez\gui\MathMethods.java|529|530|B|field|com.joarez.gui.MathMethods|B
+      @|com\joarez\gui\MathMethods.java|544|550|RESULT|field|com.joarez.gui.MathMethods|RESULT
+      @|com\joarez\gui\MathMethods.java|553|554|A|field|com.joarez.gui.MathMethods|A
+      @|com\joarez\gui\MathMethods.java|555|556|B|field|com.joarez.gui.MathMethods|B
+      @|com\joarez\gui\MathMethods.java|574|580|RESULT|field|com.joarez.gui.MathMethods|RESULT
+   Method End: GetResult()I
+   Method Start: Randomize()V
+      @|com\joarez\gui\MathMethods.java|607|616|Randomize|method|com.joarez.gui.MathMethods|Randomize|()V
+      @|com\joarez\gui\MathMethods.java|652|655|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|701|705|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|706|712|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|746|750|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|751|757|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|820|823|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|869|873|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|874|880|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|915|919|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|920|926|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|988|991|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|1031|1035|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1036|1042|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1074|1078|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1079|1085|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1117|1120|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|1160|1164|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1165|1171|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1204|1208|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1209|1215|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1247|1250|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|1290|1294|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1295|1301|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1332|1336|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1337|1343|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1373|1376|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|1416|1420|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1421|1427|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1458|1462|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1463|1469|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1498|1501|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|1545|1549|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1550|1556|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1587|1591|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1592|1598|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1698|1701|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\MathMethods.java|1745|1749|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1750|1756|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1787|1791|Math|class|java.lang.Math
+      @|com\joarez\gui\MathMethods.java|1792|1798|random|method|java.lang.Math|random|()D
+      @|com\joarez\gui\MathMethods.java|1903|1904|A|field|com.joarez.gui.MathMethods|A
+      @|com\joarez\gui\MathMethods.java|1917|1918|B|field|com.joarez.gui.MathMethods|B
+   Method End: Randomize()V
+Class End  : com.joarez.gui.MathMethods
+endProcessing "com\joarez\gui\MathMethods.java"
+
+startProcessing "com\joarez\gui\TutorialGUI.java" md5: a6ad6b3f72f574034b966e39c1386030
+@|com\joarez\gui\TutorialGUI.java|8|22|com.joarez.gui|package|com.joarez.gui|(file)
+Class Start: com.joarez.gui.TutorialGUI
+   @|com\joarez\gui\TutorialGUI.java|615|626|TutorialGUI|class|com.joarez.gui.TutorialGUI
+   @|com\joarez\gui\TutorialGUI.java|635|644|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+   @|com\joarez\gui\TutorialGUI.java|655|671|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\TutorialGUI.java|655|671|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\TutorialGUI.java|672|682|textureLoc|field|com.joarez.gui.TutorialGUI|textureLoc|
+   @|com\joarez\gui\TutorialGUI.java|689|705|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\TutorialGUI.java|706|713|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\gui\TutorialGUI.java|714|720|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\gui\TutorialGUI.java|752|756|guiH|field|com.joarez.gui.TutorialGUI|guiH|
+   @|com\joarez\gui\TutorialGUI.java|769|773|guiW|field|com.joarez.gui.TutorialGUI|guiW|
+   @|com\joarez\gui\TutorialGUI.java|786|795|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\TutorialGUI.java|786|795|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\TutorialGUI.java|796|799|bt1|field|com.joarez.gui.TutorialGUI|bt1|
+   @|com\joarez\gui\TutorialGUI.java|812|818|bt1_id|field|com.joarez.gui.TutorialGUI|bt1_id|
+   @|com\joarez\gui\TutorialGUI.java|825|842|GuiButtonTutorial|class|com.joarez.gui.GuiButtonTutorial
+   @|com\joarez\gui\TutorialGUI.java|825|842|GuiButtonTutorial|class|com.joarez.gui.GuiButtonTutorial
+   @|com\joarez\gui\TutorialGUI.java|843|847|bt_t|field|com.joarez.gui.TutorialGUI|bt_t|
+   @|com\joarez\gui\TutorialGUI.java|850|862|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+   @|com\joarez\gui\TutorialGUI.java|850|862|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+   @|com\joarez\gui\TutorialGUI.java|863|872|textfield|field|com.joarez.gui.TutorialGUI|textfield|
+   @|com\joarez\gui\TutorialGUI.java|885|897|textfield_id|field|com.joarez.gui.TutorialGUI|textfield_id|
+   Method Start: drawScreen(IIF)V
+      @|com\joarez\gui\TutorialGUI.java|944|950|mouseX|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|956|962|mouseY|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\gui\TutorialGUI.java|970|982|partialTicks|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|partialTicks|2
+      @|com\joarez\gui\TutorialGUI.java|907|915|Override|class|java.lang.Override
+      @|com\joarez\gui\TutorialGUI.java|929|939|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\gui\TutorialGUI.java|1003|1015|drawTutorial|method|com.joarez.gui.TutorialGUI|drawTutorial|(II)V
+      @|com\joarez\gui\TutorialGUI.java|1016|1022|mouseX|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|1023|1029|mouseY|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\gui\TutorialGUI.java|1040|1050|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\gui\TutorialGUI.java|1051|1057|mouseX|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|1059|1065|mouseY|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\gui\TutorialGUI.java|1067|1079|partialTicks|param|com.joarez.gui.TutorialGUI|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: drawTutorial(II)V
+      @|com\joarez\gui\TutorialGUI.java|1122|1128|mouseX|param|com.joarez.gui.TutorialGUI|drawTutorial|(II)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|1134|1140|mouseY|param|com.joarez.gui.TutorialGUI|drawTutorial|(II)V|mouseY|1
+      @|com\joarez\gui\TutorialGUI.java|1105|1117|drawTutorial|method|com.joarez.gui.TutorialGUI|drawTutorial|(II)V
+      @|com\joarez\gui\TutorialGUI.java|1151|1172|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com\joarez\gui\TutorialGUI.java|1194|1199|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\TutorialGUI.java|1202|1206|guiW|field|com.joarez.gui.TutorialGUI|guiW
+      @|com\joarez\gui\TutorialGUI.java|1228|1234|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\gui\TutorialGUI.java|1237|1241|guiH|field|com.joarez.gui.TutorialGUI|guiH
+      @|com\joarez\gui\TutorialGUI.java|1251|1255|GL11|class|org.lwjgl.opengl.GL11
+      @|com\joarez\gui\TutorialGUI.java|1256|1268|glPushMatrix|method|org.lwjgl.opengl.GL11|glPushMatrix|()V
+      @|com\joarez\gui\TutorialGUI.java|1279|1293|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\TutorialGUI.java|1294|1305|enableAlpha|method|net.minecraft.client.renderer.GlStateManager|enableAlpha|()V
+      @|com\joarez\gui\TutorialGUI.java|1312|1326|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\TutorialGUI.java|1327|1338|enableBlend|method|net.minecraft.client.renderer.GlStateManager|enableBlend|()V
+      @|com\joarez\gui\TutorialGUI.java|1345|1354|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\TutorialGUI.java|1355|1367|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\TutorialGUI.java|1370|1382|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\joarez\gui\TutorialGUI.java|1383|1394|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\gui\TutorialGUI.java|1395|1405|textureLoc|field|com.joarez.gui.TutorialGUI|textureLoc
+      @|com\joarez\gui\TutorialGUI.java|1419|1440|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\joarez\gui\TutorialGUI.java|1461|1465|guiW|field|com.joarez.gui.TutorialGUI|guiW
+      @|com\joarez\gui\TutorialGUI.java|1466|1470|guiH|field|com.joarez.gui.TutorialGUI|guiH
+      @|com\joarez\gui\TutorialGUI.java|1611|1615|GL11|class|org.lwjgl.opengl.GL11
+      @|com\joarez\gui\TutorialGUI.java|1616|1627|glPopMatrix|method|org.lwjgl.opengl.GL11|glPopMatrix|()V
+      @|com\joarez\gui\TutorialGUI.java|1880|1894|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\TutorialGUI.java|1895|1905|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|com\joarez\gui\TutorialGUI.java|1919|1933|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\TutorialGUI.java|1934|1943|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|com\joarez\gui\TutorialGUI.java|1945|1950|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\TutorialGUI.java|1960|1975|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\TutorialGUI.java|1976|1990|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\TutorialGUI.java|2032|2046|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\TutorialGUI.java|2047|2052|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|com\joarez\gui\TutorialGUI.java|2071|2086|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\TutorialGUI.java|2087|2097|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\joarez\gui\TutorialGUI.java|2147|2161|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\gui\TutorialGUI.java|2162|2171|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+      @|com\joarez\gui\TutorialGUI.java|2182|2191|textfield|field|com.joarez.gui.TutorialGUI|textfield
+      @|com\joarez\gui\TutorialGUI.java|2192|2203|drawTextBox|method|net.minecraft.client.gui.GuiTextField|drawTextBox|()V
+      @|com\joarez\gui\TutorialGUI.java|2217|2223|mouseX|param|com.joarez.gui.TutorialGUI|drawTutorial|(II)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|2238|2244|mouseX|param|com.joarez.gui.TutorialGUI|drawTutorial|(II)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|2269|2273|List|class|java.util.List
+      @|com\joarez\gui\TutorialGUI.java|2274|2280|String|class|java.lang.String
+      @|com\joarez\gui\TutorialGUI.java|2293|2302|ArrayList|class|java.util.ArrayList
+      @|com\joarez\gui\TutorialGUI.java|2303|2309|String|class|java.lang.String
+      @|com\joarez\gui\TutorialGUI.java|2322|2325|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\TutorialGUI.java|2350|2366|drawHoveringText|method|net.minecraft.client.gui.GuiScreen|drawHoveringText|(Ljava/util/List;II)V
+      @|com\joarez\gui\TutorialGUI.java|2373|2379|mouseX|param|com.joarez.gui.TutorialGUI|drawTutorial|(II)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|2381|2387|mouseY|param|com.joarez.gui.TutorialGUI|drawTutorial|(II)V|mouseY|1
+   Method End: drawTutorial(II)V
+   Method Start: initGui()V
+      @|com\joarez\gui\TutorialGUI.java|2402|2410|Override|class|java.lang.Override
+      @|com\joarez\gui\TutorialGUI.java|2424|2431|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\joarez\gui\TutorialGUI.java|2440|2450|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\TutorialGUI.java|2451|2456|clear|method|java.util.Collection|clear|()V
+      @|com\joarez\gui\TutorialGUI.java|2462|2472|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\TutorialGUI.java|2473|2476|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\TutorialGUI.java|2477|2480|bt1|field|com.joarez.gui.TutorialGUI|bt1
+      @|com\joarez\gui\TutorialGUI.java|2487|2496|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\TutorialGUI.java|2497|2503|bt1_id|field|com.joarez.gui.TutorialGUI|bt1_id
+      @|com\joarez\gui\TutorialGUI.java|2504|2509|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\TutorialGUI.java|2517|2521|guiH|field|com.joarez.gui.TutorialGUI|guiH
+      @|com\joarez\gui\TutorialGUI.java|2545|2555|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\TutorialGUI.java|2556|2559|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\TutorialGUI.java|2560|2564|bt_t|field|com.joarez.gui.TutorialGUI|bt_t
+      @|com\joarez\gui\TutorialGUI.java|2571|2588|GuiButtonTutorial|class|com.joarez.gui.GuiButtonTutorial
+      @|com\joarez\gui\TutorialGUI.java|2604|2613|textfield|field|com.joarez.gui.TutorialGUI|textfield
+      @|com\joarez\gui\TutorialGUI.java|2620|2632|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+      @|com\joarez\gui\TutorialGUI.java|2633|2645|textfield_id|field|com.joarez.gui.TutorialGUI|textfield_id
+      @|com\joarez\gui\TutorialGUI.java|2651|2666|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\TutorialGUI.java|2667|2672|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\TutorialGUI.java|2680|2686|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\gui\TutorialGUI.java|2705|2714|textfield|field|com.joarez.gui.TutorialGUI|textfield
+      @|com\joarez\gui\TutorialGUI.java|2715|2727|setTextColor|method|net.minecraft.client.gui.GuiTextField|setTextColor|(I)V
+      @|com\joarez\gui\TutorialGUI.java|2751|2758|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+   Method End: initGui()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\TutorialGUI.java|2819|2825|button|param|com.joarez.gui.TutorialGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\gui\TutorialGUI.java|2768|2776|Override|class|java.lang.Override
+      @|com\joarez\gui\TutorialGUI.java|2793|2808|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\TutorialGUI.java|2809|2818|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\TutorialGUI.java|2834|2845|IOException|class|java.io.IOException
+      @|com\joarez\gui\TutorialGUI.java|2857|2863|button|param|com.joarez.gui.TutorialGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\gui\TutorialGUI.java|2864|2866|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\joarez\gui\TutorialGUI.java|2877|2883|bt1_id|field|com.joarez.gui.TutorialGUI|bt1_id
+      @|com\joarez\gui\TutorialGUI.java|2888|2891|bt1|field|com.joarez.gui.TutorialGUI|bt1
+      @|com\joarez\gui\TutorialGUI.java|2892|2905|displayString|field|net.minecraft.client.gui.GuiButton|displayString
+      @|com\joarez\gui\TutorialGUI.java|2926|2929|bt1|field|com.joarez.gui.TutorialGUI|bt1
+      @|com\joarez\gui\TutorialGUI.java|2930|2937|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com\joarez\gui\TutorialGUI.java|2969|2984|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\TutorialGUI.java|2985|2991|button|param|com.joarez.gui.TutorialGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: keyTyped(CI)V
+      @|com\joarez\gui\TutorialGUI.java|3039|3048|typedChar|param|com.joarez.gui.TutorialGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\gui\TutorialGUI.java|3054|3061|keyCode|param|com.joarez.gui.TutorialGUI|keyTyped|(CI)V|keyCode|1
+      @|com\joarez\gui\TutorialGUI.java|3000|3008|Override|class|java.lang.Override
+      @|com\joarez\gui\TutorialGUI.java|3025|3033|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\joarez\gui\TutorialGUI.java|3070|3081|IOException|class|java.io.IOException
+      @|com\joarez\gui\TutorialGUI.java|3086|3095|textfield|field|com.joarez.gui.TutorialGUI|textfield
+      @|com\joarez\gui\TutorialGUI.java|3096|3111|textboxKeyTyped|method|net.minecraft.client.gui.GuiTextField|textboxKeyTyped|(CI)Z
+      @|com\joarez\gui\TutorialGUI.java|3112|3121|typedChar|param|com.joarez.gui.TutorialGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\gui\TutorialGUI.java|3123|3130|keyCode|param|com.joarez.gui.TutorialGUI|keyTyped|(CI)V|keyCode|1
+      @|com\joarez\gui\TutorialGUI.java|3143|3151|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\joarez\gui\TutorialGUI.java|3152|3161|typedChar|param|com.joarez.gui.TutorialGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\gui\TutorialGUI.java|3163|3170|keyCode|param|com.joarez.gui.TutorialGUI|keyTyped|(CI)V|keyCode|1
+   Method End: keyTyped(CI)V
+   Method Start: mouseClicked(III)V
+      @|com\joarez\gui\TutorialGUI.java|3223|3229|mouseX|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|3235|3241|mouseY|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\gui\TutorialGUI.java|3247|3258|mouseButton|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseButton|2
+      @|com\joarez\gui\TutorialGUI.java|3181|3189|Override|class|java.lang.Override
+      @|com\joarez\gui\TutorialGUI.java|3206|3218|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\joarez\gui\TutorialGUI.java|3267|3278|IOException|class|java.io.IOException
+      @|com\joarez\gui\TutorialGUI.java|3283|3292|textfield|field|com.joarez.gui.TutorialGUI|textfield
+      @|com\joarez\gui\TutorialGUI.java|3293|3305|mouseClicked|method|net.minecraft.client.gui.GuiTextField|mouseClicked|(III)V
+      @|com\joarez\gui\TutorialGUI.java|3306|3312|mouseX|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|3314|3320|mouseY|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\gui\TutorialGUI.java|3322|3333|mouseButton|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseButton|2
+      @|com\joarez\gui\TutorialGUI.java|3346|3358|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\joarez\gui\TutorialGUI.java|3359|3365|mouseX|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\gui\TutorialGUI.java|3367|3373|mouseY|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\gui\TutorialGUI.java|3375|3386|mouseButton|param|com.joarez.gui.TutorialGUI|mouseClicked|(III)V|mouseButton|2
+   Method End: mouseClicked(III)V
+   Method Start: doesGuiPauseGame()Z
+      @|com\joarez\gui\TutorialGUI.java|3395|3403|Override|class|java.lang.Override
+      @|com\joarez\gui\TutorialGUI.java|3420|3436|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+   Method End: doesGuiPauseGame()Z
+Class End  : com.joarez.gui.TutorialGUI
+endProcessing "com\joarez\gui\TutorialGUI.java"
+
+startProcessing "com\joarez\gui\YearSelectionGUI.java" md5: 4349402295d45e7f4481a9127123fbc4
+@|com\joarez\gui\YearSelectionGUI.java|8|22|com.joarez.gui|package|com.joarez.gui|(file)
+Class Start: com.joarez.gui.YearSelectionGUI
+   @|com\joarez\gui\YearSelectionGUI.java|526|542|YearSelectionGUI|class|com.joarez.gui.YearSelectionGUI
+   @|com\joarez\gui\YearSelectionGUI.java|551|560|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+   @|com\joarez\gui\YearSelectionGUI.java|565|581|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\YearSelectionGUI.java|565|581|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\YearSelectionGUI.java|582|589|texture|field|com.joarez.gui.YearSelectionGUI|texture|
+   @|com\joarez\gui\YearSelectionGUI.java|596|612|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\gui\YearSelectionGUI.java|613|620|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\gui\YearSelectionGUI.java|621|627|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\gui\YearSelectionGUI.java|658|667|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|658|667|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|668|679|bt_add_easy|field|com.joarez.gui.YearSelectionGUI|bt_add_easy|
+   @|com\joarez\gui\YearSelectionGUI.java|681|692|bt_add_hard|field|com.joarez.gui.YearSelectionGUI|bt_add_hard|
+   @|com\joarez\gui\YearSelectionGUI.java|696|705|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|696|705|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|706|717|bt_sub_easy|field|com.joarez.gui.YearSelectionGUI|bt_sub_easy|
+   @|com\joarez\gui\YearSelectionGUI.java|719|730|bt_sub_hard|field|com.joarez.gui.YearSelectionGUI|bt_sub_hard|
+   @|com\joarez\gui\YearSelectionGUI.java|733|742|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|733|742|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|743|754|bt_mul_easy|field|com.joarez.gui.YearSelectionGUI|bt_mul_easy|
+   @|com\joarez\gui\YearSelectionGUI.java|756|767|bt_mul_hard|field|com.joarez.gui.YearSelectionGUI|bt_mul_hard|
+   @|com\joarez\gui\YearSelectionGUI.java|770|779|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|770|779|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\gui\YearSelectionGUI.java|780|791|bt_div_easy|field|com.joarez.gui.YearSelectionGUI|bt_div_easy|
+   @|com\joarez\gui\YearSelectionGUI.java|793|804|bt_div_hard|field|com.joarez.gui.YearSelectionGUI|bt_div_hard|
+   @|com\joarez\gui\YearSelectionGUI.java|813|816|bgW|field|com.joarez.gui.YearSelectionGUI|bgW|
+   @|com\joarez\gui\YearSelectionGUI.java|829|832|bgH|field|com.joarez.gui.YearSelectionGUI|bgH|
+   @|com\joarez\gui\YearSelectionGUI.java|845|848|btW|field|com.joarez.gui.YearSelectionGUI|btW|
+   @|com\joarez\gui\YearSelectionGUI.java|860|863|btH|field|com.joarez.gui.YearSelectionGUI|btH|
+   @|com\joarez\gui\YearSelectionGUI.java|877|880|gap|field|com.joarez.gui.YearSelectionGUI|gap|
+   Method Start: drawScreen(IIF)V
+      @|com\joarez\gui\YearSelectionGUI.java|925|931|mouseX|param|com.joarez.gui.YearSelectionGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\gui\YearSelectionGUI.java|937|943|mouseY|param|com.joarez.gui.YearSelectionGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\gui\YearSelectionGUI.java|951|963|partialTicks|param|com.joarez.gui.YearSelectionGUI|drawScreen|(IIF)V|partialTicks|2
+      @|com\joarez\gui\YearSelectionGUI.java|888|896|Override|class|java.lang.Override
+      @|com\joarez\gui\YearSelectionGUI.java|910|920|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\gui\YearSelectionGUI.java|987|993|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1020|1027|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\gui\YearSelectionGUI.java|1028|1043|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\gui\YearSelectionGUI.java|1055|1061|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1088|1095|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\gui\YearSelectionGUI.java|1096|1111|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\gui\YearSelectionGUI.java|1123|1129|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1156|1163|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\gui\YearSelectionGUI.java|1164|1179|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\gui\YearSelectionGUI.java|1191|1197|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1224|1231|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\gui\YearSelectionGUI.java|1232|1247|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\gui\YearSelectionGUI.java|1265|1271|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1282|1286|I18n|class|net.minecraft.client.resources.I18n
+      @|com\joarez\gui\YearSelectionGUI.java|1287|1293|format|method|net.minecraft.client.resources.I18n|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\joarez\gui\YearSelectionGUI.java|1317|1323|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1334|1338|I18n|class|net.minecraft.client.resources.I18n
+      @|com\joarez\gui\YearSelectionGUI.java|1339|1345|format|method|net.minecraft.client.resources.I18n|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\joarez\gui\YearSelectionGUI.java|1369|1375|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1386|1390|I18n|class|net.minecraft.client.resources.I18n
+      @|com\joarez\gui\YearSelectionGUI.java|1391|1397|format|method|net.minecraft.client.resources.I18n|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\joarez\gui\YearSelectionGUI.java|1421|1427|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|1438|1442|I18n|class|net.minecraft.client.resources.I18n
+      @|com\joarez\gui\YearSelectionGUI.java|1443|1449|format|method|net.minecraft.client.resources.I18n|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\joarez\gui\YearSelectionGUI.java|1497|1512|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|1513|1527|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\YearSelectionGUI.java|1561|1576|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|1577|1591|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\YearSelectionGUI.java|1625|1640|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|1641|1655|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\YearSelectionGUI.java|1689|1704|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|1705|1719|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\gui\YearSelectionGUI.java|1745|1748|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|1756|1771|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|1772|1783|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\gui\YearSelectionGUI.java|1827|1832|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\YearSelectionGUI.java|1835|1838|bgW|field|com.joarez.gui.YearSelectionGUI|bgW
+      @|com\joarez\gui\YearSelectionGUI.java|1856|1862|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\gui\YearSelectionGUI.java|1865|1868|bgH|field|com.joarez.gui.YearSelectionGUI|bgH
+      @|com\joarez\gui\YearSelectionGUI.java|1880|1901|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com\joarez\gui\YearSelectionGUI.java|1907|1916|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\gui\YearSelectionGUI.java|1917|1929|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\gui\YearSelectionGUI.java|1932|1944|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\joarez\gui\YearSelectionGUI.java|1945|1956|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\gui\YearSelectionGUI.java|1957|1964|texture|field|com.joarez.gui.YearSelectionGUI|texture
+      @|com\joarez\gui\YearSelectionGUI.java|1974|1995|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\joarez\gui\YearSelectionGUI.java|2008|2011|bgW|field|com.joarez.gui.YearSelectionGUI|bgW
+      @|com\joarez\gui\YearSelectionGUI.java|2012|2015|bgH|field|com.joarez.gui.YearSelectionGUI|bgH
+      @|com\joarez\gui\YearSelectionGUI.java|2056|2061|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\YearSelectionGUI.java|2102|2117|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|2118|2129|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\gui\YearSelectionGUI.java|2138|2153|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|2154|2164|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;FFIZ)I
+      @|com\joarez\gui\YearSelectionGUI.java|2229|2234|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\YearSelectionGUI.java|2273|2288|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|2289|2299|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;FFIZ)I
+      @|com\joarez\gui\YearSelectionGUI.java|2364|2369|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\YearSelectionGUI.java|2408|2423|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|2424|2434|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;FFIZ)I
+      @|com\joarez\gui\YearSelectionGUI.java|2499|2504|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\YearSelectionGUI.java|2543|2558|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|2559|2569|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;FFIZ)I
+      @|com\joarez\gui\YearSelectionGUI.java|2619|2629|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\gui\YearSelectionGUI.java|2630|2636|mouseX|param|com.joarez.gui.YearSelectionGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\gui\YearSelectionGUI.java|2638|2644|mouseY|param|com.joarez.gui.YearSelectionGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\gui\YearSelectionGUI.java|2646|2658|partialTicks|param|com.joarez.gui.YearSelectionGUI|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+   Method Start: initGui()V
+      @|com\joarez\gui\YearSelectionGUI.java|2668|2676|Override|class|java.lang.Override
+      @|com\joarez\gui\YearSelectionGUI.java|2690|2697|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\joarez\gui\YearSelectionGUI.java|2718|2724|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|2748|2755|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\gui\YearSelectionGUI.java|2756|2771|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\gui\YearSelectionGUI.java|2784|2790|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|2802|2806|I18n|class|net.minecraft.client.resources.I18n
+      @|com\joarez\gui\YearSelectionGUI.java|2807|2813|format|method|net.minecraft.client.resources.I18n|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\joarez\gui\YearSelectionGUI.java|2834|2840|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|2864|2871|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\gui\YearSelectionGUI.java|2872|2887|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\gui\YearSelectionGUI.java|2900|2906|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|2918|2922|I18n|class|net.minecraft.client.resources.I18n
+      @|com\joarez\gui\YearSelectionGUI.java|2923|2929|format|method|net.minecraft.client.resources.I18n|format|(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+      @|com\joarez\gui\YearSelectionGUI.java|2963|2968|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\YearSelectionGUI.java|2971|2974|bgW|field|com.joarez.gui.YearSelectionGUI|bgW
+      @|com\joarez\gui\YearSelectionGUI.java|2998|3003|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\gui\YearSelectionGUI.java|3006|3009|bgW|field|com.joarez.gui.YearSelectionGUI|bgW
+      @|com\joarez\gui\YearSelectionGUI.java|3015|3018|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3037|3043|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\gui\YearSelectionGUI.java|3046|3049|bgH|field|com.joarez.gui.YearSelectionGUI|bgH
+      @|com\joarez\gui\YearSelectionGUI.java|3066|3069|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3077|3092|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|3093|3104|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\gui\YearSelectionGUI.java|3147|3162|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\gui\YearSelectionGUI.java|3163|3174|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\gui\YearSelectionGUI.java|3178|3189|bt_add_easy|field|com.joarez.gui.YearSelectionGUI|bt_add_easy
+      @|com\joarez\gui\YearSelectionGUI.java|3196|3205|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3218|3221|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3222|3225|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3239|3250|bt_add_hard|field|com.joarez.gui.YearSelectionGUI|bt_add_hard
+      @|com\joarez\gui\YearSelectionGUI.java|3257|3266|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3279|3282|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3283|3286|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3325|3336|bt_sub_easy|field|com.joarez.gui.YearSelectionGUI|bt_sub_easy
+      @|com\joarez\gui\YearSelectionGUI.java|3343|3352|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3365|3368|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3369|3372|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3386|3397|bt_sub_hard|field|com.joarez.gui.YearSelectionGUI|bt_sub_hard
+      @|com\joarez\gui\YearSelectionGUI.java|3404|3413|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3426|3429|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3430|3433|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3474|3485|bt_mul_easy|field|com.joarez.gui.YearSelectionGUI|bt_mul_easy
+      @|com\joarez\gui\YearSelectionGUI.java|3492|3501|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3514|3517|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3518|3521|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3535|3546|bt_mul_hard|field|com.joarez.gui.YearSelectionGUI|bt_mul_hard
+      @|com\joarez\gui\YearSelectionGUI.java|3553|3562|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3575|3578|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3579|3582|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3621|3632|bt_div_easy|field|com.joarez.gui.YearSelectionGUI|bt_div_easy
+      @|com\joarez\gui\YearSelectionGUI.java|3639|3648|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3661|3664|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3665|3668|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3682|3693|bt_div_hard|field|com.joarez.gui.YearSelectionGUI|bt_div_hard
+      @|com\joarez\gui\YearSelectionGUI.java|3700|3709|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|3722|3725|btW|field|com.joarez.gui.YearSelectionGUI|btW
+      @|com\joarez\gui\YearSelectionGUI.java|3726|3729|btH|field|com.joarez.gui.YearSelectionGUI|btH
+      @|com\joarez\gui\YearSelectionGUI.java|3748|3758|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|3759|3762|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|3763|3774|bt_add_easy|field|com.joarez.gui.YearSelectionGUI|bt_add_easy
+      @|com\joarez\gui\YearSelectionGUI.java|3784|3794|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|3795|3798|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|3799|3810|bt_add_hard|field|com.joarez.gui.YearSelectionGUI|bt_add_hard
+      @|com\joarez\gui\YearSelectionGUI.java|3820|3830|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|3831|3834|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|3835|3846|bt_sub_easy|field|com.joarez.gui.YearSelectionGUI|bt_sub_easy
+      @|com\joarez\gui\YearSelectionGUI.java|3856|3866|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|3867|3870|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|3871|3882|bt_sub_hard|field|com.joarez.gui.YearSelectionGUI|bt_sub_hard
+      @|com\joarez\gui\YearSelectionGUI.java|3892|3902|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|3903|3906|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|3907|3918|bt_mul_easy|field|com.joarez.gui.YearSelectionGUI|bt_mul_easy
+      @|com\joarez\gui\YearSelectionGUI.java|3928|3938|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|3939|3942|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|3943|3954|bt_mul_hard|field|com.joarez.gui.YearSelectionGUI|bt_mul_hard
+      @|com\joarez\gui\YearSelectionGUI.java|3964|3974|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|3975|3978|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|3979|3990|bt_div_easy|field|com.joarez.gui.YearSelectionGUI|bt_div_easy
+      @|com\joarez\gui\YearSelectionGUI.java|4000|4010|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|4011|4014|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\gui\YearSelectionGUI.java|4015|4026|bt_div_hard|field|com.joarez.gui.YearSelectionGUI|bt_div_hard
+      @|com\joarez\gui\YearSelectionGUI.java|4038|4047|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|4058|4068|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|4077|4084|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com\joarez\gui\YearSelectionGUI.java|4092|4094|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\joarez\gui\YearSelectionGUI.java|4098|4109|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\YearSelectionGUI.java|4110|4113|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\YearSelectionGUI.java|4128|4135|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+   Method End: initGui()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\YearSelectionGUI.java|4197|4203|button|param|com.joarez.gui.YearSelectionGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\gui\YearSelectionGUI.java|4146|4154|Override|class|java.lang.Override
+      @|com\joarez\gui\YearSelectionGUI.java|4171|4186|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\YearSelectionGUI.java|4187|4196|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|4212|4223|IOException|class|java.io.IOException
+      @|com\joarez\gui\YearSelectionGUI.java|4228|4234|String|class|java.lang.String
+      @|com\joarez\gui\YearSelectionGUI.java|4287|4298|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\YearSelectionGUI.java|4299|4307|CURRENCY|field|com.joarez.gui.MathMethods|CURRENCY
+      @|com\joarez\gui\YearSelectionGUI.java|4363|4374|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\YearSelectionGUI.java|4375|4384|OPERATION|field|com.joarez.gui.MathMethods|OPERATION
+      @|com\joarez\gui\YearSelectionGUI.java|4397|4403|button|param|com.joarez.gui.YearSelectionGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\gui\YearSelectionGUI.java|4404|4406|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\joarez\gui\YearSelectionGUI.java|4411|4422|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\YearSelectionGUI.java|4423|4426|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\YearSelectionGUI.java|4429|4435|button|param|com.joarez.gui.YearSelectionGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\gui\YearSelectionGUI.java|4436|4438|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\joarez\gui\YearSelectionGUI.java|4446|4455|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\gui\YearSelectionGUI.java|4466|4476|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\gui\YearSelectionGUI.java|4485|4492|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com\joarez\gui\YearSelectionGUI.java|4500|4502|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\joarez\gui\YearSelectionGUI.java|4506|4517|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\gui\YearSelectionGUI.java|4518|4521|DIF|field|com.joarez.gui.MathMethods|DIF
+      @|com\joarez\gui\YearSelectionGUI.java|4536|4551|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\gui\YearSelectionGUI.java|4552|4558|button|param|com.joarez.gui.YearSelectionGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+Class End  : com.joarez.gui.YearSelectionGUI
+endProcessing "com\joarez\gui\YearSelectionGUI.java"
+
+startProcessing "com\joarez\init\ModBlocks.java" md5: 6775609c9a3667d9a819437a68573eaa
+@|com\joarez\init\ModBlocks.java|8|23|com.joarez.init|package|com.joarez.init|(file)
+Class Start: com.joarez.init.ModBlocks
+   @|com\joarez\init\ModBlocks.java|604|613|ModBlocks|class|com.joarez.init.ModBlocks
+   @|com\joarez\init\ModBlocks.java|633|646|BlockTutorial|class|com.joarez.blocks.BlockTutorial
+   @|com\joarez\init\ModBlocks.java|633|646|BlockTutorial|class|com.joarez.blocks.BlockTutorial
+   @|com\joarez\init\ModBlocks.java|647|660|tutorialBlock|field|com.joarez.init.ModBlocks|tutorialBlock|
+   Method Start: init()V
+      @|com\joarez\init\ModBlocks.java|682|686|init|method|com.joarez.init.ModBlocks|init|()V
+      @|com\joarez\init\ModBlocks.java|696|712|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|com\joarez\init\ModBlocks.java|728|744|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|com\joarez\init\ModBlocks.java|745|752|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModBlocks.java|753|759|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+      @|com\joarez\init\ModBlocks.java|761|766|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\init\ModBlocks.java|767|781|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
+      @|com\joarez\init\ModBlocks.java|789|802|tutorialBlock|field|com.joarez.init.ModBlocks|tutorialBlock
+      @|com\joarez\init\ModBlocks.java|809|822|BlockTutorial|class|com.joarez.blocks.BlockTutorial
+      @|com\joarez\init\ModBlocks.java|828|841|tutorialBlock|field|com.joarez.init.ModBlocks|tutorialBlock
+      @|com\joarez\init\ModBlocks.java|842|857|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
+      @|com\joarez\init\ModBlocks.java|871|883|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\init\ModBlocks.java|884|892|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|com\joarez\init\ModBlocks.java|893|906|tutorialBlock|field|com.joarez.init.ModBlocks|tutorialBlock
+      @|com\joarez\init\ModBlocks.java|911|923|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\init\ModBlocks.java|924|932|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;Lnet/minecraft/util/ResourceLocation;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|com\joarez\init\ModBlocks.java|937|946|ItemBlock|class|net.minecraft.item.ItemBlock
+      @|com\joarez\init\ModBlocks.java|947|960|tutorialBlock|field|com.joarez.init.ModBlocks|tutorialBlock
+   Method End: init()V
+   Method Start: initRecipes()V
+      @|com\joarez\init\ModBlocks.java|998|1009|initRecipes|method|com.joarez.init.ModBlocks|initRecipes|()V
+      @|com\joarez\init\ModBlocks.java|1016|1029|tutorialBlock|field|com.joarez.init.ModBlocks|tutorialBlock
+      @|com\joarez\init\ModBlocks.java|1030|1040|addRecipes|method|com.joarez.blocks.BlockTutorial|addRecipes|()V
+   Method End: initRecipes()V
+   Method Start: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|com\joarez\init\ModBlocks.java|1120|1126|mesher|param|com.joarez.init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|com\joarez\init\ModBlocks.java|1051|1059|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\joarez\init\ModBlocks.java|1060|1064|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\joarez\init\ModBlocks.java|1065|1071|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\joarez\init\ModBlocks.java|1093|1103|initClient|method|com.joarez.init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|com\joarez\init\ModBlocks.java|1104|1119|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
+      @|com\joarez\init\ModBlocks.java|1135|1139|Item|class|net.minecraft.item.Item
+      @|com\joarez\init\ModBlocks.java|1147|1151|Item|class|net.minecraft.item.Item
+      @|com\joarez\init\ModBlocks.java|1152|1168|getItemFromBlock|method|net.minecraft.item.Item|getItemFromBlock|(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
+      @|com\joarez\init\ModBlocks.java|1169|1182|tutorialBlock|field|com.joarez.init.ModBlocks|tutorialBlock
+      @|com\joarez\init\ModBlocks.java|1187|1208|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|com\joarez\init\ModBlocks.java|1221|1242|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|com\joarez\init\ModBlocks.java|1243|1250|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModBlocks.java|1251|1266|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\init\ModBlocks.java|1269|1274|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\init\ModBlocks.java|1275|1289|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
+      @|com\joarez\init\ModBlocks.java|1307|1318|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
+      @|com\joarez\init\ModBlocks.java|1319|1339|registerItemVariants|method|net.minecraft.client.renderer.block.model.ModelBakery|registerItemVariants|(Lnet/minecraft/item/Item;[Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\init\ModBlocks.java|1356|1362|mesher|param|com.joarez.init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|com\joarez\init\ModBlocks.java|1363|1371|register|method|net.minecraft.client.renderer.ItemModelMesher|register|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
+   Method End: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+Class End  : com.joarez.init.ModBlocks
+endProcessing "com\joarez\init\ModBlocks.java"
+
+startProcessing "com\joarez\init\ModItems.java" md5: 309afa154152b73796af23cb00ffccfc
+@|com\joarez\init\ModItems.java|8|23|com.joarez.init|package|com.joarez.init|(file)
+Class Start: com.joarez.init.ModItems
+   @|com\joarez\init\ModItems.java|741|749|ModItems|class|com.joarez.init.ModItems
+   @|com\joarez\init\ModItems.java|769|781|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+   @|com\joarez\init\ModItems.java|769|781|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+   @|com\joarez\init\ModItems.java|782|794|tutorialItem|field|com.joarez.init.ModItems|tutorialItem|
+   @|com\joarez\init\ModItems.java|811|823|ToolMaterial|class|net.minecraft.item.Item.ToolMaterial
+   @|com\joarez\init\ModItems.java|811|823|ToolMaterial|class|net.minecraft.item.Item.ToolMaterial
+   @|com\joarez\init\ModItems.java|824|836|toolMaterial|field|com.joarez.init.ModItems|toolMaterial|
+   @|com\joarez\init\ModItems.java|839|849|EnumHelper|class|net.minecraftforge.common.util.EnumHelper
+   @|com\joarez\init\ModItems.java|850|865|addToolMaterial|method|net.minecraftforge.common.util.EnumHelper|addToolMaterial|(Ljava/lang/String;IIFFI)Lnet/minecraft/item/Item$ToolMaterial;
+   @|com\joarez\init\ModItems.java|866|873|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\init\ModItems.java|874|889|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+   @|com\joarez\init\ModItems.java|945|956|ItemPickaxe|class|net.minecraft.item.ItemPickaxe
+   @|com\joarez\init\ModItems.java|945|956|ItemPickaxe|class|net.minecraft.item.ItemPickaxe
+   @|com\joarez\init\ModItems.java|957|972|tutorialPickaxe|field|com.joarez.init.ModItems|tutorialPickaxe|
+   Method Start: init()V
+      @|com\joarez\init\ModItems.java|996|1000|init|method|com.joarez.init.ModItems|init|()V
+      @|com\joarez\init\ModItems.java|1007|1019|tutorialItem|field|com.joarez.init.ModItems|tutorialItem
+      @|com\joarez\init\ModItems.java|1026|1038|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+      @|com\joarez\init\ModItems.java|1044|1056|tutorialItem|field|com.joarez.init.ModItems|tutorialItem
+      @|com\joarez\init\ModItems.java|1057|1072|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
+      @|com\joarez\init\ModItems.java|1077|1093|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|com\joarez\init\ModItems.java|1094|1101|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|1102|1108|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+      @|com\joarez\init\ModItems.java|1109|1114|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\init\ModItems.java|1115|1128|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
+      @|com\joarez\init\ModItems.java|1136|1148|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\init\ModItems.java|1149|1157|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|com\joarez\init\ModItems.java|1158|1170|tutorialItem|field|com.joarez.init.ModItems|tutorialItem
+      @|com\joarez\init\ModItems.java|1181|1196|tutorialPickaxe|field|com.joarez.init.ModItems|tutorialPickaxe
+      @|com\joarez\init\ModItems.java|1203|1222|ItemTutorialPickaxe|class|tools.ItemTutorialPickaxe
+      @|com\joarez\init\ModItems.java|1228|1243|tutorialPickaxe|field|com.joarez.init.ModItems|tutorialPickaxe
+      @|com\joarez\init\ModItems.java|1244|1259|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
+      @|com\joarez\init\ModItems.java|1264|1280|ResourceLocation|class|net.minecraft.util.ResourceLocation
+      @|com\joarez\init\ModItems.java|1281|1288|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|1289|1295|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+      @|com\joarez\init\ModItems.java|1297|1302|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\init\ModItems.java|1303|1319|TUTORIAL_PICKAXE|field|com.joarez.mathmod.items.Names|TUTORIAL_PICKAXE
+      @|com\joarez\init\ModItems.java|1325|1337|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\init\ModItems.java|1338|1346|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|com\joarez\init\ModItems.java|1347|1362|tutorialPickaxe|field|com.joarez.init.ModItems|tutorialPickaxe
+      @|com\joarez\init\ModItems.java|1367|1382|tutorialPickaxe|field|com.joarez.init.ModItems|tutorialPickaxe
+      @|com\joarez\init\ModItems.java|1383|1397|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
+      @|com\joarez\init\ModItems.java|1398|1405|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|1406|1417|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
+   Method End: init()V
+   Method Start: initRecipes()V
+      @|com\joarez\init\ModItems.java|1445|1456|initRecipes|method|com.joarez.init.ModItems|initRecipes|()V
+      @|com\joarez\init\ModItems.java|1463|1475|tutorialItem|field|com.joarez.init.ModItems|tutorialItem
+      @|com\joarez\init\ModItems.java|1476|1486|addRecipes|method|com.joarez.mathmod.items.ItemTutorial|addRecipes|()V
+   Method End: initRecipes()V
+   Method Start: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|com\joarez\init\ModItems.java|1566|1572|mesher|param|com.joarez.init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|com\joarez\init\ModItems.java|1497|1505|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\joarez\init\ModItems.java|1506|1510|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\joarez\init\ModItems.java|1511|1517|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\joarez\init\ModItems.java|1539|1549|initClient|method|com.joarez.init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|com\joarez\init\ModItems.java|1550|1565|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
+      @|com\joarez\init\ModItems.java|1581|1602|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|com\joarez\init\ModItems.java|1615|1636|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|com\joarez\init\ModItems.java|1637|1644|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|1645|1660|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\init\ModItems.java|1661|1666|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\init\ModItems.java|1667|1680|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
+      @|com\joarez\init\ModItems.java|1698|1709|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
+      @|com\joarez\init\ModItems.java|1710|1730|registerItemVariants|method|net.minecraft.client.renderer.block.model.ModelBakery|registerItemVariants|(Lnet/minecraft/item/Item;[Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\init\ModItems.java|1731|1743|tutorialItem|field|com.joarez.init.ModItems|tutorialItem
+      @|com\joarez\init\ModItems.java|1755|1761|mesher|param|com.joarez.init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|com\joarez\init\ModItems.java|1762|1770|register|method|net.minecraft.client.renderer.ItemModelMesher|register|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
+      @|com\joarez\init\ModItems.java|1771|1783|tutorialItem|field|com.joarez.init.ModItems|tutorialItem
+      @|com\joarez\init\ModItems.java|1804|1817|registerModel|method|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V
+      @|com\joarez\init\ModItems.java|1818|1824|mesher|param|com.joarez.init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
+      @|com\joarez\init\ModItems.java|1825|1840|tutorialPickaxe|field|com.joarez.init.ModItems|tutorialPickaxe
+      @|com\joarez\init\ModItems.java|1841|1846|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\init\ModItems.java|1847|1863|TUTORIAL_PICKAXE|field|com.joarez.mathmod.items.Names|TUTORIAL_PICKAXE
+   Method End: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+   Method Start: registerModel(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V
+      @|com\joarez\init\ModItems.java|2000|2006|mesher|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|mesher|0
+      @|com\joarez\init\ModItems.java|2013|2017|item|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|item|1
+      @|com\joarez\init\ModItems.java|2026|2030|name|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|name|2
+      @|com\joarez\init\ModItems.java|1928|1936|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\joarez\init\ModItems.java|1937|1941|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\joarez\init\ModItems.java|1942|1948|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\joarez\init\ModItems.java|1970|1983|registerModel|method|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V
+      @|com\joarez\init\ModItems.java|1984|1999|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
+      @|com\joarez\init\ModItems.java|2008|2012|Item|class|net.minecraft.item.Item
+      @|com\joarez\init\ModItems.java|2019|2025|String|class|java.lang.String
+      @|com\joarez\init\ModItems.java|2036|2057|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|com\joarez\init\ModItems.java|2070|2091|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
+      @|com\joarez\init\ModItems.java|2092|2099|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|2100|2115|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\init\ModItems.java|2118|2122|name|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|name|2
+      @|com\joarez\init\ModItems.java|2140|2151|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
+      @|com\joarez\init\ModItems.java|2152|2172|registerItemVariants|method|net.minecraft.client.renderer.block.model.ModelBakery|registerItemVariants|(Lnet/minecraft/item/Item;[Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\init\ModItems.java|2173|2177|item|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|item|1
+      @|com\joarez\init\ModItems.java|2189|2195|mesher|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|mesher|0
+      @|com\joarez\init\ModItems.java|2196|2204|register|method|net.minecraft.client.renderer.ItemModelMesher|register|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
+      @|com\joarez\init\ModItems.java|2205|2209|item|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|item|1
+      @|com\joarez\init\ModItems.java|2224|2228|item|param|com.joarez.init.ModItems|registerModel|(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V|item|1
+      @|com\joarez\init\ModItems.java|2229|2243|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
+      @|com\joarez\init\ModItems.java|2244|2251|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|2252|2263|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
+   Method End: registerModel(Lnet/minecraft/client/renderer/ItemModelMesher;Lnet/minecraft/item/Item;Ljava/lang/String;)V
+   Method Start: register(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;
+      @|com\joarez\init\ModItems.java|2319|2323|item|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|item|0
+      @|com\joarez\init\ModItems.java|2332|2336|name|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|name|1
+      @|com\joarez\init\ModItems.java|2300|2304|Item|class|net.minecraft.item.Item
+      @|com\joarez\init\ModItems.java|2308|2316|register|method|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;
+      @|com\joarez\init\ModItems.java|2325|2331|String|class|java.lang.String
+      @|com\joarez\init\ModItems.java|2342|2346|item|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|item|0
+      @|com\joarez\init\ModItems.java|2347|2362|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry.Impl|setRegistryName|(Ljava/lang/String;Ljava/lang/String;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|com\joarez\init\ModItems.java|2363|2370|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|2371|2377|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+      @|com\joarez\init\ModItems.java|2378|2382|name|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|name|1
+      @|com\joarez\init\ModItems.java|2387|2399|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\init\ModItems.java|2400|2408|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
+      @|com\joarez\init\ModItems.java|2409|2413|item|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|item|0
+      @|com\joarez\init\ModItems.java|2418|2422|item|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|item|0
+      @|com\joarez\init\ModItems.java|2423|2441|setUnlocalizedName|method|net.minecraft.item.Item|setUnlocalizedName|(Ljava/lang/String;)Lnet/minecraft/item/Item;
+      @|com\joarez\init\ModItems.java|2442|2449|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\init\ModItems.java|2450|2465|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\init\ModItems.java|2468|2472|name|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|name|1
+      @|com\joarez\init\ModItems.java|2484|2488|item|param|com.joarez.init.ModItems|register|(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;|item|0
+   Method End: register(Lnet/minecraft/item/Item;Ljava/lang/String;)Lnet/minecraft/item/Item;
+Class End  : com.joarez.init.ModItems
+endProcessing "com\joarez\init\ModItems.java"
+
+startProcessing "com\joarez\keybind\KeyboardCommands.java" md5: 755b166c7a7046c68c570c7992c3c387
+@|com\joarez\keybind\KeyboardCommands.java|8|26|com.joarez.keybind|package|com.joarez.keybind|(file)
+Class Start: com.joarez.keybind.KeyboardCommands
+   @|com\joarez\keybind\KeyboardCommands.java|346|362|KeyboardCommands|class|com.joarez.keybind.KeyboardCommands
+   @|com\joarez\keybind\KeyboardCommands.java|383|393|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\joarez\keybind\KeyboardCommands.java|383|393|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\joarez\keybind\KeyboardCommands.java|396|400|keys|field|com.joarez.keybind.KeyboardCommands|keys|
+   @|com\joarez\keybind\KeyboardCommands.java|408|418|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+   @|com\joarez\keybind\KeyboardCommands.java|439|447|Keyboard|class|org.lwjgl.input.Keyboard
+   @|com\joarez\keybind\KeyboardCommands.java|448|455|KEY_F12|field|org.lwjgl.input.Keyboard|KEY_F12
+   Method Start: init()V
+      @|com\joarez\keybind\KeyboardCommands.java|468|476|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\joarez\keybind\KeyboardCommands.java|477|481|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\joarez\keybind\KeyboardCommands.java|482|488|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\joarez\keybind\KeyboardCommands.java|511|515|init|method|com.joarez.keybind.KeyboardCommands|init|()V
+      @|com\joarez\keybind\KeyboardCommands.java|527|537|KeyBinding|class|net.minecraft.client.settings.KeyBinding
+      @|com\joarez\keybind\KeyboardCommands.java|542|546|keys|field|com.joarez.keybind.KeyboardCommands|keys
+      @|com\joarez\keybind\KeyboardCommands.java|553|567|ClientRegistry|class|net.minecraftforge.fml.client.registry.ClientRegistry
+      @|com\joarez\keybind\KeyboardCommands.java|568|586|registerKeyBinding|method|net.minecraftforge.fml.client.registry.ClientRegistry|registerKeyBinding|(Lnet/minecraft/client/settings/KeyBinding;)V
+   Method End: init()V
+   Method Start: onKeyEvent(Lnet/minecraftforge/fml/common/gameevent/InputEvent;)V
+      @|com\joarez\keybind\KeyboardCommands.java|664|669|event|param|com.joarez.keybind.KeyboardCommands|onKeyEvent|(Lnet/minecraftforge/fml/common/gameevent/InputEvent;)V|event|0
+      @|com\joarez\keybind\KeyboardCommands.java|607|615|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\joarez\keybind\KeyboardCommands.java|616|620|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\joarez\keybind\KeyboardCommands.java|621|627|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\joarez\keybind\KeyboardCommands.java|642|652|onKeyEvent|method|com.joarez.keybind.KeyboardCommands|onKeyEvent|(Lnet/minecraftforge/fml/common/gameevent/InputEvent;)V
+      @|com\joarez\keybind\KeyboardCommands.java|653|663|InputEvent|class|net.minecraftforge.fml.common.gameevent.InputEvent
+      @|com\joarez\keybind\KeyboardCommands.java|679|683|keys|field|com.joarez.keybind.KeyboardCommands|keys
+      @|com\joarez\keybind\KeyboardCommands.java|687|696|isPressed|method|net.minecraft.client.settings.KeyBinding|isPressed|()Z
+      @|com\joarez\keybind\KeyboardCommands.java|705|711|System|class|java.lang.System
+      @|com\joarez\keybind\KeyboardCommands.java|712|715|out|field|java.lang.System|out
+      @|com\joarez\keybind\KeyboardCommands.java|716|723|println|method|java.io.PrintStream|println|(Ljava/lang/String;)V
+   Method End: onKeyEvent(Lnet/minecraftforge/fml/common/gameevent/InputEvent;)V
+Class End  : com.joarez.keybind.KeyboardCommands
+endProcessing "com\joarez\keybind\KeyboardCommands.java"
+
+startProcessing "com\joarez\mathmod\ClientProxy.java" md5: d66173c4fd54020bb66783796afb9561
 @|com\joarez\mathmod\ClientProxy.java|8|26|com.joarez.mathmod|package|com.joarez.mathmod|(file)
 Class Start: com.joarez.mathmod.ClientProxy
-   @|com\joarez\mathmod\ClientProxy.java|389|400|ClientProxy|class|com.joarez.mathmod.ClientProxy
-   @|com\joarez\mathmod\ClientProxy.java|409|420|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   @|com\joarez\mathmod\ClientProxy.java|456|467|ClientProxy|class|com.joarez.mathmod.ClientProxy
+   @|com\joarez\mathmod\ClientProxy.java|476|487|CommonProxy|class|com.joarez.mathmod.CommonProxy
    Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|483|488|event|param|com.joarez.mathmod.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\ClientProxy.java|427|435|Override|class|java.lang.Override
-      @|com\joarez\mathmod\ClientProxy.java|449|456|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|457|482|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
-      @|com\joarez\mathmod\ClientProxy.java|503|510|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|511|516|event|param|com.joarez.mathmod.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|550|555|event|param|com.joarez.mathmod.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|494|502|Override|class|java.lang.Override
+      @|com\joarez\mathmod\ClientProxy.java|516|523|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|524|549|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\joarez\mathmod\ClientProxy.java|570|577|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|578|583|event|param|com.joarez.mathmod.ClientProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
    Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
    Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|574|579|event|param|com.joarez.mathmod.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\ClientProxy.java|524|532|Override|class|java.lang.Override
-      @|com\joarez\mathmod\ClientProxy.java|546|550|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|551|573|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
-      @|com\joarez\mathmod\ClientProxy.java|594|598|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|599|604|event|param|com.joarez.mathmod.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\ClientProxy.java|612|627|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
-      @|com\joarez\mathmod\ClientProxy.java|637|646|Minecraft|class|net.minecraft.client.Minecraft
-      @|com\joarez\mathmod\ClientProxy.java|647|659|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|com\joarez\mathmod\ClientProxy.java|662|675|getRenderItem|method|net.minecraft.client.Minecraft|getRenderItem|()Lnet/minecraft/client/renderer/RenderItem;
-      @|com\joarez\mathmod\ClientProxy.java|678|696|getItemModelMesher|method|net.minecraft.client.renderer.RenderItem|getItemModelMesher|()Lnet/minecraft/client/renderer/ItemModelMesher;
-      @|com\joarez\mathmod\ClientProxy.java|702|711|ModBlocks|class|init.ModBlocks
-      @|com\joarez\mathmod\ClientProxy.java|712|722|initClient|method|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
-      @|com\joarez\mathmod\ClientProxy.java|734|742|ModItems|class|init.ModItems
-      @|com\joarez\mathmod\ClientProxy.java|743|753|initClient|method|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|com\joarez\mathmod\ClientProxy.java|641|646|event|param|com.joarez.mathmod.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|591|599|Override|class|java.lang.Override
+      @|com\joarez\mathmod\ClientProxy.java|613|617|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|618|640|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\joarez\mathmod\ClientProxy.java|661|665|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|666|671|event|param|com.joarez.mathmod.ClientProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|679|694|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
+      @|com\joarez\mathmod\ClientProxy.java|704|713|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\mathmod\ClientProxy.java|714|726|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\mathmod\ClientProxy.java|729|742|getRenderItem|method|net.minecraft.client.Minecraft|getRenderItem|()Lnet/minecraft/client/renderer/RenderItem;
+      @|com\joarez\mathmod\ClientProxy.java|745|763|getItemModelMesher|method|net.minecraft.client.renderer.RenderItem|getItemModelMesher|()Lnet/minecraft/client/renderer/ItemModelMesher;
+      @|com\joarez\mathmod\ClientProxy.java|769|778|ModBlocks|class|com.joarez.init.ModBlocks
+      @|com\joarez\mathmod\ClientProxy.java|779|789|initClient|method|com.joarez.init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
+      @|com\joarez\mathmod\ClientProxy.java|801|809|ModItems|class|com.joarez.init.ModItems
+      @|com\joarez\mathmod\ClientProxy.java|810|820|initClient|method|com.joarez.init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
    Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
    Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|826|831|event|param|com.joarez.mathmod.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\ClientProxy.java|768|776|Override|class|java.lang.Override
-      @|com\joarez\mathmod\ClientProxy.java|790|798|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|799|825|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
-      @|com\joarez\mathmod\ClientProxy.java|846|854|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\ClientProxy.java|855|860|event|param|com.joarez.mathmod.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|902|907|event|param|com.joarez.mathmod.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\ClientProxy.java|844|852|Override|class|java.lang.Override
+      @|com\joarez\mathmod\ClientProxy.java|866|874|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|875|901|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\joarez\mathmod\ClientProxy.java|922|930|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\ClientProxy.java|931|936|event|param|com.joarez.mathmod.ClientProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
    Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
 Class End  : com.joarez.mathmod.ClientProxy
 endProcessing "com\joarez\mathmod\ClientProxy.java"
 
-startProcessing "com\joarez\mathmod\CommonProxy.java" md5: 86f7d2ea506daf2bed6ec380a84564f0
-Cache Hit!
+startProcessing "com\joarez\mathmod\CommonProxy.java" md5: 80b9e114ba42de8c752a94193c28f0ec
 @|com\joarez\mathmod\CommonProxy.java|8|26|com.joarez.mathmod|package|com.joarez.mathmod|(file)
 Class Start: com.joarez.mathmod.CommonProxy
-   @|com\joarez\mathmod\CommonProxy.java|296|307|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   @|com\joarez\mathmod\CommonProxy.java|319|330|CommonProxy|class|com.joarez.mathmod.CommonProxy
    Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\CommonProxy.java|357|362|event|param|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\CommonProxy.java|323|330|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\CommonProxy.java|331|356|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
-      @|com\joarez\mathmod\CommonProxy.java|368|377|ModBlocks|class|init.ModBlocks
-      @|com\joarez\mathmod\CommonProxy.java|378|382|init|method|init.ModBlocks|init|()V
-      @|com\joarez\mathmod\CommonProxy.java|388|396|ModItems|class|init.ModItems
-      @|com\joarez\mathmod\CommonProxy.java|397|401|init|method|init.ModItems|init|()V
+      @|com\joarez\mathmod\CommonProxy.java|380|385|event|param|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\CommonProxy.java|346|353|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|354|379|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\joarez\mathmod\CommonProxy.java|391|400|ModBlocks|class|com.joarez.init.ModBlocks
+      @|com\joarez\mathmod\CommonProxy.java|401|405|init|method|com.joarez.init.ModBlocks|init|()V
+      @|com\joarez\mathmod\CommonProxy.java|411|419|ModItems|class|com.joarez.init.ModItems
+      @|com\joarez\mathmod\CommonProxy.java|420|424|init|method|com.joarez.init.ModItems|init|()V
    Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
    Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\CommonProxy.java|451|456|event|param|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\CommonProxy.java|423|427|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\CommonProxy.java|428|450|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
-      @|com\joarez\mathmod\CommonProxy.java|462|471|ModBlocks|class|init.ModBlocks
-      @|com\joarez\mathmod\CommonProxy.java|472|483|initRecipes|method|init.ModBlocks|initRecipes|()V
-      @|com\joarez\mathmod\CommonProxy.java|489|497|ModItems|class|init.ModItems
-      @|com\joarez\mathmod\CommonProxy.java|498|509|initRecipes|method|init.ModItems|initRecipes|()V
+      @|com\joarez\mathmod\CommonProxy.java|474|479|event|param|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\CommonProxy.java|446|450|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|451|473|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\joarez\mathmod\CommonProxy.java|485|494|ModBlocks|class|com.joarez.init.ModBlocks
+      @|com\joarez\mathmod\CommonProxy.java|495|506|initRecipes|method|com.joarez.init.ModBlocks|initRecipes|()V
+      @|com\joarez\mathmod\CommonProxy.java|512|520|ModItems|class|com.joarez.init.ModItems
+      @|com\joarez\mathmod\CommonProxy.java|521|532|initRecipes|method|com.joarez.init.ModItems|initRecipes|()V
    Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
    Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\CommonProxy.java|567|572|event|param|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\CommonProxy.java|531|539|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\CommonProxy.java|540|566|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\joarez\mathmod\CommonProxy.java|590|595|event|param|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\CommonProxy.java|554|562|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\CommonProxy.java|563|589|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
    Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
 Class End  : com.joarez.mathmod.CommonProxy
 endProcessing "com\joarez\mathmod\CommonProxy.java"
 
-startProcessing "com\joarez\mathmod\MathMod.java" md5: 6ce49aee21ec37656de6cb1622e9ada9
-Cache Hit!
+startProcessing "com\joarez\mathmod\MathMod.java" md5: 0c9b3387756e3430fdf73710c63bfd7f
 @|com\joarez\mathmod\MathMod.java|8|26|com.joarez.mathmod|package|com.joarez.mathmod|(file)
 Class Start: com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|568|571|Mod|class|net.minecraftforge.fml.common.Mod
-   @|com\joarez\mathmod\MathMod.java|572|577|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
-   @|com\joarez\mathmod\MathMod.java|580|587|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|588|594|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
-   @|com\joarez\mathmod\MathMod.java|596|600|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
-   @|com\joarez\mathmod\MathMod.java|603|610|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|611|619|MOD_NAME|field|com.joarez.mathmod.MathMod|MOD_NAME
-   @|com\joarez\mathmod\MathMod.java|621|628|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
-   @|com\joarez\mathmod\MathMod.java|631|638|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|639|646|VERSION|field|com.joarez.mathmod.MathMod|VERSION
-   @|com\joarez\mathmod\MathMod.java|648|660|dependencies|method|net.minecraftforge.fml.common.Mod|dependencies|()Ljava/lang/String;
-   @|com\joarez\mathmod\MathMod.java|663|670|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|671|683|DEPENDENCIES|field|com.joarez.mathmod.MathMod|DEPENDENCIES
-   @|com\joarez\mathmod\MathMod.java|698|705|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|742|748|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|742|748|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|749|755|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID|
-   @|com\joarez\mathmod\MathMod.java|790|796|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|790|796|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|797|805|MOD_NAME|field|com.joarez.mathmod.MathMod|MOD_NAME|
-   @|com\joarez\mathmod\MathMod.java|841|847|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|841|847|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|848|855|VERSION|field|com.joarez.mathmod.MathMod|VERSION|
-   @|com\joarez\mathmod\MathMod.java|892|898|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|892|898|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|899|911|DEPENDENCIES|field|com.joarez.mathmod.MathMod|DEPENDENCIES|
-   @|com\joarez\mathmod\MathMod.java|975|981|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|975|981|String|class|java.lang.String
-   @|com\joarez\mathmod\MathMod.java|982|997|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX|
-   @|com\joarez\mathmod\MathMod.java|1000|1006|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
-   @|com\joarez\mathmod\MathMod.java|1007|1018|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
-   @|com\joarez\mathmod\MathMod.java|1061|1067|Random|class|java.util.Random
-   @|com\joarez\mathmod\MathMod.java|1061|1067|Random|class|java.util.Random
-   @|com\joarez\mathmod\MathMod.java|1068|1074|random|field|com.joarez.mathmod.MathMod|random|
-   @|com\joarez\mathmod\MathMod.java|1081|1087|Random|class|java.util.Random
-   @|com\joarez\mathmod\MathMod.java|1129|1136|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|1097|1105|Instance|class|net.minecraftforge.fml.common.Mod.Instance
-   @|com\joarez\mathmod\MathMod.java|1106|1112|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
-   @|com\joarez\mathmod\MathMod.java|1129|1136|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|1137|1145|instance|field|com.joarez.mathmod.MathMod|instance|
-   @|com\joarez\mathmod\MathMod.java|1271|1282|CommonProxy|class|com.joarez.mathmod.CommonProxy
-   @|com\joarez\mathmod\MathMod.java|1151|1161|SidedProxy|class|net.minecraftforge.fml.common.SidedProxy
-   @|com\joarez\mathmod\MathMod.java|1162|1172|clientSide|method|net.minecraftforge.fml.common.SidedProxy|clientSide|()Ljava/lang/String;
-   @|com\joarez\mathmod\MathMod.java|1209|1219|serverSide|method|net.minecraftforge.fml.common.SidedProxy|serverSide|()Ljava/lang/String;
-   @|com\joarez\mathmod\MathMod.java|1271|1282|CommonProxy|class|com.joarez.mathmod.CommonProxy
-   @|com\joarez\mathmod\MathMod.java|1283|1288|proxy|field|com.joarez.mathmod.MathMod|proxy|
+   @|com\joarez\mathmod\MathMod.java|807|810|Mod|class|net.minecraftforge.fml.common.Mod
+   @|com\joarez\mathmod\MathMod.java|811|816|modid|method|net.minecraftforge.fml.common.Mod|modid|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|819|826|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|827|833|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\MathMod.java|835|839|name|method|net.minecraftforge.fml.common.Mod|name|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|842|849|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|850|858|MOD_NAME|field|com.joarez.mathmod.MathMod|MOD_NAME
+   @|com\joarez\mathmod\MathMod.java|860|867|version|method|net.minecraftforge.fml.common.Mod|version|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|870|877|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|878|885|VERSION|field|com.joarez.mathmod.MathMod|VERSION
+   @|com\joarez\mathmod\MathMod.java|887|899|dependencies|method|net.minecraftforge.fml.common.Mod|dependencies|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|902|909|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|910|922|DEPENDENCIES|field|com.joarez.mathmod.MathMod|DEPENDENCIES
+   @|com\joarez\mathmod\MathMod.java|937|944|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|981|987|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|981|987|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|988|994|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID|
+   @|com\joarez\mathmod\MathMod.java|1029|1035|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1029|1035|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1036|1044|MOD_NAME|field|com.joarez.mathmod.MathMod|MOD_NAME|
+   @|com\joarez\mathmod\MathMod.java|1080|1086|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1080|1086|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1087|1094|VERSION|field|com.joarez.mathmod.MathMod|VERSION|
+   @|com\joarez\mathmod\MathMod.java|1131|1137|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1131|1137|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1138|1150|DEPENDENCIES|field|com.joarez.mathmod.MathMod|DEPENDENCIES|
+   @|com\joarez\mathmod\MathMod.java|1214|1220|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1214|1220|String|class|java.lang.String
+   @|com\joarez\mathmod\MathMod.java|1221|1236|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX|
+   @|com\joarez\mathmod\MathMod.java|1239|1245|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\MathMod.java|1246|1257|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|1300|1306|Random|class|java.util.Random
+   @|com\joarez\mathmod\MathMod.java|1300|1306|Random|class|java.util.Random
+   @|com\joarez\mathmod\MathMod.java|1307|1313|random|field|com.joarez.mathmod.MathMod|random|
+   @|com\joarez\mathmod\MathMod.java|1320|1326|Random|class|java.util.Random
+   @|com\joarez\mathmod\MathMod.java|1368|1375|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|1336|1344|Instance|class|net.minecraftforge.fml.common.Mod.Instance
+   @|com\joarez\mathmod\MathMod.java|1345|1351|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\MathMod.java|1368|1375|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|1376|1384|instance|field|com.joarez.mathmod.MathMod|instance|
+   @|com\joarez\mathmod\MathMod.java|1510|1521|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   @|com\joarez\mathmod\MathMod.java|1390|1400|SidedProxy|class|net.minecraftforge.fml.common.SidedProxy
+   @|com\joarez\mathmod\MathMod.java|1401|1411|clientSide|method|net.minecraftforge.fml.common.SidedProxy|clientSide|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|1448|1458|serverSide|method|net.minecraftforge.fml.common.SidedProxy|serverSide|()Ljava/lang/String;
+   @|com\joarez\mathmod\MathMod.java|1510|1521|CommonProxy|class|com.joarez.mathmod.CommonProxy
+   @|com\joarez\mathmod\MathMod.java|1522|1527|proxy|field|com.joarez.mathmod.MathMod|proxy|
    Method Start: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1354|1359|event|param|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\MathMod.java|1294|1306|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
-      @|com\joarez\mathmod\MathMod.java|1320|1327|preInit|method|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1328|1353|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
-      @|com\joarez\mathmod\MathMod.java|1365|1370|proxy|field|com.joarez.mathmod.MathMod|proxy
-      @|com\joarez\mathmod\MathMod.java|1371|1378|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1379|1384|event|param|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1593|1598|event|param|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1533|1545|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\joarez\mathmod\MathMod.java|1559|1566|preInit|method|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1567|1592|FMLPreInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPreInitializationEvent
+      @|com\joarez\mathmod\MathMod.java|1604|1609|proxy|field|com.joarez.mathmod.MathMod|proxy
+      @|com\joarez\mathmod\MathMod.java|1610|1617|preInit|method|com.joarez.mathmod.CommonProxy|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1618|1623|event|param|com.joarez.mathmod.MathMod|preInit|(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1631|1645|KeybindingMath|class|Keybinding.KeybindingMath
+      @|com\joarez\mathmod\MathMod.java|1646|1654|register|method|Keybinding.KeybindingMath|register|()V
+      @|com\joarez\mathmod\MathMod.java|1660|1674|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\joarez\mathmod\MathMod.java|1675|1684|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\joarez\mathmod\MathMod.java|1685|1693|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\joarez\mathmod\MathMod.java|1698|1713|KeyInputHandler|class|Keybinding.KeyInputHandler
    Method End: preInit(Lnet/minecraftforge/fml/common/event/FMLPreInitializationEvent;)V
    Method Start: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1448|1453|event|param|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\MathMod.java|1394|1406|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
-      @|com\joarez\mathmod\MathMod.java|1420|1424|init|method|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1425|1447|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
-      @|com\joarez\mathmod\MathMod.java|1459|1464|proxy|field|com.joarez.mathmod.MathMod|proxy
-      @|com\joarez\mathmod\MathMod.java|1465|1469|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1470|1475|event|param|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1779|1784|event|param|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1725|1737|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\joarez\mathmod\MathMod.java|1751|1755|init|method|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1756|1778|FMLInitializationEvent|class|net.minecraftforge.fml.common.event.FMLInitializationEvent
+      @|com\joarez\mathmod\MathMod.java|1790|1811|TimeBasedEventHandler|class|com.joarez.mathmod.TimeBasedEventHandler
+      @|com\joarez\mathmod\MathMod.java|1812|1823|InitialTime|field|com.joarez.mathmod.TimeBasedEventHandler|InitialTime
+      @|com\joarez\mathmod\MathMod.java|1826|1835|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\mathmod\MathMod.java|1836|1849|getSystemTime|method|net.minecraft.client.Minecraft|getSystemTime|()J
+      @|com\joarez\mathmod\MathMod.java|1923|1928|proxy|field|com.joarez.mathmod.MathMod|proxy
+      @|com\joarez\mathmod\MathMod.java|1929|1933|init|method|com.joarez.mathmod.CommonProxy|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1934|1939|event|param|com.joarez.mathmod.MathMod|init|(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V|event|0
    Method End: init(Lnet/minecraftforge/fml/common/event/FMLInitializationEvent;)V
    Method Start: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1547|1552|event|param|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
-      @|com\joarez\mathmod\MathMod.java|1485|1497|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
-      @|com\joarez\mathmod\MathMod.java|1511|1519|postInit|method|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1520|1546|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
-      @|com\joarez\mathmod\MathMod.java|1558|1563|proxy|field|com.joarez.mathmod.MathMod|proxy
-      @|com\joarez\mathmod\MathMod.java|1564|1572|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-      @|com\joarez\mathmod\MathMod.java|1573|1578|event|param|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|2013|2018|event|param|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
+      @|com\joarez\mathmod\MathMod.java|1951|1963|EventHandler|class|net.minecraftforge.fml.common.Mod.EventHandler
+      @|com\joarez\mathmod\MathMod.java|1977|1985|postInit|method|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|1986|2012|FMLPostInitializationEvent|class|net.minecraftforge.fml.common.event.FMLPostInitializationEvent
+      @|com\joarez\mathmod\MathMod.java|2024|2038|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\joarez\mathmod\MathMod.java|2039|2048|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\joarez\mathmod\MathMod.java|2049|2057|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\joarez\mathmod\MathMod.java|2062|2082|TutorialEventHandler|class|events.TutorialEventHandler
+      @|com\joarez\mathmod\MathMod.java|2089|2103|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\joarez\mathmod\MathMod.java|2104|2113|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\joarez\mathmod\MathMod.java|2114|2122|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\joarez\mathmod\MathMod.java|2127|2137|GuiOverlay|class|com.joarez.gui.GuiOverlay
+      @|com\joarez\mathmod\MathMod.java|2144|2149|proxy|field|com.joarez.mathmod.MathMod|proxy
+      @|com\joarez\mathmod\MathMod.java|2150|2158|postInit|method|com.joarez.mathmod.CommonProxy|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
+      @|com\joarez\mathmod\MathMod.java|2159|2164|event|param|com.joarez.mathmod.MathMod|postInit|(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V|event|0
    Method End: postInit(Lnet/minecraftforge/fml/common/event/FMLPostInitializationEvent;)V
-   @|com\joarez\mathmod\MathMod.java|1603|1615|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
-   @|com\joarez\mathmod\MathMod.java|1603|1615|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
-   @|com\joarez\mathmod\MathMod.java|1616|1627|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial|
-   @|com\joarez\mathmod\MathMod.java|1634|1646|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
-   @|com\joarez\mathmod\MathMod.java|1647|1654|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\MathMod.java|1655|1670|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+   @|com\joarez\mathmod\MathMod.java|2189|2201|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\joarez\mathmod\MathMod.java|2189|2201|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\joarez\mathmod\MathMod.java|2202|2213|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial|
+   @|com\joarez\mathmod\MathMod.java|2220|2232|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+   @|com\joarez\mathmod\MathMod.java|2233|2240|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\MathMod.java|2241|2256|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
    Anon Class Start: com.joarez.mathmod.MathMod$1
       Method Start: getTabIconItem()Lnet/minecraft/item/ItemStack;
-         @|com\joarez\mathmod\MathMod.java|1692|1700|Override|class|java.lang.Override
-         @|com\joarez\mathmod\MathMod.java|1710|1719|ItemStack|class|net.minecraft.item.ItemStack
-         @|com\joarez\mathmod\MathMod.java|1720|1734|getTabIconItem|method|net.minecraft.creativetab.CreativeTabs|getTabIconItem|()Lnet/minecraft/item/ItemStack;
-         @|com\joarez\mathmod\MathMod.java|1753|1762|ItemStack|class|net.minecraft.item.ItemStack
-         @|com\joarez\mathmod\MathMod.java|1763|1771|ModItems|class|init.ModItems
-         @|com\joarez\mathmod\MathMod.java|1772|1784|tutorialItem|field|init.ModItems|tutorialItem
+         @|com\joarez\mathmod\MathMod.java|2278|2286|Override|class|java.lang.Override
+         @|com\joarez\mathmod\MathMod.java|2296|2305|ItemStack|class|net.minecraft.item.ItemStack
+         @|com\joarez\mathmod\MathMod.java|2306|2320|getTabIconItem|method|net.minecraft.creativetab.CreativeTabs|getTabIconItem|()Lnet/minecraft/item/ItemStack;
+         @|com\joarez\mathmod\MathMod.java|2339|2348|ItemStack|class|net.minecraft.item.ItemStack
+         @|com\joarez\mathmod\MathMod.java|2349|2357|ModItems|class|com.joarez.init.ModItems
+         @|com\joarez\mathmod\MathMod.java|2358|2370|tutorialItem|field|com.joarez.init.ModItems|tutorialItem
       Method End: getTabIconItem()Lnet/minecraft/item/ItemStack;
    Anon Class End: com.joarez.mathmod.MathMod$1
 Class End  : com.joarez.mathmod.MathMod
 endProcessing "com\joarez\mathmod\MathMod.java"
 
-startProcessing "com\joarez\mathmod\items\ItemTutorial.java" md5: 7d0482dc3937f729cf893c9d7d18690f
-Cache Hit!
+startProcessing "com\joarez\mathmod\TimeBasedEventHandler.java" md5: 5e3fdf9dae3d3dcd4aae67907b3c2690
+@|com\joarez\mathmod\TimeBasedEventHandler.java|8|26|com.joarez.mathmod|package|com.joarez.mathmod|(file)
+Class Start: com.joarez.mathmod.TimeBasedEventHandler
+   @|com\joarez\mathmod\TimeBasedEventHandler.java|373|394|TimeBasedEventHandler|class|com.joarez.mathmod.TimeBasedEventHandler
+   @|com\joarez\mathmod\TimeBasedEventHandler.java|419|430|InitialTime|field|com.joarez.mathmod.TimeBasedEventHandler|InitialTime|
+   Method Start: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|532|537|event|param|com.joarez.mathmod.TimeBasedEventHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V|event|0
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|441|449|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|450|454|Side|class|net.minecraftforge.fml.relauncher.Side
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|455|461|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|465|479|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|493|505|onClientTick|method|com.joarez.mathmod.TimeBasedEventHandler|onClientTick|(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|506|531|TickEvent.PlayerTickEvent|class|net.minecraftforge.fml.common.gameevent.TickEvent.PlayerTickEvent
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|561|570|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|571|584|getSystemTime|method|net.minecraft.client.Minecraft|getSystemTime|()J
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|589|600|InitialTime|field|com.joarez.mathmod.TimeBasedEventHandler|InitialTime
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|634|643|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|644|656|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|659|671|isGamePaused|method|net.minecraft.client.Minecraft|isGamePaused|()Z
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|832|843|MathMethods|class|com.joarez.gui.MathMethods
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|844|850|ACTUAL|field|com.joarez.gui.MathMethods|ACTUAL
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|859|868|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|869|881|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|884|900|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\joarez\mathmod\TimeBasedEventHandler.java|905|914|DoMathGUI|class|com.joarez.gui.DoMathGUI
+   Method End: onClientTick(Lnet/minecraftforge/fml/common/gameevent/TickEvent$PlayerTickEvent;)V
+Class End  : com.joarez.mathmod.TimeBasedEventHandler
+endProcessing "com\joarez\mathmod\TimeBasedEventHandler.java"
+
+startProcessing "com\joarez\mathmod\items\ItemTutorial.java" md5: c5f2db3297ba6dc80b0015f2b543e88f
 @|com\joarez\mathmod\items\ItemTutorial.java|8|32|com.joarez.mathmod.items|package|com.joarez.mathmod.items|(file)
 Class Start: com.joarez.mathmod.items.ItemTutorial
-   @|com\joarez\mathmod\items\ItemTutorial.java|492|504|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
-   @|com\joarez\mathmod\items\ItemTutorial.java|513|517|Item|class|net.minecraft.item.Item
+   @|com\joarez\mathmod\items\ItemTutorial.java|571|583|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
+   @|com\joarez\mathmod\items\ItemTutorial.java|592|596|Item|class|net.minecraft.item.Item
    Method Start: ItemTutorial()V
-      @|com\joarez\mathmod\items\ItemTutorial.java|532|544|ItemTutorial|method|com.joarez.mathmod.items.ItemTutorial|ItemTutorial|()V
-      @|com\joarez\mathmod\items\ItemTutorial.java|551|566|setMaxStackSize|method|net.minecraft.item.Item|setMaxStackSize|(I)Lnet/minecraft/item/Item;
-      @|com\joarez\mathmod\items\ItemTutorial.java|574|588|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
-      @|com\joarez\mathmod\items\ItemTutorial.java|589|596|MathMod|class|com.joarez.mathmod.MathMod
-      @|com\joarez\mathmod\items\ItemTutorial.java|597|608|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
+      @|com\joarez\mathmod\items\ItemTutorial.java|611|623|ItemTutorial|method|com.joarez.mathmod.items.ItemTutorial|ItemTutorial|()V
+      @|com\joarez\mathmod\items\ItemTutorial.java|630|645|setMaxStackSize|method|net.minecraft.item.Item|setMaxStackSize|(I)Lnet/minecraft/item/Item;
+      @|com\joarez\mathmod\items\ItemTutorial.java|653|667|setCreativeTab|method|net.minecraft.item.Item|setCreativeTab|(Lnet/minecraft/creativetab/CreativeTabs;)Lnet/minecraft/item/Item;
+      @|com\joarez\mathmod\items\ItemTutorial.java|668|675|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\mathmod\items\ItemTutorial.java|676|687|tabTutorial|field|com.joarez.mathmod.MathMod|tabTutorial
    Method End: ItemTutorial()V
    Method Start: addRecipes()V
-      @|com\joarez\mathmod\items\ItemTutorial.java|665|675|addRecipes|method|com.joarez.mathmod.items.ItemTutorial|addRecipes|()V
-      @|com\joarez\mathmod\items\ItemTutorial.java|682|694|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|com\joarez\mathmod\items\ItemTutorial.java|695|713|addShapelessRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapelessRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
-      @|com\joarez\mathmod\items\ItemTutorial.java|718|727|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\items\ItemTutorial.java|735|740|Items|class|net.minecraft.init.Items
-      @|com\joarez\mathmod\items\ItemTutorial.java|741|745|BONE|field|net.minecraft.init.Items|BONE
-      @|com\joarez\mathmod\items\ItemTutorial.java|746|751|Items|class|net.minecraft.init.Items
-      @|com\joarez\mathmod\items\ItemTutorial.java|752|756|BONE|field|net.minecraft.init.Items|BONE
-      @|com\joarez\mathmod\items\ItemTutorial.java|762|771|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\items\ItemTutorial.java|772|778|Blocks|class|net.minecraft.init.Blocks
-      @|com\joarez\mathmod\items\ItemTutorial.java|779|782|LOG|field|net.minecraft.init.Blocks|LOG
+      @|com\joarez\mathmod\items\ItemTutorial.java|744|754|addRecipes|method|com.joarez.mathmod.items.ItemTutorial|addRecipes|()V
+      @|com\joarez\mathmod\items\ItemTutorial.java|761|773|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
+      @|com\joarez\mathmod\items\ItemTutorial.java|774|792|addShapelessRecipe|method|net.minecraftforge.fml.common.registry.GameRegistry|addShapelessRecipe|(Lnet/minecraft/item/ItemStack;[Ljava/lang/Object;)V
+      @|com\joarez\mathmod\items\ItemTutorial.java|797|806|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|814|819|Items|class|net.minecraft.init.Items
+      @|com\joarez\mathmod\items\ItemTutorial.java|820|824|BONE|field|net.minecraft.init.Items|BONE
+      @|com\joarez\mathmod\items\ItemTutorial.java|825|830|Items|class|net.minecraft.init.Items
+      @|com\joarez\mathmod\items\ItemTutorial.java|831|835|BONE|field|net.minecraft.init.Items|BONE
+      @|com\joarez\mathmod\items\ItemTutorial.java|841|850|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|851|857|Blocks|class|net.minecraft.init.Blocks
+      @|com\joarez\mathmod\items\ItemTutorial.java|858|861|LOG|field|net.minecraft.init.Blocks|LOG
    Method End: addRecipes()V
    Method Start: getUnlocalizedName(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;
-      @|com\joarez\mathmod\items\ItemTutorial.java|854|859|stack|param|com.joarez.mathmod.items.ItemTutorial|getUnlocalizedName|(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;|stack|0
-      @|com\joarez\mathmod\items\ItemTutorial.java|801|809|Override|class|java.lang.Override
-      @|com\joarez\mathmod\items\ItemTutorial.java|818|824|String|class|java.lang.String
-      @|com\joarez\mathmod\items\ItemTutorial.java|825|843|getUnlocalizedName|method|net.minecraft.item.Item|getUnlocalizedName|(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;
-      @|com\joarez\mathmod\items\ItemTutorial.java|844|853|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\items\ItemTutorial.java|883|890|MathMod|class|com.joarez.mathmod.MathMod
-      @|com\joarez\mathmod\items\ItemTutorial.java|891|906|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
-      @|com\joarez\mathmod\items\ItemTutorial.java|909|914|Names|class|com.joarez.mathmod.items.Names
-      @|com\joarez\mathmod\items\ItemTutorial.java|915|928|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
+      @|com\joarez\mathmod\items\ItemTutorial.java|933|938|stack|param|com.joarez.mathmod.items.ItemTutorial|getUnlocalizedName|(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;|stack|0
+      @|com\joarez\mathmod\items\ItemTutorial.java|880|888|Override|class|java.lang.Override
+      @|com\joarez\mathmod\items\ItemTutorial.java|897|903|String|class|java.lang.String
+      @|com\joarez\mathmod\items\ItemTutorial.java|904|922|getUnlocalizedName|method|net.minecraft.item.Item|getUnlocalizedName|(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;
+      @|com\joarez\mathmod\items\ItemTutorial.java|923|932|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|962|969|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\mathmod\items\ItemTutorial.java|970|985|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
+      @|com\joarez\mathmod\items\ItemTutorial.java|988|993|Names|class|com.joarez.mathmod.items.Names
+      @|com\joarez\mathmod\items\ItemTutorial.java|994|1007|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
    Method End: getUnlocalizedName(Lnet/minecraft/item/ItemStack;)Ljava/lang/String;
    Method Start: onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
-      @|com\joarez\mathmod\items\ItemTutorial.java|1001|1006|world|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|world|0
-      @|com\joarez\mathmod\items\ItemTutorial.java|1021|1027|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
-      @|com\joarez\mathmod\items\ItemTutorial.java|1038|1042|hand|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|hand|2
-      @|com\joarez\mathmod\items\ItemTutorial.java|937|945|Override|class|java.lang.Override
-      @|com\joarez\mathmod\items\ItemTutorial.java|954|966|ActionResult|class|net.minecraft.util.ActionResult
-      @|com\joarez\mathmod\items\ItemTutorial.java|967|976|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\items\ItemTutorial.java|978|994|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
-      @|com\joarez\mathmod\items\ItemTutorial.java|995|1000|World|class|net.minecraft.world.World
-      @|com\joarez\mathmod\items\ItemTutorial.java|1008|1020|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
-      @|com\joarez\mathmod\items\ItemTutorial.java|1029|1037|EnumHand|class|net.minecraft.util.EnumHand
-      @|com\joarez\mathmod\items\ItemTutorial.java|1050|1056|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
-      @|com\joarez\mathmod\items\ItemTutorial.java|1057|1068|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
-      @|com\joarez\mathmod\items\ItemTutorial.java|1073|1092|TextComponentString|class|net.minecraft.util.text.TextComponentString
-      @|com\joarez\mathmod\items\ItemTutorial.java|1134|1150|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
-      @|com\joarez\mathmod\items\ItemTutorial.java|1151|1156|world|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|world|0
-      @|com\joarez\mathmod\items\ItemTutorial.java|1158|1164|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
-      @|com\joarez\mathmod\items\ItemTutorial.java|1166|1170|hand|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|hand|2
+      @|com\joarez\mathmod\items\ItemTutorial.java|1080|1085|world|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|world|0
+      @|com\joarez\mathmod\items\ItemTutorial.java|1100|1106|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
+      @|com\joarez\mathmod\items\ItemTutorial.java|1117|1121|hand|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|hand|2
+      @|com\joarez\mathmod\items\ItemTutorial.java|1016|1024|Override|class|java.lang.Override
+      @|com\joarez\mathmod\items\ItemTutorial.java|1033|1045|ActionResult|class|net.minecraft.util.ActionResult
+      @|com\joarez\mathmod\items\ItemTutorial.java|1046|1055|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\items\ItemTutorial.java|1057|1073|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\joarez\mathmod\items\ItemTutorial.java|1074|1079|World|class|net.minecraft.world.World
+      @|com\joarez\mathmod\items\ItemTutorial.java|1087|1099|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|com\joarez\mathmod\items\ItemTutorial.java|1108|1116|EnumHand|class|net.minecraft.util.EnumHand
+      @|com\joarez\mathmod\items\ItemTutorial.java|1129|1135|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
+      @|com\joarez\mathmod\items\ItemTutorial.java|1136|1147|sendMessage|method|net.minecraft.command.ICommandSender|sendMessage|(Lnet/minecraft/util/text/ITextComponent;)V
+      @|com\joarez\mathmod\items\ItemTutorial.java|1152|1171|TextComponentString|class|net.minecraft.util.text.TextComponentString
+      @|com\joarez\mathmod\items\ItemTutorial.java|1213|1229|onItemRightClick|method|net.minecraft.item.Item|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
+      @|com\joarez\mathmod\items\ItemTutorial.java|1230|1235|world|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|world|0
+      @|com\joarez\mathmod\items\ItemTutorial.java|1237|1243|player|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|player|1
+      @|com\joarez\mathmod\items\ItemTutorial.java|1245|1249|hand|param|com.joarez.mathmod.items.ItemTutorial|onItemRightClick|(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;|hand|2
    Method End: onItemRightClick(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/EntityPlayer;Lnet/minecraft/util/EnumHand;)Lnet/minecraft/util/ActionResult;
 Class End  : com.joarez.mathmod.items.ItemTutorial
 endProcessing "com\joarez\mathmod\items\ItemTutorial.java"
 
-startProcessing "com\joarez\mathmod\items\Names.java" md5: 7fc50ebe387cc90c84889f58407b8abf
-Cache Hit!
+startProcessing "com\joarez\mathmod\items\Names.java" md5: c2f2a27a6096943a3373f9846eccb58d
 @|com\joarez\mathmod\items\Names.java|8|32|com.joarez.mathmod.items|package|com.joarez.mathmod.items|(file)
 Class Start: com.joarez.mathmod.items.Names
    @|com\joarez\mathmod\items\Names.java|48|53|Names|class|com.joarez.mathmod.items.Names
@@ -292,115 +1427,83 @@ Class Start: com.joarez.mathmod.items.Names
    @|com\joarez\mathmod\items\Names.java|138|144|String|class|java.lang.String
    @|com\joarez\mathmod\items\Names.java|138|144|String|class|java.lang.String
    @|com\joarez\mathmod\items\Names.java|145|159|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK|
+   @|com\joarez\mathmod\items\Names.java|201|207|String|class|java.lang.String
+   @|com\joarez\mathmod\items\Names.java|201|207|String|class|java.lang.String
+   @|com\joarez\mathmod\items\Names.java|208|224|TUTORIAL_PICKAXE|field|com.joarez.mathmod.items.Names|TUTORIAL_PICKAXE|
 Class End  : com.joarez.mathmod.items.Names
 endProcessing "com\joarez\mathmod\items\Names.java"
 
-startProcessing "init\ModBlocks.java" md5: 7cad00e847d2b23859e6aec71c45de72
-Cache Hit!
-@|init\ModBlocks.java|8|12|init|package|init|(file)
-Class Start: init.ModBlocks
-   @|init\ModBlocks.java|582|591|ModBlocks|class|init.ModBlocks
-   @|init\ModBlocks.java|611|624|BlockTutorial|class|blocks.BlockTutorial
-   @|init\ModBlocks.java|611|624|BlockTutorial|class|blocks.BlockTutorial
-   @|init\ModBlocks.java|625|638|tutorialBlock|field|init.ModBlocks|tutorialBlock|
-   Method Start: init()V
-      @|init\ModBlocks.java|660|664|init|method|init.ModBlocks|init|()V
-      @|init\ModBlocks.java|674|690|ResourceLocation|class|net.minecraft.util.ResourceLocation
-      @|init\ModBlocks.java|706|722|ResourceLocation|class|net.minecraft.util.ResourceLocation
-      @|init\ModBlocks.java|723|730|MathMod|class|com.joarez.mathmod.MathMod
-      @|init\ModBlocks.java|731|737|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
-      @|init\ModBlocks.java|739|744|Names|class|com.joarez.mathmod.items.Names
-      @|init\ModBlocks.java|745|759|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
-      @|init\ModBlocks.java|767|780|tutorialBlock|field|init.ModBlocks|tutorialBlock
-      @|init\ModBlocks.java|787|800|BlockTutorial|class|blocks.BlockTutorial
-      @|init\ModBlocks.java|806|819|tutorialBlock|field|init.ModBlocks|tutorialBlock
-      @|init\ModBlocks.java|820|835|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
-      @|init\ModBlocks.java|849|861|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|init\ModBlocks.java|862|870|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
-      @|init\ModBlocks.java|871|884|tutorialBlock|field|init.ModBlocks|tutorialBlock
-      @|init\ModBlocks.java|889|901|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|init\ModBlocks.java|902|910|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;Lnet/minecraft/util/ResourceLocation;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
-      @|init\ModBlocks.java|915|924|ItemBlock|class|net.minecraft.item.ItemBlock
-      @|init\ModBlocks.java|925|938|tutorialBlock|field|init.ModBlocks|tutorialBlock
-   Method End: init()V
-   Method Start: initRecipes()V
-      @|init\ModBlocks.java|976|987|initRecipes|method|init.ModBlocks|initRecipes|()V
-      @|init\ModBlocks.java|994|1007|tutorialBlock|field|init.ModBlocks|tutorialBlock
-      @|init\ModBlocks.java|1008|1018|addRecipes|method|blocks.BlockTutorial|addRecipes|()V
-   Method End: initRecipes()V
-   Method Start: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
-      @|init\ModBlocks.java|1098|1104|mesher|param|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
-      @|init\ModBlocks.java|1029|1037|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
-      @|init\ModBlocks.java|1038|1042|Side|class|net.minecraftforge.fml.relauncher.Side
-      @|init\ModBlocks.java|1043|1049|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
-      @|init\ModBlocks.java|1071|1081|initClient|method|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
-      @|init\ModBlocks.java|1082|1097|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
-      @|init\ModBlocks.java|1113|1117|Item|class|net.minecraft.item.Item
-      @|init\ModBlocks.java|1125|1129|Item|class|net.minecraft.item.Item
-      @|init\ModBlocks.java|1130|1146|getItemFromBlock|method|net.minecraft.item.Item|getItemFromBlock|(Lnet/minecraft/block/Block;)Lnet/minecraft/item/Item;
-      @|init\ModBlocks.java|1147|1160|tutorialBlock|field|init.ModBlocks|tutorialBlock
-      @|init\ModBlocks.java|1165|1186|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
-      @|init\ModBlocks.java|1199|1220|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
-      @|init\ModBlocks.java|1221|1228|MathMod|class|com.joarez.mathmod.MathMod
-      @|init\ModBlocks.java|1229|1244|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
-      @|init\ModBlocks.java|1247|1252|Names|class|com.joarez.mathmod.items.Names
-      @|init\ModBlocks.java|1253|1267|TUTORIAL_BLOCK|field|com.joarez.mathmod.items.Names|TUTORIAL_BLOCK
-      @|init\ModBlocks.java|1285|1296|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
-      @|init\ModBlocks.java|1297|1317|registerItemVariants|method|net.minecraft.client.renderer.block.model.ModelBakery|registerItemVariants|(Lnet/minecraft/item/Item;[Lnet/minecraft/util/ResourceLocation;)V
-      @|init\ModBlocks.java|1334|1340|mesher|param|init.ModBlocks|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
-      @|init\ModBlocks.java|1341|1349|register|method|net.minecraft.client.renderer.ItemModelMesher|register|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
-   Method End: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
-Class End  : init.ModBlocks
-endProcessing "init\ModBlocks.java"
+startProcessing "events\TutorialEventHandler.java" md5: c0c77221bf7a2558dbbf048610a7083f
+@|events\TutorialEventHandler.java|8|14|events|package|events|(file)
+Class Start: events.TutorialEventHandler
+   @|events\TutorialEventHandler.java|277|297|TutorialEventHandler|class|events.TutorialEventHandler
+   Method Start: entityJoinWorld(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V
+      @|events\TutorialEventHandler.java|367|372|event|param|events.TutorialEventHandler|entityJoinWorld|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V|event|0
+      @|events\TutorialEventHandler.java|302|316|SubscribeEvent|class|net.minecraftforge.fml.common.eventhandler.SubscribeEvent
+      @|events\TutorialEventHandler.java|330|345|entityJoinWorld|method|events.TutorialEventHandler|entityJoinWorld|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V
+      @|events\TutorialEventHandler.java|346|366|EntityJoinWorldEvent|class|net.minecraftforge.event.entity.EntityJoinWorldEvent
+      @|events\TutorialEventHandler.java|381|386|event|param|events.TutorialEventHandler|entityJoinWorld|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V|event|0
+      @|events\TutorialEventHandler.java|387|396|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|events\TutorialEventHandler.java|410|422|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|events\TutorialEventHandler.java|429|441|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|events\TutorialEventHandler.java|452|464|EntityPlayer|class|net.minecraft.entity.player.EntityPlayer
+      @|events\TutorialEventHandler.java|466|471|event|param|events.TutorialEventHandler|entityJoinWorld|(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V|event|0
+      @|events\TutorialEventHandler.java|472|481|getEntity|method|net.minecraftforge.event.entity.EntityEvent|getEntity|()Lnet/minecraft/entity/Entity;
+      @|events\TutorialEventHandler.java|495|504|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|events\TutorialEventHandler.java|505|528|addItemStackToInventory|method|net.minecraft.entity.player.InventoryPlayer|addItemStackToInventory|(Lnet/minecraft/item/ItemStack;)Z
+      @|events\TutorialEventHandler.java|533|542|ItemStack|class|net.minecraft.item.ItemStack
+      @|events\TutorialEventHandler.java|543|548|Items|class|net.minecraft.init.Items
+      @|events\TutorialEventHandler.java|549|554|APPLE|field|net.minecraft.init.Items|APPLE
+   Method End: entityJoinWorld(Lnet/minecraftforge/event/entity/EntityJoinWorldEvent;)V
+Class End  : events.TutorialEventHandler
+endProcessing "events\TutorialEventHandler.java"
 
-startProcessing "init\ModItems.java" md5: 5e0c1f41952009590d7c31dcdb402afc
-Cache Hit!
-@|init\ModItems.java|8|12|init|package|init|(file)
-Class Start: init.ModItems
-   @|init\ModItems.java|530|538|ModItems|class|init.ModItems
-   @|init\ModItems.java|558|570|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
-   @|init\ModItems.java|558|570|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
-   @|init\ModItems.java|571|583|tutorialItem|field|init.ModItems|tutorialItem|
-   Method Start: init()V
-      @|init\ModItems.java|607|611|init|method|init.ModItems|init|()V
-      @|init\ModItems.java|618|630|tutorialItem|field|init.ModItems|tutorialItem
-      @|init\ModItems.java|637|649|ItemTutorial|class|com.joarez.mathmod.items.ItemTutorial
-      @|init\ModItems.java|655|667|tutorialItem|field|init.ModItems|tutorialItem
-      @|init\ModItems.java|668|683|setRegistryName|method|net.minecraftforge.fml.common.registry.IForgeRegistryEntry|setRegistryName|(Lnet/minecraft/util/ResourceLocation;)Ljava/lang/Object;
-      @|init\ModItems.java|688|704|ResourceLocation|class|net.minecraft.util.ResourceLocation
-      @|init\ModItems.java|705|712|MathMod|class|com.joarez.mathmod.MathMod
-      @|init\ModItems.java|713|719|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
-      @|init\ModItems.java|720|725|Names|class|com.joarez.mathmod.items.Names
-      @|init\ModItems.java|726|739|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
-      @|init\ModItems.java|748|760|GameRegistry|class|net.minecraftforge.fml.common.registry.GameRegistry
-      @|init\ModItems.java|761|769|register|method|net.minecraftforge.fml.common.registry.GameRegistry|register|(Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;)Lnet/minecraftforge/fml/common/registry/IForgeRegistryEntry;
-      @|init\ModItems.java|770|782|tutorialItem|field|init.ModItems|tutorialItem
-   Method End: init()V
-   Method Start: initRecipes()V
-      @|init\ModItems.java|810|821|initRecipes|method|init.ModItems|initRecipes|()V
-      @|init\ModItems.java|828|840|tutorialItem|field|init.ModItems|tutorialItem
-      @|init\ModItems.java|841|851|addRecipes|method|com.joarez.mathmod.items.ItemTutorial|addRecipes|()V
-   Method End: initRecipes()V
-   Method Start: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
-      @|init\ModItems.java|931|937|mesher|param|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
-      @|init\ModItems.java|862|870|SideOnly|class|net.minecraftforge.fml.relauncher.SideOnly
-      @|init\ModItems.java|871|875|Side|class|net.minecraftforge.fml.relauncher.Side
-      @|init\ModItems.java|876|882|CLIENT|field|net.minecraftforge.fml.relauncher.Side|CLIENT
-      @|init\ModItems.java|904|914|initClient|method|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V
-      @|init\ModItems.java|915|930|ItemModelMesher|class|net.minecraft.client.renderer.ItemModelMesher
-      @|init\ModItems.java|946|967|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
-      @|init\ModItems.java|980|1001|ModelResourceLocation|class|net.minecraft.client.renderer.block.model.ModelResourceLocation
-      @|init\ModItems.java|1002|1009|MathMod|class|com.joarez.mathmod.MathMod
-      @|init\ModItems.java|1010|1025|RESOURCE_PREFIX|field|com.joarez.mathmod.MathMod|RESOURCE_PREFIX
-      @|init\ModItems.java|1026|1031|Names|class|com.joarez.mathmod.items.Names
-      @|init\ModItems.java|1032|1045|TUTORIAL_ITEM|field|com.joarez.mathmod.items.Names|TUTORIAL_ITEM
-      @|init\ModItems.java|1063|1074|ModelLoader|class|net.minecraftforge.client.model.ModelLoader
-      @|init\ModItems.java|1075|1095|registerItemVariants|method|net.minecraft.client.renderer.block.model.ModelBakery|registerItemVariants|(Lnet/minecraft/item/Item;[Lnet/minecraft/util/ResourceLocation;)V
-      @|init\ModItems.java|1096|1108|tutorialItem|field|init.ModItems|tutorialItem
-      @|init\ModItems.java|1120|1126|mesher|param|init.ModItems|initClient|(Lnet/minecraft/client/renderer/ItemModelMesher;)V|mesher|0
-      @|init\ModItems.java|1127|1135|register|method|net.minecraft.client.renderer.ItemModelMesher|register|(Lnet/minecraft/item/Item;ILnet/minecraft/client/renderer/block/model/ModelResourceLocation;)V
-      @|init\ModItems.java|1136|1148|tutorialItem|field|init.ModItems|tutorialItem
-   Method End: initClient(Lnet/minecraft/client/renderer/ItemModelMesher;)V
-Class End  : init.ModItems
-endProcessing "init\ModItems.java"
+startProcessing "tools\ItemTutorialPickaxe.java" md5: 17210281420b928a6cd047178a5d7bce
+@|tools\ItemTutorialPickaxe.java|8|13|tools|package|tools|(file)
+Class Start: tools.ItemTutorialPickaxe
+   @|tools\ItemTutorialPickaxe.java|103|122|ItemTutorialPickaxe|class|tools.ItemTutorialPickaxe
+   @|tools\ItemTutorialPickaxe.java|131|142|ItemPickaxe|class|net.minecraft.item.ItemPickaxe
+   Method Start: ItemTutorialPickaxe()V
+      @|tools\ItemTutorialPickaxe.java|154|173|ItemTutorialPickaxe|method|tools.ItemTutorialPickaxe|ItemTutorialPickaxe|()V
+      @|tools\ItemTutorialPickaxe.java|186|194|ModItems|class|com.joarez.init.ModItems
+      @|tools\ItemTutorialPickaxe.java|195|207|toolMaterial|field|com.joarez.init.ModItems|toolMaterial
+   Method End: ItemTutorialPickaxe()V
+Class End  : tools.ItemTutorialPickaxe
+endProcessing "tools\ItemTutorialPickaxe.java"
+
+startProcessing "variablemanager\VariableManagerHandler.java" md5: 2a860b261540ce28c365cd62b3be6b13
+@|variablemanager\VariableManagerHandler.java|8|23|variablemanager|package|variablemanager|(file)
+Class Start: variablemanager.VariableManagerHandler
+   @|variablemanager\VariableManagerHandler.java|161|183|VariableManagerHandler|class|variablemanager.VariableManagerHandler
+   @|variablemanager\VariableManagerHandler.java|192|202|TileEntity|class|net.minecraft.tileentity.TileEntity
+   Method Start: readFromNBT(Lnet/minecraft/nbt/NBTTagCompound;)V
+      @|variablemanager\VariableManagerHandler.java|258|266|compound|param|variablemanager.VariableManagerHandler|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|compound|0
+      @|variablemanager\VariableManagerHandler.java|209|217|Override|class|java.lang.Override
+      @|variablemanager\VariableManagerHandler.java|231|242|readFromNBT|method|net.minecraft.tileentity.TileEntity|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V
+      @|variablemanager\VariableManagerHandler.java|243|257|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound
+      @|variablemanager\VariableManagerHandler.java|278|289|readFromNBT|method|net.minecraft.tileentity.TileEntity|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V
+      @|variablemanager\VariableManagerHandler.java|290|298|compound|param|variablemanager.VariableManagerHandler|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|compound|0
+      @|variablemanager\VariableManagerHandler.java|303|314|MathMethods|class|com.joarez.gui.MathMethods
+      @|variablemanager\VariableManagerHandler.java|315|323|CURRENCY|field|com.joarez.gui.MathMethods|CURRENCY
+      @|variablemanager\VariableManagerHandler.java|326|334|compound|param|variablemanager.VariableManagerHandler|readFromNBT|(Lnet/minecraft/nbt/NBTTagCompound;)V|compound|0
+      @|variablemanager\VariableManagerHandler.java|335|345|getInteger|method|net.minecraft.nbt.NBTTagCompound|getInteger|(Ljava/lang/String;)I
+   Method End: readFromNBT(Lnet/minecraft/nbt/NBTTagCompound;)V
+   Method Start: writeToNBT(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|variablemanager\VariableManagerHandler.java|423|431|compound|param|variablemanager.VariableManagerHandler|writeToNBT|(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;|compound|0
+      @|variablemanager\VariableManagerHandler.java|365|373|Override|class|java.lang.Override
+      @|variablemanager\VariableManagerHandler.java|382|396|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound
+      @|variablemanager\VariableManagerHandler.java|397|407|writeToNBT|method|net.minecraft.tileentity.TileEntity|writeToNBT|(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|variablemanager\VariableManagerHandler.java|408|422|NBTTagCompound|class|net.minecraft.nbt.NBTTagCompound
+      @|variablemanager\VariableManagerHandler.java|439|447|compound|param|variablemanager.VariableManagerHandler|writeToNBT|(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;|compound|0
+      @|variablemanager\VariableManagerHandler.java|448|458|setInteger|method|net.minecraft.nbt.NBTTagCompound|setInteger|(Ljava/lang/String;I)V
+      @|variablemanager\VariableManagerHandler.java|471|482|MathMethods|class|com.joarez.gui.MathMethods
+      @|variablemanager\VariableManagerHandler.java|483|491|CURRENCY|field|com.joarez.gui.MathMethods|CURRENCY
+      @|variablemanager\VariableManagerHandler.java|509|519|writeToNBT|method|net.minecraft.tileentity.TileEntity|writeToNBT|(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;
+      @|variablemanager\VariableManagerHandler.java|520|528|compound|param|variablemanager.VariableManagerHandler|writeToNBT|(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;|compound|0
+   Method End: writeToNBT(Lnet/minecraft/nbt/NBTTagCompound;)Lnet/minecraft/nbt/NBTTagCompound;
+   Method Start: GetMathCurrency()V
+      @|variablemanager\VariableManagerHandler.java|561|576|GetMathCurrency|method|variablemanager.VariableManagerHandler|GetMathCurrency|()V
+   Method End: GetMathCurrency()V
+Class End  : variablemanager.VariableManagerHandler
+endProcessing "variablemanager\VariableManagerHandler.java"
 

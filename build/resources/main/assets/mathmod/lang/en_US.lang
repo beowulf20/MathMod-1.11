@@ -6,7 +6,7 @@ tile.mathmod:tutorial_block.name=Tutorial Block
 
 #ITEMS
 item.mathmod:tutorial_item.name=Tutorial Item
-
+item.mathmod:tutorial_pickaxe.name=Tutorial Pickaxe
 #
 
 
@@ -14,3 +14,19 @@ item.mathmod:tutorial_item.name=Tutorial Item
 #CREATIVE TAB
 
 itemGroup.mathmod:tab_tutorial=Math Tab
+
+
+#YEAR SELECTION
+
+year.mathmod:easy=EASY
+year.mathmod:hard=HARD
+year.mathmod:add=ADDITION
+year.mathmod:sub=SUBTRACTION
+year.mathmod:mul=MULTIPLICATION
+year.mathmod:div=DIVISION
+
+
+#KEYBINDING
+
+key.openyear_key=Open Year Selection
+key.categories.mod=Math Mod

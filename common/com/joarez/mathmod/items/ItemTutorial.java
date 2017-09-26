@@ -1,7 +1,8 @@
 package com.joarez.mathmod.items;
 
-import com.joarez.gui.YearSelectionGUI;
 import com.joarez.mathmod.MathMod;
+import com.joarez.mathmod.Names;
+import com.joarez.mathmod.gui.YearSelectionGUI;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;

@@ -14,23 +14,22 @@ public class  MathMethods {
 	public static int CURRENCY = 9;
 	
 	public static int GetResult() {
-		switch(OPERATION){
-		case "+":
-			RESULT = A + B;
-			break;
-		case "-":
+		if(OPERATION == "+") {
+			RESULT = A + B;			
+		}
+		if(OPERATION == "-") {
 			RESULT = A-B;
-			break;
-		case "*":		
+		}
+		if(OPERATION == "*") {
 			RESULT = A*B;
-			break;
-		case "/":
+		}
+		if(OPERATION == "/") {
 			if(B == 0) {
 				B = 1;
 			}
 			RESULT = A/B;
-			break;
 		}
+		
 		return RESULT;
 	}
 	
