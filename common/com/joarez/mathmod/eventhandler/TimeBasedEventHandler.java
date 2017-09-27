@@ -21,7 +21,7 @@ public class TimeBasedEventHandler {
 		if(actualTime % 1000 == 0 && !Minecraft.getMinecraft().isGamePaused()) {
 			//EntityPlayer player = (EntityPlayer) Minecraft.getMinecraft().player;
 			//player.inventory.addItemStackToInventory(new ItemStack(Items.APPLE,1));
-			MathMethods.ACTUAL = 1;
+
 			Minecraft.getMinecraft().displayGuiScreen(new DoMathGUI());
 
 		}

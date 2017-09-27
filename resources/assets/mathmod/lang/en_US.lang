@@ -1,12 +1,13 @@
 #BLOCKS
 tile.mathmod:tutorial_block.name=Tutorial Block
-tile.mathmod:pc_block=PC Block
-
+tile.mathmod:pc_block.name=PC Block
+tile.mathmod:shop_block.name=Math Shop Block
 #
 
 #ITEMS
 item.mathmod:tutorial_item.name=Tutorial Item
 item.mathmod:tutorial_pickaxe.name=Tutorial Pickaxe
+item.mathmod:math_coin.name=Math Coin
 #
 
 

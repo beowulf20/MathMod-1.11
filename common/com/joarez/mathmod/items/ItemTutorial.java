@@ -21,7 +21,7 @@ public class ItemTutorial extends Item {
 	
 	public ItemTutorial() {
 		setMaxStackSize(64);
-		setCreativeTab(MathMod.tabTutorial); //make item appears in creative tab
+		//setCreativeTab(MathMod.tabTutorial); //make item appears in creative tab
 	}
 	
 	public void addRecipes() {

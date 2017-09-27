@@ -8,10 +8,6 @@ public class  MathMethods {
 	public static int DIF = 1;
 	
 	
-	public static int TOTAL = 3;
-	public static int ACTUAL = 1;
-	
-	public static int CURRENCY = 9;
 	
 	public static int GetResult() {
 		if(OPERATION == "+") {

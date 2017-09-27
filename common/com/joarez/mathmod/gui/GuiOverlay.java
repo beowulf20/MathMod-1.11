@@ -4,7 +4,6 @@ import com.joarez.mathmod.MathMod;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
-import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -17,7 +16,8 @@ public class GuiOverlay extends Gui {
 	public void renderOverlay(RenderGameOverlayEvent event) {
 		int width = event.getResolution().getScaledWidth();
 		int height = event.getResolution().getScaledHeight();
-		String money = "$ " + MathMethods.CURRENCY;
+				
+		String money = "$ " ; 
 		int x = width - Minecraft.getMinecraft().fontRendererObj.getStringWidth(money) - 3;			
 		int y = height - Minecraft.getMinecraft().fontRendererObj.FONT_HEIGHT - 3;					
 		int w = 23;

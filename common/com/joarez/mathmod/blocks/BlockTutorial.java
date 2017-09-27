@@ -20,7 +20,7 @@ public class BlockTutorial extends Block {
 		setResistance(10.0f);
 		setSoundType(SoundType.LADDER);
 		setHarvestLevel("pickaxe",1);
-		setCreativeTab(MathMod.tabTutorial);
+		setCreativeTab(MathMod.tabMod);
 	}
 
 	@Override

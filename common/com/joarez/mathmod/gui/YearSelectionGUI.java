@@ -130,7 +130,7 @@ public class YearSelectionGUI extends GuiScreen {
 	@Override
 	protected void actionPerformed(GuiButton button) throws IOException {
 		String[] operation = {"+","+","-","-","*","*","/","/",};
-		MathMethods.CURRENCY += 10;
+		
 		//System.out.println(MathMethods.CURRENCY);
 		MathMethods.OPERATION = operation[button.id];
 		MathMethods.DIF = button.id;

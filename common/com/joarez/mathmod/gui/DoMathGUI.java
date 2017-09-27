@@ -2,23 +2,20 @@ package com.joarez.mathmod.gui;
 
 import java.io.IOException;
 
-import org.lwjgl.input.Keyboard;
-
 import com.joarez.mathmod.MathMod;
-import com.sun.jna.platform.win32.WinUser.INPUT;
+import com.joarez.mathmod.init.ModItems;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.renderer.GlStateManager;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import scala.swing.event.Key;
 
 public class DoMathGUI extends GuiScreen {
 
-	ResourceLocation bg_texture = new ResourceLocation(MathMod.MOD_ID, "textures/gui/math_bg.png");
-	
+	ResourceLocation bg_texture = new ResourceLocation(MathMod.MOD_ID, "textures/gui/math_bg.png");	
 	GuiTextField expression_textfield;
 	GuiButton bt_check;
 	int bgW,bgH,bgX,bgY;
@@ -71,13 +68,7 @@ public class DoMathGUI extends GuiScreen {
 		this.buttonList.clear();
 		this.buttonList.add(bt_check);
 		
-		//DRAW REMAIN.
-		String remain = MathMethods.ACTUAL + "/" + MathMethods.TOTAL;
-		int rX = width/2 - bgW/2 + 2;
-		int rY = height/2 + bgH/2 - this.fontRendererObj.FONT_HEIGHT - 2;		
-		this.fontRendererObj.drawString(remain, rX, rY, 0xff0000);
-		
-		
+	
 		
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
@@ -110,10 +101,8 @@ public class DoMathGUI extends GuiScreen {
 						expression_textfield.setText("");
 						expression_textfield.setFocused(true);
 						MathMethods.Randomize();
-						
-						if(MathMethods.ACTUAL < MathMethods.TOTAL) {
-							MathMethods.ACTUAL++;
-						}
+						Minecraft.getMinecraft().player.inventory.addItemStackToInventory(new ItemStack(ModItems.math_coin,MathMethods.DIF));
+
 					}
 				}catch(Exception e) {
 					r = 0;

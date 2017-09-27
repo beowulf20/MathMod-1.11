@@ -28,7 +28,7 @@ public class MathMod {
 	//Constants
 	public static final String MOD_ID = "mathmod";
 	public static final String MOD_NAME = "Math Mod";
-	public static final String VERSION = "@VERSION@";
+	public static final String VERSION = "1.0";
 	public static final String DEPENDENCIES = "required-after:forge@[13.20.1.2386,]";
 	public static final String RESOURCE_PREFIX = MOD_ID.toLowerCase() + ":";
 	
@@ -63,15 +63,15 @@ public class MathMod {
 	@EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		//MinecraftForge.EVENT_BUS.register(new TutorialEventHandler());
-		MinecraftForge.EVENT_BUS.register(new GuiOverlay());
+		//MinecraftForge.EVENT_BUS.register(new GuiOverlay());
 		proxy.postInit(event);
 	}
 	
 	
-	public static CreativeTabs tabTutorial = new CreativeTabs(MathMod.RESOURCE_PREFIX+"tab_tutorial") {
+	public static CreativeTabs tabMod = new CreativeTabs(MathMod.RESOURCE_PREFIX+"tab_tutorial") {
 		@Override
 		public ItemStack getTabIconItem() {
-			return new ItemStack(ModItems.tutorialItem);
+			return new ItemStack(ModItems.math_coin);
 		}
 	};
 }
