@@ -26,7 +26,10 @@ year.mathmod:sub=SUBTRACTION
 year.mathmod:mul=MULTIPLICATION
 year.mathmod:div=DIVISION
 
-
+#MATH SHOP
+shop.mathmod:shop_title=MATH SHOP
+shop.mathmod:bt_previous=Previous
+shop.mathmod:bt_next=Next
 #KEYBINDING
 
 key.openyear_key=Open Year Selection

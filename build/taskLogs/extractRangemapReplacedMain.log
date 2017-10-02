@@ -1,65 +1,90 @@
 Symbol range map extraction starting
-Processing 21 files
-startProcessing "Keybinding\KeyInputHandler.java" md5: eb4b3fe97c6d2f99cd061af987cd4fb8
-endProcessing "Keybinding\KeyInputHandler.java"
-
-startProcessing "Keybinding\KeybindingMath.java" md5: 9b4c7659cbf7b9965aa6d9c6c45e2aeb
-endProcessing "Keybinding\KeybindingMath.java"
-
-startProcessing "com\joarez\blocks\BlockTutorial.java" md5: 38a60fe8c29e80d9b7adc432c33c1e18
-endProcessing "com\joarez\blocks\BlockTutorial.java"
-
-startProcessing "com\joarez\gui\DoMathGUI.java" md5: 9cbf92bf5c3536935f8426eea462757d
-endProcessing "com\joarez\gui\DoMathGUI.java"
-
-startProcessing "com\joarez\gui\GuiButtonTutorial.java" md5: 6f559be43a27abb5f3719cde9047e534
-endProcessing "com\joarez\gui\GuiButtonTutorial.java"
-
-startProcessing "com\joarez\gui\GuiOverlay.java" md5: 38240f7c45a127576a7f68bca206cca7
-endProcessing "com\joarez\gui\GuiOverlay.java"
-
-startProcessing "com\joarez\gui\MathMethods.java" md5: 115f67770186d8d3bc2cfd1734bc2c97
-endProcessing "com\joarez\gui\MathMethods.java"
-
-startProcessing "com\joarez\gui\TutorialGUI.java" md5: a6ad6b3f72f574034b966e39c1386030
-endProcessing "com\joarez\gui\TutorialGUI.java"
-
-startProcessing "com\joarez\gui\YearSelectionGUI.java" md5: 4349402295d45e7f4481a9127123fbc4
-endProcessing "com\joarez\gui\YearSelectionGUI.java"
-
-startProcessing "com\joarez\init\ModBlocks.java" md5: 6775609c9a3667d9a819437a68573eaa
-endProcessing "com\joarez\init\ModBlocks.java"
-
-startProcessing "com\joarez\init\ModItems.java" md5: 309afa154152b73796af23cb00ffccfc
-endProcessing "com\joarez\init\ModItems.java"
-
-startProcessing "com\joarez\keybind\KeyboardCommands.java" md5: 755b166c7a7046c68c570c7992c3c387
-endProcessing "com\joarez\keybind\KeyboardCommands.java"
-
-startProcessing "com\joarez\mathmod\ClientProxy.java" md5: d66173c4fd54020bb66783796afb9561
+Processing 29 files
+startProcessing "com\joarez\mathmod\ClientProxy.java" md5: 2fe450fe63f39bce829fec72eb73785d
 endProcessing "com\joarez\mathmod\ClientProxy.java"
 
-startProcessing "com\joarez\mathmod\CommonProxy.java" md5: 80b9e114ba42de8c752a94193c28f0ec
+startProcessing "com\joarez\mathmod\CommonProxy.java" md5: aed5e37ed0477464c5ba4d5921b400b7
 endProcessing "com\joarez\mathmod\CommonProxy.java"
 
-startProcessing "com\joarez\mathmod\MathMod.java" md5: 0c9b3387756e3430fdf73710c63bfd7f
+startProcessing "com\joarez\mathmod\MathMod.java" md5: cc1fad693df5f0ac2c53390b0774fed9
 endProcessing "com\joarez\mathmod\MathMod.java"
 
-startProcessing "com\joarez\mathmod\TimeBasedEventHandler.java" md5: 5e3fdf9dae3d3dcd4aae67907b3c2690
-endProcessing "com\joarez\mathmod\TimeBasedEventHandler.java"
+startProcessing "com\joarez\mathmod\Names.java" md5: f3208ab84dae52ec04f44698ad683902
+endProcessing "com\joarez\mathmod\Names.java"
 
-startProcessing "com\joarez\mathmod\items\ItemTutorial.java" md5: c5f2db3297ba6dc80b0015f2b543e88f
+startProcessing "com\joarez\mathmod\blocks\BlockTutorial.java" md5: 7aae9d3d8eefe9341dd66a95fd267305
+endProcessing "com\joarez\mathmod\blocks\BlockTutorial.java"
+
+startProcessing "com\joarez\mathmod\blocks\PCBlock.java" md5: 320f0c2f7c02471a52b9739fc87f1e2e
+endProcessing "com\joarez\mathmod\blocks\PCBlock.java"
+
+startProcessing "com\joarez\mathmod\blocks\ShopBlock.java" md5: 3bdd75884630dcc725d577fe262eab7d
+endProcessing "com\joarez\mathmod\blocks\ShopBlock.java"
+
+startProcessing "com\joarez\mathmod\eventhandler\TimeBasedEventHandler.java" md5: cd17464d69b6914879490b0647cdd6d0
+endProcessing "com\joarez\mathmod\eventhandler\TimeBasedEventHandler.java"
+
+startProcessing "com\joarez\mathmod\eventhandler\TutorialEventHandler.java" md5: 0b0da9385e6cad023a5fb0e5f1adf07f
+endProcessing "com\joarez\mathmod\eventhandler\TutorialEventHandler.java"
+
+startProcessing "com\joarez\mathmod\gui\DoMathGUI.java" md5: d95cf3f843a100e1596320c2fd107eae
+endProcessing "com\joarez\mathmod\gui\DoMathGUI.java"
+
+startProcessing "com\joarez\mathmod\gui\GuiButtonTutorial.java" md5: ffc023b505d5f9ff094141328a9cc2ec
+endProcessing "com\joarez\mathmod\gui\GuiButtonTutorial.java"
+
+startProcessing "com\joarez\mathmod\gui\GuiOverlay.java" md5: 423f58adad99f3c806bfedcb1a999410
+endProcessing "com\joarez\mathmod\gui\GuiOverlay.java"
+
+startProcessing "com\joarez\mathmod\gui\MathMethods.java" md5: cb9ac6155cc02ce8e75918aa127a2dd1
+endProcessing "com\joarez\mathmod\gui\MathMethods.java"
+
+startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: 6c28d5c60b712e1fb84bd2d96e074c70
+endProcessing "com\joarez\mathmod\gui\MathShopGUI.java"
+
+startProcessing "com\joarez\mathmod\gui\TestGui.java" md5: 05aa937201ca226cfc05873fcb9ce492
+endProcessing "com\joarez\mathmod\gui\TestGui.java"
+
+startProcessing "com\joarez\mathmod\gui\TutorialGUI.java" md5: cd70fd51eb49b7614dcf7d5e0a1f6a50
+endProcessing "com\joarez\mathmod\gui\TutorialGUI.java"
+
+startProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java" md5: 6baef4cbb28db8947fe42fe4cc2244dc
+endProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java"
+
+startProcessing "com\joarez\mathmod\init\ModBlocks.java" md5: 9d80e6acf9e031403461fb989174d8b7
+endProcessing "com\joarez\mathmod\init\ModBlocks.java"
+
+startProcessing "com\joarez\mathmod\init\ModItems.java" md5: e63563dcb9337f1d4a650537914bb1f5
+endProcessing "com\joarez\mathmod\init\ModItems.java"
+
+startProcessing "com\joarez\mathmod\items\ItemMathCoin.java" md5: 90c1023e9126e4521e55697f7a5b0cf4
+endProcessing "com\joarez\mathmod\items\ItemMathCoin.java"
+
+startProcessing "com\joarez\mathmod\items\ItemTutorial.java" md5: 4705415c9b55187c74f920ae16bedd44
 endProcessing "com\joarez\mathmod\items\ItemTutorial.java"
 
-startProcessing "com\joarez\mathmod\items\Names.java" md5: c2f2a27a6096943a3373f9846eccb58d
-endProcessing "com\joarez\mathmod\items\Names.java"
+startProcessing "com\joarez\mathmod\keybinding\KeyInputHandler.java" md5: 75629ef8a5f8dedba6c6a4745aaa5e56
+endProcessing "com\joarez\mathmod\keybinding\KeyInputHandler.java"
 
-startProcessing "events\TutorialEventHandler.java" md5: c0c77221bf7a2558dbbf048610a7083f
-endProcessing "events\TutorialEventHandler.java"
+startProcessing "com\joarez\mathmod\keybinding\KeybindingMath.java" md5: 58d766714147c7080b47b64e462e1455
+endProcessing "com\joarez\mathmod\keybinding\KeybindingMath.java"
 
-startProcessing "tools\ItemTutorialPickaxe.java" md5: 17210281420b928a6cd047178a5d7bce
-endProcessing "tools\ItemTutorialPickaxe.java"
+startProcessing "com\joarez\mathmod\keybinding\KeyboardCommands.java" md5: 3656e25ac4d2664243d5619486e2c594
+endProcessing "com\joarez\mathmod\keybinding\KeyboardCommands.java"
 
-startProcessing "variablemanager\VariableManagerHandler.java" md5: 2a860b261540ce28c365cd62b3be6b13
-endProcessing "variablemanager\VariableManagerHandler.java"
+startProcessing "com\joarez\mathmod\tools\ItemTutorialPickaxe.java" md5: 891b0334fc5b76f652f9ae90b8926cb8
+endProcessing "com\joarez\mathmod\tools\ItemTutorialPickaxe.java"
+
+startProcessing "com\joarez\mathmod\util\CommandUtil.java" md5: 8f3250282f5d72ca2b68b86d4926e20a
+endProcessing "com\joarez\mathmod\util\CommandUtil.java"
+
+startProcessing "com\joarez\mathmod\util\CommandUtilServer.java" md5: c7b17ffeafb9d84702e37052788ddc61
+    Compile Error! Pb(883) '<>' operator is not allowed for source level below 1.7
+endProcessing "com\joarez\mathmod\util\CommandUtilServer.java"
+
+startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: e7130f9132e01b2ab81db2e476c86941
+endProcessing "com\joarez\mathmod\util\ElementListHandler.java"
+
+startProcessing "com\joarez\mathmod\variableshandler\VariableManagerHandler.java" md5: 4e33e1ca129bc393b427bf74a086a848
+endProcessing "com\joarez\mathmod\variableshandler\VariableManagerHandler.java"
 
