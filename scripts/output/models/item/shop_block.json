@@ -1,6 +1,0 @@
-{
-  "parent": "mathmod:block/shop_block",
-  "textures": {
-    "layer0": "mathmod:blocks/shop_block"
-  }
-}

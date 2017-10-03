@@ -28,7 +28,7 @@ public class ClientProxy extends CommonProxy {
 		super.init(event);
 		
 		SimpleNetworkWrapper.INSTANCE.registerMessage(GiveItemMessageHandler.class, GiveItemMessage.class, 0, Side.SERVER);
-//		SimpleNetworkWrapper.INSTANCE.registerMessage(DeleteItemMessageHandler.class, DeleteItemMessage.class, 1, Side.SERVER);
+		SimpleNetworkWrapper.INSTANCE.registerMessage(DeleteItemMessageHandler.class, DeleteItemMessage.class, 1, Side.SERVER);
 		ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 		ModBlocks.initClient(mesher);
 		ModItems.initClient(mesher);

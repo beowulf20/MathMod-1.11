@@ -30,8 +30,9 @@ public class ShopBlock extends Block {
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 		EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
 		
-		System.out.println("OPEN GUI");
-		Minecraft.getMinecraft().displayGuiScreen(new MathShopGUI());
+		if(worldIn.isRemote) {
+			Minecraft.getMinecraft().displayGuiScreen(new MathShopGUI());
+		}		
 		//return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
 		return true;
 	}

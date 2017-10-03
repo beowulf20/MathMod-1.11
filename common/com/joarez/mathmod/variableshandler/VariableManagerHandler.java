@@ -1,6 +1,6 @@
 package com.joarez.mathmod.variableshandler;
 
-import com.joarez.mathmod.gui.MathMethods;
+import com.joarez.mathmod.util.MathMethods;
 
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.tileentity.TileEntity;

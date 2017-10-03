@@ -1,13 +1,15 @@
 package com.joarez.mathmod.gui;
 
+import java.awt.TextComponent;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.init.ModItems;
-import com.joarez.mathmod.util.CommandUtil;
+import com.joarez.mathmod.network.DeleteItemMessage;
+import com.joarez.mathmod.network.GiveItemMessage;
+import com.joarez.mathmod.network.SimpleNetworkWrapper;
 import com.joarez.mathmod.util.ElementListHandler;
 
 import net.minecraft.client.Minecraft;
@@ -16,12 +18,11 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.entity.player.EntityPlayerMP;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.ResourceLocation;
-import scala.Array;
+import net.minecraft.util.text.ITextComponent;
 public class MathShopGUI extends GuiScreen{
 
 	ResourceLocation bg_texture = new ResourceLocation(MathMod.MOD_ID,"textures/gui/shop_bg.png");
@@ -34,6 +35,7 @@ public class MathShopGUI extends GuiScreen{
 	int pageAtual = 1, pageTotal = 0, offset_items = 0;
 	GuiButton bt_previous, bt_next;
 	ItemStack hoovering_stack;
+	int hoovering_item_index = 0;
 	int hooverX = 0, hooverY = 0;
 	int item_size = 16;
 	int total_items = 398;
@@ -119,11 +121,11 @@ public class MathShopGUI extends GuiScreen{
 									//this.renderToolTip(stack, mouseX, mouseY);	
 									List<String> textLines = new ArrayList<String>();
 									textLines.add(stack.getDisplayName());
-									
 									drawHoveringText(textLines, mouseX, mouseY);
 								}
 								RenderHelper.disableStandardItemLighting();
 								hoovering_stack = stack;
+								hoovering_item_index = pos;
 							}
 							if(t == 0) {
 								RenderHelper.enableGUIStandardItemLighting();						
@@ -145,18 +147,16 @@ public class MathShopGUI extends GuiScreen{
 	protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
 		if(mouseX >= hooverX && mouseX <= hooverX + item_size && mouseY >= hooverY && mouseY <= hooverY + item_size) {
 			if(total_coins>0) {								
-				total_coins --;
-				CommandUtil.giveStack(hoovering_stack.copy(), 1);
+				total_coins --;						 								
+				int id = hoovering_item_index;			
+				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,id,true));												
 			}
 			
 		}		
 		super.mouseClicked(mouseX, mouseY, mouseButton);
 	}
 
-	protected void giveItemPlayer(ItemStack stack, int slotId) {
-		mc.playerController.sendSlotPacket(stack.copy(), slotId);
-		//mc.player.inventory.addItemStackToInventory(stack.copy());		
-	}
+	
 	
 	@Override
 	protected void actionPerformed(GuiButton button) throws IOException {
@@ -178,10 +178,7 @@ public class MathShopGUI extends GuiScreen{
 	@Override
 	public void initGui() {
 		total_coins = 0;
-		this.countCointPlayer();
-		mc.player.sendChatMessage("/gamerule sendCommandFeedback false");
-		
-		
+		countCoinsPlayer();		
 		total_items = items.size();
 		offset_items = total_items%20;
 		int total = (total_items - offset_items)/20;
@@ -189,6 +186,7 @@ public class MathShopGUI extends GuiScreen{
 			total++;
 		}
 		pageTotal = total;
+		
 		//CONSTANTS
 				bgW = 180;
 				bgH = 210;
@@ -214,39 +212,36 @@ public class MathShopGUI extends GuiScreen{
 								
 		super.initGui();
 	}
-	public void countCointPlayer() {
-		for(int slot=0;slot<mc.player.inventory.getSizeInventory();slot++) {
+
+
+	private void countCoinsPlayer() {
+		int total = 0;
+		for(int slot =0;slot<mc.player.inventory.getSizeInventory();slot++) {
 			ItemStack stack = mc.player.inventory.getStackInSlot(slot);
 			if(stack != null && stack.getItem().equals(ModItems.math_coin)) {
-				total_coins += stack.getCount();			
-				}
+				total += stack.getCount();
+				SimpleNetworkWrapper.INSTANCE.sendToServer(new DeleteItemMessage(slot));
 			}
-	}	
-	
-	public void returnCoinsToPlayer() {
-		for(int slot=0;slot<mc.player.inventory.getSizeInventory();slot++) {
-			ItemStack stack = mc.player.inventory.getStackInSlot(slot);
-			if(stack != null && stack.getItem().equals(ModItems.math_coin)) {
-				mc.player.inventory.deleteStack(stack);
-				}
-			}
-		if(total_coins > 0) {
-			mc.player.inventory.addItemStackToInventory(new ItemStack(ModItems.math_coin,total_coins));
-			
 		}
+		total_coins = total;
+	}
 		
+
+	private void returnCoinsPlayer() {
+		if(total_coins > 0) {
+			int id = Item.getIdFromItem(ModItems.math_coin);
+			SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(total_coins,id,false));
+		}
 	}
+
 	
-	@Override
-	public void updateScreen() {
-		// TODO Auto-generated method stub
-		super.updateScreen();
-	}
+
+
 
 	@Override
 	public void onGuiClosed() {
-		this.returnCoinsToPlayer();
-		super.onGuiClosed();
+		returnCoinsPlayer();
+		super.onGuiClosed();		
 	}
 
 

@@ -1,12 +1,10 @@
+
 {
-  "parent": "block/cube",
-  "textures": {
-	"particle": "mathmod:blocks/pc_block_down_up",
-	"up": "mathmod:blocks/pc_block_down_up",
-	"north": "mathmod:blocks/pc_block_front",
-	"south": "mathmod:blocks/pc_block_side",
-	"east": "mathmod:blocks/pc_block_side",
-	"west": "mathmod:blocks/pc_block_side",
-	"down": "mathmod:blocks/pc_block_down_up"
-  }
+    "parent": "block/orientable",
+    "textures": {
+		"particle": "mathmod:blocks/pc_block_down_up",
+        "top": "mathmod:blocks/pc_block_down_up",
+        "front": "mathmod:blocks/pc_block_side",
+        "side": "mathmod:blocks/pc_block_side"
+    }
 }

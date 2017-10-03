@@ -17,7 +17,7 @@ public class ElementListHandler {
 		List<ItemStack> items = NonNullList.<ItemStack>create();
 		for(Item item : Item.REGISTRY) {
 			if(item != null &&  item.getCreativeTab() != null) {
-				if(item != ModItems.math_coin && item != Item.getItemFromBlock(ModBlocks.pcblock) && item != Item.getItemFromBlock(ModBlocks.shopblock)) {
+				if(item != ModItems.math_coin && item != Item.getItemFromBlock(ModBlocks.pc_block) && item != Item.getItemFromBlock(ModBlocks.shop_block)) {
 					item.getSubItems(item, (CreativeTabs)null, (NonNullList<ItemStack>) items);
 				}
 				

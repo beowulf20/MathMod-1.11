@@ -1,4 +1,4 @@
-package com.joarez.mathmod.gui;
+package com.joarez.mathmod.util;
 
 public class  MathMethods {
 	public static int A = 63;

@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.lwjgl.input.Keyboard;
 
 import com.joarez.mathmod.MathMod;
+import com.joarez.mathmod.util.MathMethods;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -96,23 +97,23 @@ public class YearSelectionGUI extends GuiScreen {
 		
 		//ADD
 		int btY = bgY + 2*this.fontRendererObj.FONT_HEIGHT;
-		bt_add_easy = new GuiButton(0,btX_L,btY,btW,btH,easy_loc);
-		bt_add_hard = new GuiButton(1,btX_R,btY,btW,btH,hard_loc);
+		bt_add_easy = new GuiButton(1,btX_L,btY,btW,btH,easy_loc);
+		bt_add_hard = new GuiButton(2,btX_R,btY,btW,btH,hard_loc);
 		
 		//SUB
 		btY += gap;
-		bt_sub_easy = new GuiButton(2,btX_L,btY,btW,btH,easy_loc);
-		bt_sub_hard = new GuiButton(3,btX_R,btY,btW,btH,hard_loc);
+		bt_sub_easy = new GuiButton(3,btX_L,btY,btW,btH,easy_loc);
+		bt_sub_hard = new GuiButton(4,btX_R,btY,btW,btH,hard_loc);
 				
 		//MUL
 		btY += gap;
-		bt_mul_easy = new GuiButton(4,btX_L,btY,btW,btH,easy_loc);
-		bt_mul_hard = new GuiButton(5,btX_R,btY,btW,btH,hard_loc);
+		bt_mul_easy = new GuiButton(5,btX_L,btY,btW,btH,easy_loc);
+		bt_mul_hard = new GuiButton(6,btX_R,btY,btW,btH,hard_loc);
 		
 		//DIV
 		btY += gap;
-		bt_div_easy = new GuiButton(6,btX_L,btY,btW,btH,easy_loc);
-		bt_div_hard = new GuiButton(7,btX_R,btY,btW,btH,hard_loc);
+		bt_div_easy = new GuiButton(7,btX_L,btY,btW,btH,easy_loc);
+		bt_div_hard = new GuiButton(8,btX_R,btY,btW,btH,hard_loc);
 		this.buttonList.add(bt_add_easy);
 		this.buttonList.add(bt_add_hard);
 		this.buttonList.add(bt_sub_easy);
@@ -133,7 +134,7 @@ public class YearSelectionGUI extends GuiScreen {
 		String[] operation = {"+","+","-","-","*","*","/","/",};
 		
 		//System.out.println(MathMethods.CURRENCY);
-		MathMethods.OPERATION = operation[button.id];
+		MathMethods.OPERATION = operation[button.id-1];
 		MathMethods.DIF = button.id;
 		for(GuiButton bt : this.buttonList){
 			bt.enabled = !(bt.id == MathMethods.DIF);

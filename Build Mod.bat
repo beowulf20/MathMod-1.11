@@ -1,2 +1,1 @@
-gradlew build --stacktrace
-pause
+gradlew build

@@ -15,8 +15,8 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
-public class PCBlock extends Block {
-	public PCBlock() {
+public class BasicMathBlock extends Block {
+	public BasicMathBlock() {
 		super(Material.IRON);		
 		this.setBlockUnbreakable();
 		this.setSoundType(SoundType.METAL);
@@ -26,18 +26,18 @@ public class PCBlock extends Block {
 
 	@Override
 	public String getUnlocalizedName() {
-		 return "tile." + MathMod.RESOURCE_PREFIX + Names.PC_BLOCK;		
+		 return "tile." + MathMod.RESOURCE_PREFIX + Names.BASICMATH_BLOCK;		
 	}
 
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 			EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		System.out.println("Open math gui");
-		Minecraft.getMinecraft().displayGuiScreen(new DoMathGUI());		
+		if(worldIn.isRemote) {
+			Minecraft.getMinecraft().displayGuiScreen(new DoMathGUI());
+		}
+				
 		//return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
-		
 		return true;
-		
 	}
 	
 	

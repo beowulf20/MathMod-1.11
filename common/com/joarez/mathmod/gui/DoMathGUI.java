@@ -2,8 +2,11 @@ package com.joarez.mathmod.gui;
 
 import java.io.IOException;
 
+import org.lwjgl.input.Keyboard;
+
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.init.ModItems;
+import com.joarez.mathmod.util.MathMethods;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -39,9 +42,18 @@ public class DoMathGUI extends GuiScreen {
 		
 		//DRAW TITLE
 		String title = "Realize a Conta!";
-		titleX =(width)/2 - this.fontRendererObj.getStringWidth(title)/2;
+		int k = 2;
+		titleX =(width)/2 - k*this.fontRendererObj.getStringWidth(title)/2;
 		titleY = bgY+10;
-		this.fontRendererObj.drawString(title, titleX ,titleY,  0x000000);
+		
+		GlStateManager.pushMatrix();
+		{
+			GlStateManager.translate(titleX, titleY, 0);
+			GlStateManager.scale(k, k, 1);
+			this.fontRendererObj.drawString(title, 0 ,0,  0x000000);
+		}
+		GlStateManager.popMatrix();
+		
 		
 		//DRAW EXPRESSION
 		int s = 3;
@@ -81,8 +93,10 @@ public class DoMathGUI extends GuiScreen {
 		textX = (width-textW)/2;
 		textY = (height - textH)/2;
 		expression_textfield = new GuiTextField(0,this.fontRendererObj,textX,textY,textW,textH);		
-		expression_textfield.setTextColor(0xffffff);
-		//super.initGui();
+		expression_textfield.setTextColor(0xffffff);		
+		expression_textfield.setFocused(true);
+		expression_textfield.setCanLoseFocus(false);
+		super.initGui();
 	}
 
 
@@ -130,7 +144,13 @@ public class DoMathGUI extends GuiScreen {
 
 	@Override
 	protected void keyTyped(char typedChar, int keyCode) throws IOException {
-		expression_textfield.textboxKeyTyped(typedChar, keyCode);		
+		if(keyCode == 28) {		
+			this.actionPerformed(bt_check);
+		}
+		else if(Character.isDigit(typedChar) || keyCode == Keyboard.KEY_BACK) {
+			expression_textfield.textboxKeyTyped(typedChar, keyCode);
+		}
+				
 		super.keyTyped(typedChar, keyCode);
 	}
 

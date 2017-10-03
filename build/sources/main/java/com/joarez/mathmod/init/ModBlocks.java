@@ -2,8 +2,9 @@ package com.joarez.mathmod.init;
 
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.Names;
+import com.joarez.mathmod.blocks.BasicMathBlock;
 import com.joarez.mathmod.blocks.BlockTutorial;
-import com.joarez.mathmod.blocks.PCBlock;
+import com.joarez.mathmod.blocks.RomanBlock;
 import com.joarez.mathmod.blocks.ShopBlock;
 
 import net.minecraft.block.Block;
@@ -19,30 +20,35 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ModBlocks {
 	
-	public static BlockTutorial tutorialBlock;
-	public static PCBlock pcblock;
-	public static ShopBlock shopblock;
+	public static BlockTutorial tutorial_block;
+	public static BasicMathBlock pc_block;
+	public static ShopBlock shop_block;
+	public static RomanBlock roman_block;
 	
 	public static void init() {		
-		tutorialBlock = new BlockTutorial();		
-		registerInitBlock(tutorialBlock, Names.TUTORIAL_BLOCK);
+		tutorial_block = new BlockTutorial();		
+		registerInitBlock(tutorial_block, Names.TUTORIAL_BLOCK);
 	
-		pcblock = new PCBlock();
-		registerInitBlock(pcblock, Names.PC_BLOCK);
+		pc_block = new BasicMathBlock();
+		registerInitBlock(pc_block, Names.BASICMATH_BLOCK);
 		
-		shopblock = new ShopBlock();
-		registerInitBlock(shopblock, Names.SHOP_BLOCK);
+		shop_block = new ShopBlock();
+		registerInitBlock(shop_block, Names.SHOP_BLOCK);
+		
+		roman_block = new RomanBlock();
+		registerInitBlock(roman_block,Names.ROMAN_BLOCK);
 	}
 	
 	public static void initRecipes() {
-		tutorialBlock.addRecipes();		
+		tutorial_block.addRecipes();		
 	}
 	
 	@SideOnly(Side.CLIENT)
 	public static void initClient(ItemModelMesher mesher) {		
-		registerClientBlock(tutorialBlock,mesher,Names.TUTORIAL_BLOCK);										
-		registerClientBlock(pcblock,mesher,Names.PC_BLOCK);
-		registerClientBlock(shopblock,mesher, Names.SHOP_BLOCK);
+		registerClientBlock(tutorial_block,mesher,Names.TUTORIAL_BLOCK);										
+		registerClientBlock(pc_block,mesher,Names.BASICMATH_BLOCK);
+		registerClientBlock(shop_block,mesher, Names.SHOP_BLOCK);
+		registerClientBlock(roman_block,mesher,Names.ROMAN_BLOCK);
 	}
 	
 	

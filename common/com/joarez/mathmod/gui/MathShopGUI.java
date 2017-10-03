@@ -1,13 +1,11 @@
 package com.joarez.mathmod.gui;
 
+import java.awt.TextComponent;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.lwjgl.input.Keyboard;
-
 import com.joarez.mathmod.MathMod;
-import com.joarez.mathmod.blocks.ShopBlock;
 import com.joarez.mathmod.init.ModItems;
 import com.joarez.mathmod.network.DeleteItemMessage;
 import com.joarez.mathmod.network.GiveItemMessage;
@@ -20,9 +18,11 @@ import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.resources.I18n;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.text.ITextComponent;
 public class MathShopGUI extends GuiScreen{
 
 	ResourceLocation bg_texture = new ResourceLocation(MathMod.MOD_ID,"textures/gui/shop_bg.png");
@@ -35,6 +35,7 @@ public class MathShopGUI extends GuiScreen{
 	int pageAtual = 1, pageTotal = 0, offset_items = 0;
 	GuiButton bt_previous, bt_next;
 	ItemStack hoovering_stack;
+	int hoovering_item_index = 0;
 	int hooverX = 0, hooverY = 0;
 	int item_size = 16;
 	int total_items = 398;
@@ -124,6 +125,7 @@ public class MathShopGUI extends GuiScreen{
 								}
 								RenderHelper.disableStandardItemLighting();
 								hoovering_stack = stack;
+								hoovering_item_index = pos;
 							}
 							if(t == 0) {
 								RenderHelper.enableGUIStandardItemLighting();						
@@ -145,8 +147,9 @@ public class MathShopGUI extends GuiScreen{
 	protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
 		if(mouseX >= hooverX && mouseX <= hooverX + item_size && mouseY >= hooverY && mouseY <= hooverY + item_size) {
 			if(total_coins>0) {								
-				total_coins --;
-				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,Item.getIdFromItem(hoovering_stack.getItem())));												
+				total_coins --;						 								
+				int id = hoovering_item_index;			
+				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,id,true));												
 			}
 			
 		}		
@@ -175,7 +178,7 @@ public class MathShopGUI extends GuiScreen{
 	@Override
 	public void initGui() {
 		total_coins = 0;
-		countCoinsPlayer();				
+		countCoinsPlayer();		
 		total_items = items.size();
 		offset_items = total_items%20;
 		int total = (total_items - offset_items)/20;
@@ -216,14 +219,20 @@ public class MathShopGUI extends GuiScreen{
 		for(int slot =0;slot<mc.player.inventory.getSizeInventory();slot++) {
 			ItemStack stack = mc.player.inventory.getStackInSlot(slot);
 			if(stack != null && stack.getItem().equals(ModItems.math_coin)) {
-				total++;
+				total += stack.getCount();
+				SimpleNetworkWrapper.INSTANCE.sendToServer(new DeleteItemMessage(slot));
 			}
 		}
-		//System.out.println("Total Coins: "+ total);
-		
+		total_coins = total;
 	}
+		
 
-
+	private void returnCoinsPlayer() {
+		if(total_coins > 0) {
+			int id = Item.getIdFromItem(ModItems.math_coin);
+			SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(total_coins,id,false));
+		}
+	}
 
 	
 
@@ -231,7 +240,7 @@ public class MathShopGUI extends GuiScreen{
 
 	@Override
 	public void onGuiClosed() {
-		System.out.println("Gui closed...");
+		returnCoinsPlayer();
 		super.onGuiClosed();		
 	}
 
@@ -240,7 +249,7 @@ public class MathShopGUI extends GuiScreen{
 	@Override
 	public boolean doesGuiPauseGame() {
 		// TODO Auto-generated method stub
-		return true;
+		return false;
 	}
 
 

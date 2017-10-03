@@ -1,0 +1,6 @@
+{
+  "parent": "mathmod:block/roman_block",
+  "textures": {
+    "layer0": "mathmod:blocks/roman_block"
+  }
+}

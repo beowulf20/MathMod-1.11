@@ -15,7 +15,9 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+
 public class ShopBlock extends Block {
+	public static Boolean isGUIopened = false;
 	public ShopBlock() {
 		super(Material.IRON);
 		this.setBlockUnbreakable();
@@ -23,17 +25,14 @@ public class ShopBlock extends Block {
 		this.setCreativeTab(MathMod.tabMod);
 		this.setUnlocalizedName(this.getUnlocalizedName());
 	}
-
+	
 	@Override
 	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn,
 		EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-		//playerIn.sendMessage(new TextComponentString("Test Shop Block"));		
-		//return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
 		
-		//Minecraft.getMinecraft().displayGuiScreen(new TestGui());
-		Minecraft.getMinecraft().displayGuiScreen(new MathShopGUI());
-		//Minecraft.getMinecraft().displayGuiScreen(new TutorialGUI());
-		
+		if(worldIn.isRemote) {
+			Minecraft.getMinecraft().displayGuiScreen(new MathShopGUI());
+		}		
 		//return super.onBlockActivated(worldIn, pos, state, playerIn, hand, facing, hitX, hitY, hitZ);
 		return true;
 	}

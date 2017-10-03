@@ -1,7 +1,7 @@
 package com.joarez.mathmod.eventhandler;
 
 import com.joarez.mathmod.gui.DoMathGUI;
-import com.joarez.mathmod.gui.MathMethods;
+import com.joarez.mathmod.util.MathMethods;
 
 import net.minecraft.client.Minecraft;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;

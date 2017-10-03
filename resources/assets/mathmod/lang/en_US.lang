@@ -2,6 +2,7 @@
 tile.mathmod:tutorial_block.name=Tutorial Block
 tile.mathmod:pc_block.name=PC Block
 tile.mathmod:shop_block.name=Math Shop Block
+tile.mathmod:roman_block.name=Roman Block
 #
 
 #ITEMS

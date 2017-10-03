@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "mathmod:blocks/roman_block_side",
+        "front": "mathmod:blocks/roman_block_front",
+        "side": "mathmod:blocks/roman_block_side"
+  }
+}
