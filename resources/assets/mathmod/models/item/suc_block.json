@@ -1,0 +1,6 @@
+{
+  "parent": "mathmod:block/suc_block",
+  "textures": {
+    "layer0": "mathmod:blocks/suc_block"
+  }
+}

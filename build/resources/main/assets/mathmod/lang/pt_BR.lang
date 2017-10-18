@@ -1,0 +1,59 @@
+#BLOCKS
+tile.mathmod:tutorial_block.name=Tutorial Block
+tile.mathmod:pc_block.name=Operações Básicas
+tile.mathmod:shop_block.name=Loja Matemática
+tile.mathmod:roman_block.name=Numerais Romanos
+tile.mathmod:odd_block.name=Ímpar/Par
+tile.mathmod:suc_block.name=Sucessor/Antecessor
+#
+
+#ITEMS
+item.mathmod:tutorial_item.name=Tutorial Item
+item.mathmod:tutorial_pickaxe.name=Tutorial Pickaxe
+item.mathmod:math_coin.name=Moeda Matemática
+#
+
+#GENERAL
+gen.mathmod:check=Conferir
+
+#CREATIVE TAB
+
+itemGroup.mathmod:tab_tutorial=Math Mod
+
+
+#YEAR SELECTION
+
+year.mathmod:easy=FACIL
+year.mathmod:hard=DIFICIL
+year.mathmod:add=ADICAO
+year.mathmod:sub=SUBTRACAO
+year.mathmod:mul=MULTIPLICACAO
+year.mathmod:div=DIVISAO
+
+#BASIC MATH
+basic.mathmod:title=REALIZE A CONTA!
+
+
+#MATH SHOP
+shop.mathmod:shop_title=LOJA
+shop.mathmod:previous=ANTERIOR
+shop.mathmod:next=PROXIMA
+
+#ODD
+odd.mathmod:title=IMPAR OU PAR
+odd.mathmod:odd=IMPAR
+odd.mathmod:even=PAR
+
+#ROMAN
+roman.mathmod:title=NUMERAIS
+roman.mathmod:subtitle=ROMANOS
+
+#SUC/PRED
+suc.mathmod:title=SUCESSOR/ANTECESSOR
+suc.mathmod:suc=SUCESSOR
+suc.mathmod:pred=ANTECESSOR
+
+
+#KEYBINDING
+key.openyear_key=SELECAO ANO
+key.categories.mod=Math Mod

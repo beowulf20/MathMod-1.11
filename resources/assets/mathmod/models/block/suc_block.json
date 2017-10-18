@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "mathmod:blocks/suc_block_side",
+        "front": "mathmod:blocks/suc_block_front",
+        "side": "mathmod:blocks/suc_block_side"
+  }
+}

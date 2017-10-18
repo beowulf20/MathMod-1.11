@@ -1,0 +1,6 @@
+{
+  "parent": "mathmod:block/odd_block",
+  "textures": {
+    "layer0": "mathmod:blocks/odd_block"
+  }
+}

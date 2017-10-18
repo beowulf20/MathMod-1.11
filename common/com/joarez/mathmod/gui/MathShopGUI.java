@@ -11,6 +11,8 @@ import com.joarez.mathmod.network.DeleteItemMessage;
 import com.joarez.mathmod.network.GiveItemMessage;
 import com.joarez.mathmod.network.SimpleNetworkWrapper;
 import com.joarez.mathmod.util.ElementListHandler;
+import com.joarez.mathmod.util.InventoryUtil;
+import com.joarez.mathmod.util.ResourceLanguage;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -41,8 +43,7 @@ public class MathShopGUI extends GuiScreen{
 	int total_items = 398;
 	
 	
-	//String txt_add_unloc = "year." + MathMod.RESOURCE_PREFIX + "add";
-	//String txt_add = I18n.format(txt_add_unloc, ' ');	
+	
 
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
@@ -69,9 +70,8 @@ public class MathShopGUI extends GuiScreen{
 		int cY = iconY + cH/2;
 		this.fontRendererObj.drawString(String.valueOf(total_coins), cX, cY, 0xff000000);
 		
-		//DRAW SHOP TITLE
-		String title_unloc = "shop." + MathMod.RESOURCE_PREFIX + "shop_title";
-		String title = I18n.format(title_unloc, ' ');
+		//DRAW SHOP TITLE		
+		String title = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_MATH_SHOP, "shop_title");
 		this.fontRendererObj.setUnicodeFlag(true);
 		
 		int k = 4;
@@ -176,9 +176,8 @@ public class MathShopGUI extends GuiScreen{
 	}
 
 	@Override
-	public void initGui() {
-		total_coins = 0;
-		countCoinsPlayer();		
+	public void initGui() {				
+		total_coins = InventoryUtil.countCoinsPlayer();		
 		total_items = items.size();
 		offset_items = total_items%20;
 		int total = (total_items - offset_items)/20;
@@ -197,11 +196,11 @@ public class MathShopGUI extends GuiScreen{
 		int btH = 20;
 		int btX = width/2 - bgW/2 + 5;
 		int btY = height/2 + bgH/2 - btH -5;
-		bt_previous = new GuiButton(0,btX,btY,btW,btH,I18n.format("shop."+MathMod.RESOURCE_PREFIX+"bt_previous", ' '));
+		bt_previous = new GuiButton(0,btX,btY,btW,btH,ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_MATH_SHOP, "previous"));
 		
 		//DRAW NEXT PAGE BUTTON
 		btX = width/2 + bgW/2 - btW - 5;		
-		bt_next = new GuiButton(1,btX,btY,btW,btH,I18n.format("shop."+MathMod.RESOURCE_PREFIX+"bt_next", ' '));
+		bt_next = new GuiButton(1,btX,btY,btW,btH,ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_MATH_SHOP, "next"));
 		
 		
 		//CLEAR BUTTON LIST
@@ -214,25 +213,9 @@ public class MathShopGUI extends GuiScreen{
 	}
 
 
-	private void countCoinsPlayer() {
-		int total = 0;
-		for(int slot =0;slot<mc.player.inventory.getSizeInventory();slot++) {
-			ItemStack stack = mc.player.inventory.getStackInSlot(slot);
-			if(stack != null && stack.getItem().equals(ModItems.math_coin)) {
-				total += stack.getCount();
-				SimpleNetworkWrapper.INSTANCE.sendToServer(new DeleteItemMessage(slot));
-			}
-		}
-		total_coins = total;
-	}
+	
 		
 
-	private void returnCoinsPlayer() {
-		if(total_coins > 0) {
-			int id = Item.getIdFromItem(ModItems.math_coin);
-			SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(total_coins,id,false));
-		}
-	}
 
 	
 
@@ -240,7 +223,7 @@ public class MathShopGUI extends GuiScreen{
 
 	@Override
 	public void onGuiClosed() {
-		returnCoinsPlayer();
+		InventoryUtil.returnCoinsPlayer(total_coins);		
 		super.onGuiClosed();		
 	}
 

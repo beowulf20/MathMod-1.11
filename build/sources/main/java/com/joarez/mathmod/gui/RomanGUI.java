@@ -8,6 +8,8 @@ import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.init.ModItems;
 import com.joarez.mathmod.network.GiveItemMessage;
 import com.joarez.mathmod.network.SimpleNetworkWrapper;
+import com.joarez.mathmod.util.InventoryUtil;
+import com.joarez.mathmod.util.ResourceLanguage;
 import com.joarez.mathmod.util.RomanNumbersUtil;
 
 import net.minecraft.client.gui.GuiButton;
@@ -27,7 +29,7 @@ public class RomanGUI extends GuiScreen {
 	GuiTextField text_field;
 	int textW, textH = 20;
 	int textX,textY;
-	
+	int total_coins;
 	GuiButton bt_check;
 	int btX,btY,btW,btH = 20; 
 	@Override
@@ -41,7 +43,7 @@ public class RomanGUI extends GuiScreen {
 		super.drawScreen(mouseX, mouseY, partialTicks);
 		
 		//DRAW TITLE
-		String title = "ALGARISMOS";
+		String title = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_ROMAN, "title");
 		int k = 2;
 		int titleW = this.fontRendererObj.getStringWidth(title);
 		
@@ -56,7 +58,7 @@ public class RomanGUI extends GuiScreen {
 		GlStateManager.popMatrix();
 		
 		//DRAW SUBTITLE
-		String subtitle = "ROMANOS";
+		String subtitle = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_ROMAN, "subtitle");
 		
 		titleW = this.fontRendererObj.getStringWidth(subtitle);
 		
@@ -88,7 +90,7 @@ public class RomanGUI extends GuiScreen {
 		btW = 80;
 		btX = width/2 - btW/2;
 		btY = height/2 + bgH/2 - btH - 5;
-		String bt_title = "Check";
+		String bt_title = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_GENERAL, "check");
 		bt_check = new GuiButton(1,btX,btY,btW,btH,bt_title);
 		this.buttonList.clear();
 		this.buttonList.add(bt_check);
@@ -102,19 +104,25 @@ public class RomanGUI extends GuiScreen {
 	@Override
 	protected void actionPerformed(GuiButton button) throws IOException {
 		switch(button.id){
-		case 1:
-			try {
-				int written = Integer.valueOf(text_field.getText());
-				System.out.println("W: "+written+" EXP: "+EXP_NUMBER);
+		case 1:			
+				int written = 0;
+				 try{
+					 written = Integer.valueOf(text_field.getText());
+				 }catch(Exception e) {
+					 written = 0;
+				 }				
 				if(written == EXP_NUMBER) {	
-					SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,Item.getIdFromItem(ModItems.math_coin),false));
-					RandomizeExpression();
-					text_field.setText("");
+					//SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,Item.getIdFromItem(ModItems.math_coin),false));
+					total_coins++;														
+				}else {
+					System.out.println("False");
+					if(total_coins>0) {
+						total_coins--;
+					}
 					
 				}
-			}catch(Exception e) {
-				
-			}
+				text_field.setText("");
+				this.RandomizeExpression();
 			
 			break;
 		}
@@ -123,6 +131,7 @@ public class RomanGUI extends GuiScreen {
 
 	@Override
 	public void initGui() {
+		total_coins = InventoryUtil.countCoinsPlayer();
 		//TEXT FIELD
 		textW = bgW - 20;		
 		textX = width/2 - textW/2;
@@ -142,7 +151,7 @@ public class RomanGUI extends GuiScreen {
 
 	@Override
 	public void onGuiClosed() {
-		// TODO Auto-generated method stub
+		InventoryUtil.returnCoinsPlayer(total_coins);
 		super.onGuiClosed();
 	}
 

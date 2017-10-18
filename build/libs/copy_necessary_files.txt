@@ -1,0 +1,1 @@
+copy MathMod-1.0.jar %AppData%\.minecraft\mods\ /Y

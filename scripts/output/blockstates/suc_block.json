@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "normal": { "model": "mathmod:suc_block" }
+  }
+}

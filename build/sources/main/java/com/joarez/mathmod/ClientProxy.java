@@ -1,5 +1,7 @@
 package com.joarez.mathmod;
 
+import java.util.List;
+
 import com.joarez.mathmod.init.ModBlocks;
 import com.joarez.mathmod.init.ModItems;
 import com.joarez.mathmod.network.DeleteItemMessage;
@@ -8,8 +10,10 @@ import com.joarez.mathmod.network.GiveItemMessage;
 import com.joarez.mathmod.network.GiveItemMessageHandler;
 import com.joarez.mathmod.network.SimpleNetworkWrapper;
 
+import net.minecraft.client.AnvilConverterException;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemModelMesher;
+import net.minecraft.world.storage.WorldSummary;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -23,22 +27,20 @@ public class ClientProxy extends CommonProxy {
 		super.preInit(event);
 	}
 	@Override
-	public void init(FMLInitializationEvent event) {
-		
-		super.init(event);
-		
+	public void init(FMLInitializationEvent event) {		
+		super.init(event);		
 		SimpleNetworkWrapper.INSTANCE.registerMessage(GiveItemMessageHandler.class, GiveItemMessage.class, 0, Side.SERVER);
 		SimpleNetworkWrapper.INSTANCE.registerMessage(DeleteItemMessageHandler.class, DeleteItemMessage.class, 1, Side.SERVER);
 		ItemModelMesher mesher = Minecraft.getMinecraft().getRenderItem().getItemModelMesher();
 		ModBlocks.initClient(mesher);
-		ModItems.initClient(mesher);
-		
+		ModItems.initClient(mesher);		
 		
 		
 	}
 	@Override
-	public void postInit(FMLPostInitializationEvent event) {		
+	public void postInit(FMLPostInitializationEvent event) {	
 		
 		super.postInit(event);
+		
 	}
 }

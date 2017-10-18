@@ -2,6 +2,7 @@ package com.joarez.mathmod.util;
 
 import java.util.List;
 
+import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.init.ModBlocks;
 import com.joarez.mathmod.init.ModItems;
 
@@ -17,9 +18,11 @@ public class ElementListHandler {
 		List<ItemStack> items = NonNullList.<ItemStack>create();
 		for(Item item : Item.REGISTRY) {
 			if(item != null &&  item.getCreativeTab() != null) {
-				if(item != ModItems.math_coin && item != Item.getItemFromBlock(ModBlocks.pc_block) && item != Item.getItemFromBlock(ModBlocks.shop_block)) {
+				if(item.getCreativeTab() != MathMod.tabMod) {
 					item.getSubItems(item, (CreativeTabs)null, (NonNullList<ItemStack>) items);
 				}
+					
+				
 				
 			}
 		}

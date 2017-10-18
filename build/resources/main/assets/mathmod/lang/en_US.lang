@@ -3,6 +3,8 @@ tile.mathmod:tutorial_block.name=Tutorial Block
 tile.mathmod:pc_block.name=PC Block
 tile.mathmod:shop_block.name=Math Shop Block
 tile.mathmod:roman_block.name=Roman Block
+tile.mathmod:odd_block.name=Odd/Even Block
+tile.mathmod:suc_block.name=Successor/Predecessor Block
 #
 
 #ITEMS
@@ -11,7 +13,8 @@ item.mathmod:tutorial_pickaxe.name=Tutorial Pickaxe
 item.mathmod:math_coin.name=Math Coin
 #
 
-
+#GENERAL
+gen.mathmod:check=Check
 
 #CREATIVE TAB
 
@@ -27,11 +30,30 @@ year.mathmod:sub=SUBTRACTION
 year.mathmod:mul=MULTIPLICATION
 year.mathmod:div=DIVISION
 
+#BASIC MATH
+basic.mathmod:title=Do it!
+
+
 #MATH SHOP
 shop.mathmod:shop_title=MATH SHOP
-shop.mathmod:bt_previous=Previous
-shop.mathmod:bt_next=Next
-#KEYBINDING
+shop.mathmod:previous=Previous
+shop.mathmod:next=Next
 
+#ODD
+odd.mathmod:title=Even or Odd
+odd.mathmod:odd=Odd
+odd.mathmod:even=Even
+
+#ROMAN
+roman.mathmod:title=ROMAN
+roman.mathmod:subtitle=NUMERALS
+
+#SUC/PRED
+suc.mathmod:title=SUCCESSOR/PREDECESSOR
+suc.mathmod:suc=SUCCESSOR
+suc.mathmod:pred=PREDECESSOR
+
+
+#KEYBINDING
 key.openyear_key=Open Year Selection
 key.categories.mod=Math Mod

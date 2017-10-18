@@ -4,8 +4,10 @@ import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.Names;
 import com.joarez.mathmod.blocks.BasicMathBlock;
 import com.joarez.mathmod.blocks.BlockTutorial;
+import com.joarez.mathmod.blocks.OddBlock;
 import com.joarez.mathmod.blocks.RomanBlock;
 import com.joarez.mathmod.blocks.ShopBlock;
+import com.joarez.mathmod.blocks.SuccessorBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.ItemModelMesher;
@@ -24,6 +26,8 @@ public class ModBlocks {
 	public static BasicMathBlock pc_block;
 	public static ShopBlock shop_block;
 	public static RomanBlock roman_block;
+	public static OddBlock odd_block;
+	public static SuccessorBlock suc_block;
 	
 	public static void init() {		
 		tutorial_block = new BlockTutorial();		
@@ -37,6 +41,12 @@ public class ModBlocks {
 		
 		roman_block = new RomanBlock();
 		registerInitBlock(roman_block,Names.ROMAN_BLOCK);
+		
+		odd_block = new OddBlock();
+		registerInitBlock(odd_block,Names.ODD_BLOCK);
+		
+		suc_block = new SuccessorBlock();
+		registerInitBlock(suc_block,Names.SUCCESSOR_BLOCK);
 	}
 	
 	public static void initRecipes() {
@@ -49,6 +59,8 @@ public class ModBlocks {
 		registerClientBlock(pc_block,mesher,Names.BASICMATH_BLOCK);
 		registerClientBlock(shop_block,mesher, Names.SHOP_BLOCK);
 		registerClientBlock(roman_block,mesher,Names.ROMAN_BLOCK);
+		registerClientBlock(odd_block,mesher,Names.ODD_BLOCK);
+		registerClientBlock(suc_block,mesher,Names.SUCCESSOR_BLOCK);
 	}
 	
 	

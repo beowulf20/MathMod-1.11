@@ -1,42 +1,59 @@
 Symbol range map extraction starting
-Processing 39 files
-startProcessing "com\joarez\mathmod\ClientProxy.java" md5: a66170ba94a9a632c928ff7d4547e1ff
+Processing 45 files
+startProcessing "com\joarez\mathmod\ClientProxy.java" md5: 27937638610529977381538de788c81e
+Cache Hit!
 endProcessing "com\joarez\mathmod\ClientProxy.java"
 
 startProcessing "com\joarez\mathmod\CommonProxy.java" md5: 9d4c24db7c2e13028996704dc6cd9641
+Cache Hit!
 endProcessing "com\joarez\mathmod\CommonProxy.java"
 
-startProcessing "com\joarez\mathmod\MathMod.java" md5: cc1fad693df5f0ac2c53390b0774fed9
+startProcessing "com\joarez\mathmod\MathMod.java" md5: 7eb96434058217254ffc1b1949df7181
 Cache Hit!
 endProcessing "com\joarez\mathmod\MathMod.java"
 
-startProcessing "com\joarez\mathmod\Names.java" md5: f59769032a4c0cbdf5442eacb1dacc86
+startProcessing "com\joarez\mathmod\Names.java" md5: 570ad9ae0dd85308a2b91ff85398f9bc
+Cache Hit!
 endProcessing "com\joarez\mathmod\Names.java"
 
 startProcessing "com\joarez\mathmod\blocks\BasicMathBlock.java" md5: a3248c965c3e3f9694b393fa0b19031c
+Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\BasicMathBlock.java"
 
 startProcessing "com\joarez\mathmod\blocks\BlockTutorial.java" md5: 7aae9d3d8eefe9341dd66a95fd267305
 Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\BlockTutorial.java"
 
+startProcessing "com\joarez\mathmod\blocks\OddBlock.java" md5: 9fb46331e360ecc29a2d5d6885dd4e0a
+Cache Hit!
+endProcessing "com\joarez\mathmod\blocks\OddBlock.java"
+
 startProcessing "com\joarez\mathmod\blocks\RomanBlock.java" md5: f28cefbdf3c7886fc17742058e53bf3a
+Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\RomanBlock.java"
 
 startProcessing "com\joarez\mathmod\blocks\ShopBlock.java" md5: 90aacd91f6f922771e2fd67784092f5f
+Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\ShopBlock.java"
 
+startProcessing "com\joarez\mathmod\blocks\SuccessorBlock.java" md5: 5fdfe96be8b84356634211a7f7351595
+Cache Hit!
+endProcessing "com\joarez\mathmod\blocks\SuccessorBlock.java"
+
 startProcessing "com\joarez\mathmod\eventhandler\ItemUseEventHandler.java" md5: 29b4abd2465938ae5a14dfe682ea2fd3
+Cache Hit!
 endProcessing "com\joarez\mathmod\eventhandler\ItemUseEventHandler.java"
 
 startProcessing "com\joarez\mathmod\eventhandler\TimeBasedEventHandler.java" md5: da343ae240bbbbd4646778c39b8682ad
+Cache Hit!
 endProcessing "com\joarez\mathmod\eventhandler\TimeBasedEventHandler.java"
 
 startProcessing "com\joarez\mathmod\eventhandler\TutorialEventHandler.java" md5: 0b0da9385e6cad023a5fb0e5f1adf07f
 Cache Hit!
 endProcessing "com\joarez\mathmod\eventhandler\TutorialEventHandler.java"
 
-startProcessing "com\joarez\mathmod\gui\DoMathGUI.java" md5: 3b2ee9d60cd39bd4fc64781b7843b793
+startProcessing "com\joarez\mathmod\gui\DoMathGUI.java" md5: 5f68fa82fc8d72358474129cb6d82a1c
+Cache Hit!
 endProcessing "com\joarez\mathmod\gui\DoMathGUI.java"
 
 startProcessing "com\joarez\mathmod\gui\GuiButtonTutorial.java" md5: ffc023b505d5f9ff094141328a9cc2ec
@@ -47,14 +64,24 @@ startProcessing "com\joarez\mathmod\gui\GuiOverlay.java" md5: 423f58adad99f3c806
 Cache Hit!
 endProcessing "com\joarez\mathmod\gui\GuiOverlay.java"
 
-startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: 35fd14b81ff55dbdb1b07bb2491bd60e
+startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: 50d10a7298899559f54016cc8e3cdda8
+Cache Hit!
 endProcessing "com\joarez\mathmod\gui\MathShopGUI.java"
 
-startProcessing "com\joarez\mathmod\gui\RomanGUI.java" md5: fa740a424c07c788f8dedff5ae45385d
+startProcessing "com\joarez\mathmod\gui\OddGUI.java" md5: a1af5f78573e71cd7dd038b32a602344
+Cache Hit!
+endProcessing "com\joarez\mathmod\gui\OddGUI.java"
+
+startProcessing "com\joarez\mathmod\gui\RomanGUI.java" md5: 55ee52c17c995a6d53815e8aa0d980f9
+Cache Hit!
 endProcessing "com\joarez\mathmod\gui\RomanGUI.java"
 
 startProcessing "com\joarez\mathmod\gui\ShopGUIHandler.java" md5: 4a33cd5d644a8cabdaa155a100bf3603
+Cache Hit!
 endProcessing "com\joarez\mathmod\gui\ShopGUIHandler.java"
+
+startProcessing "com\joarez\mathmod\gui\SuccessorGUI.java" md5: 0571fe79fcdfd0e1ceb4151519e33aa7
+endProcessing "com\joarez\mathmod\gui\SuccessorGUI.java"
 
 startProcessing "com\joarez\mathmod\gui\TestGui.java" md5: 05aa937201ca226cfc05873fcb9ce492
 Cache Hit!
@@ -64,10 +91,12 @@ startProcessing "com\joarez\mathmod\gui\TutorialGUI.java" md5: cd70fd51eb49b7614
 Cache Hit!
 endProcessing "com\joarez\mathmod\gui\TutorialGUI.java"
 
-startProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java" md5: d704c420a964ac9d75c97be852c98e18
+startProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java" md5: 786d020d9c8b8eede91fbf7d42d51a5f
+Cache Hit!
 endProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java"
 
-startProcessing "com\joarez\mathmod\init\ModBlocks.java" md5: b6ed9cb46d2295c26c61dc0247b27dff
+startProcessing "com\joarez\mathmod\init\ModBlocks.java" md5: 4ac71e0660c270453cbbb4e6f0ac1b32
+Cache Hit!
 endProcessing "com\joarez\mathmod\init\ModBlocks.java"
 
 startProcessing "com\joarez\mathmod\init\ModItems.java" md5: e63563dcb9337f1d4a650537914bb1f5
@@ -95,24 +124,23 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\keybinding\KeyboardCommands.java"
 
 startProcessing "com\joarez\mathmod\network\DeleteItemMessage.java" md5: 714f538b1d8b00d78365c9c7f3ed107d
+Cache Hit!
 endProcessing "com\joarez\mathmod\network\DeleteItemMessage.java"
 
 startProcessing "com\joarez\mathmod\network\DeleteItemMessageHandler.java" md5: 710dd286ca8b323c28790619663119a5
-    Compile Error! Pb(645) Lambda expressions are allowed only at source level 1.8 or above
-    Compile Error! Pb(25) Cannot refer to the non-final local variable serverPlayer defined in an enclosing scope
-    Compile Error! Pb(25) Cannot refer to the non-final local variable id defined in an enclosing scope
+Cache Hit!
 endProcessing "com\joarez\mathmod\network\DeleteItemMessageHandler.java"
 
 startProcessing "com\joarez\mathmod\network\GiveItemMessage.java" md5: 014e8bb489dfe21cd3ea25a5e63fa844
+Cache Hit!
 endProcessing "com\joarez\mathmod\network\GiveItemMessage.java"
 
 startProcessing "com\joarez\mathmod\network\GiveItemMessageHandler.java" md5: edfe87a7423257541157dd2b379822dd
-    Compile Error! Pb(645) Lambda expressions are allowed only at source level 1.8 or above
-    Compile Error! Pb(25) Cannot refer to the non-final local variable serverPlayer defined in an enclosing scope
-    Compile Error! Pb(25) Cannot refer to the non-final local variable stack defined in an enclosing scope
+Cache Hit!
 endProcessing "com\joarez\mathmod\network\GiveItemMessageHandler.java"
 
 startProcessing "com\joarez\mathmod\network\SimpleNetworkWrapper.java" md5: de3245bb69bc6b843736c5ffafb38438
+Cache Hit!
 endProcessing "com\joarez\mathmod\network\SimpleNetworkWrapper.java"
 
 startProcessing "com\joarez\mathmod\tools\ItemTutorialPickaxe.java" md5: 891b0334fc5b76f652f9ae90b8926cb8
@@ -127,15 +155,27 @@ startProcessing "com\joarez\mathmod\util\CommandUtilServer.java" md5: c7b17ffeaf
 Cache Hit!
 endProcessing "com\joarez\mathmod\util\CommandUtilServer.java"
 
-startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: 2f6936b4fea922c6707d9320fbea3024
+startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: 7b66bbef56c44967a37439e32cbb68f8
+Cache Hit!
 endProcessing "com\joarez\mathmod\util\ElementListHandler.java"
 
+startProcessing "com\joarez\mathmod\util\InventoryUtil.java" md5: 5077bd9f697d67a91f0a74d07bb150be
+Cache Hit!
+endProcessing "com\joarez\mathmod\util\InventoryUtil.java"
+
 startProcessing "com\joarez\mathmod\util\MathMethods.java" md5: a5917207d1aea692785633144c5d7b4e
+Cache Hit!
 endProcessing "com\joarez\mathmod\util\MathMethods.java"
 
+startProcessing "com\joarez\mathmod\util\ResourceLanguage.java" md5: 14b8982e542f824abbe46719f02a53c4
+Cache Hit!
+endProcessing "com\joarez\mathmod\util\ResourceLanguage.java"
+
 startProcessing "com\joarez\mathmod\util\RomanNumbersUtil.java" md5: ebb81958d6dcf973577c1420fa70440f
+Cache Hit!
 endProcessing "com\joarez\mathmod\util\RomanNumbersUtil.java"
 
 startProcessing "com\joarez\mathmod\variableshandler\VariableManagerHandler.java" md5: 2f1ae62defcb5d65fbb5cbf7f09f00e9
+Cache Hit!
 endProcessing "com\joarez\mathmod\variableshandler\VariableManagerHandler.java"
 

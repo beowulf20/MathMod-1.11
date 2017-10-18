@@ -2,19 +2,15 @@ package com.joarez.mathmod.gui;
 
 import java.io.IOException;
 
-import org.lwjgl.input.Keyboard;
-
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.util.MathMethods;
+import com.joarez.mathmod.util.ResourceLanguage;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.client.resources.I18n;
-import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.util.ResourceLocation;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.gameevent.InputEvent;
 
 
 public class YearSelectionGUI extends GuiScreen {
@@ -34,17 +30,12 @@ public class YearSelectionGUI extends GuiScreen {
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		
-		//COMSTANSTS
-		String txt_add_unloc = "year." + MathMod.RESOURCE_PREFIX + "add";
-		String txt_sub_unloc = "year." + MathMod.RESOURCE_PREFIX + "sub";
-		String txt_mul_unloc = "year." + MathMod.RESOURCE_PREFIX + "mul";
-		String txt_div_unloc = "year." + MathMod.RESOURCE_PREFIX + "div";
-		 		
-		
-		String txt_add = I18n.format(txt_add_unloc, ' ');
-		String txt_sub = I18n.format(txt_sub_unloc, ' ');
-		String txt_mul = I18n.format(txt_mul_unloc, ' ');
-		String txt_div = I18n.format(txt_div_unloc, ' ');
+				 		
+		//TITLES
+		String txt_add = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_YEAR_SELECTION, "add");
+		String txt_sub = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_YEAR_SELECTION, "sub");
+		String txt_mul = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_YEAR_SELECTION, "mul");
+		String txt_div = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_YEAR_SELECTION, "div");
 		
 		int txt_add_W = this.fontRendererObj.getStringWidth(txt_add);
 		int txt_sub_W = this.fontRendererObj.getStringWidth(txt_sub);
@@ -86,10 +77,9 @@ public class YearSelectionGUI extends GuiScreen {
 	@Override
 	public void initGui() {
 		//CONSTANTS
-		String easy_unloc = "year." + MathMod.RESOURCE_PREFIX + "easy";
-		String easy_loc = I18n.format(easy_unloc, ' ');
-		String hard_unloc = "year." + MathMod.RESOURCE_PREFIX + "hard";
-		String hard_loc = I18n.format(hard_unloc, ' ');
+		
+		String easy_loc = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_YEAR_SELECTION, "easy");		
+		String hard_loc = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_YEAR_SELECTION, "hard");
 		int btX_L = (width - bgW)/2 + 3;
 		int btX_R = (width + bgW)/2 - btW - 3;
 		int bgY = (height - bgH)/2;

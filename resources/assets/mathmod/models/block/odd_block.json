@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+		"particle": "mathmod:blocks/odd_block_side",
+        "top": "mathmod:blocks/odd_block_side",
+        "front": "mathmod:blocks/odd_block_front",
+        "side": "mathmod:blocks/odd_block_side"
+  }
+}

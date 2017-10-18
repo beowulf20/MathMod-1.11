@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "mathmod:blocks/roman_block"
+    "all": "mathmod:blocks/suc_block"
   }
 }

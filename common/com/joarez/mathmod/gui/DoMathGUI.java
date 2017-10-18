@@ -6,7 +6,9 @@ import org.lwjgl.input.Keyboard;
 
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.init.ModItems;
+import com.joarez.mathmod.util.InventoryUtil;
 import com.joarez.mathmod.util.MathMethods;
+import com.joarez.mathmod.util.ResourceLanguage;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
@@ -26,7 +28,7 @@ public class DoMathGUI extends GuiScreen {
 	int expX, expY;
 	int textW = 170, textH = 20, textX, textY;
 	int btX, btY;
-	
+	int total_coins = 0;
 	@Override
 	public void drawScreen(int mouseX, int mouseY, float partialTicks) {
 		
@@ -41,7 +43,7 @@ public class DoMathGUI extends GuiScreen {
 		//super.drawScreen(mouseX, mouseY, partialTicks);
 		
 		//DRAW TITLE
-		String title = "Realize a Conta!";
+		String title = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_DO_MATH, "title");
 		int k = 2;
 		titleX =(width)/2 - k*this.fontRendererObj.getStringWidth(title)/2;
 		titleY = bgY+10;
@@ -73,7 +75,7 @@ public class DoMathGUI extends GuiScreen {
 		expression_textfield.drawTextBox();		
 				
 		//DRAW BUTTON
-		String bt_text = "Conferir";
+		String bt_text = ResourceLanguage.getLocalizedResource(ResourceLanguage.RP_GENERAL, "check");
 		btX = (width-100)/2;
 		btY = textY + 50;
 		bt_check = new GuiButton(1,btX,btY,100,20,bt_text);
@@ -89,6 +91,7 @@ public class DoMathGUI extends GuiScreen {
 	
 	@Override
 	public void initGui() {
+		total_coins = InventoryUtil.countCoinsPlayer();
 		MathMethods.Randomize();
 		textX = (width-textW)/2;
 		textY = (height - textH)/2;
@@ -111,18 +114,21 @@ public class DoMathGUI extends GuiScreen {
 				try {
 					r =  Integer.parseInt(expression_textfield.getText());
 					if(r == MathMethods.GetResult()) {
-						//Add points & randomize numbers
-						expression_textfield.setText("");
-						expression_textfield.setFocused(true);
+						//Add points & randomize numbers						
 						MathMethods.Randomize();
-						Minecraft.getMinecraft().player.inventory.addItemStackToInventory(new ItemStack(ModItems.math_coin,MathMethods.DIF));
-
+						total_coins++;
+						//Minecraft.getMinecraft().player.inventory.addItemStackToInventory(new ItemStack(ModItems.math_coin,MathMethods.DIF));
+					}else {
+						if(total_coins>0) {
+							total_coins--;
+						}						
 					}
 				}catch(Exception e) {
 					r = 0;
 				}
-				
-				
+				MathMethods.Randomize();
+				expression_textfield.setText("");
+				expression_textfield.setFocused(true);
 				break;
 		}
 		super.actionPerformed(button);
@@ -160,6 +166,14 @@ public class DoMathGUI extends GuiScreen {
 	public void updateScreen() {
 		expression_textfield.updateCursorCounter();
 		super.updateScreen();
+	}
+
+
+
+	@Override
+	public void onGuiClosed() {
+		InventoryUtil.returnCoinsPlayer(total_coins);
+		super.onGuiClosed();
 	}
 
 
