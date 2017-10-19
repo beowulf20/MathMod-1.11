@@ -13,7 +13,7 @@ Why?
 What the does it do?
 --------------------
 
-So far I've created 4 different blocks. Each one of the blocks, when right-clicked, opens a GUI that display 5 differents types of minigames (Basic Operations, Odd and Even, Roman Numerals, Successor and Predecessor)<br />
+So far I've created 4 different blocks. Each one of them, when right-clicked, opens a GUI that display 5 differents types of minigames (Basic Operations, Odd and Even, Roman Numerals, Successor and Predecessor)<br />
 When the kid writtes the right answer, the mod gives them a "Math Coin", which can be used to bay any block/item registered in the game through a "Shop Block".
 
 
