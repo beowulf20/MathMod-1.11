@@ -32,7 +32,7 @@ This mapping 'snapshot_20161220' was designed for MC 1.11! Use at your own peril
 :genSrgs SKIPPED
 :reobfJar
 :extractRangemapReplacedMain
-C:\Users\John\Desktop\MDK Forge 1.11.2\source\MathMod\build\sources\main\java
+C:\Users\John\Documents\GitHUB\MathMod-1.11\build\sources\main\java
 :retromapReplacedMain
 remapping source...
 :sourceJar
@@ -42,4 +42,4 @@ remapping source...
 
 BUILD SUCCESSFUL
 
-Total time: 36.949 secs
+Total time: 11.984 secs

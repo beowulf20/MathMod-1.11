@@ -1012,282 +1012,370 @@ Class Start: com.joarez.mathmod.gui.GuiOverlay
 Class End  : com.joarez.mathmod.gui.GuiOverlay
 endProcessing "com\joarez\mathmod\gui\GuiOverlay.java"
 
-startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: 50d10a7298899559f54016cc8e3cdda8
-Cache Hit!
+startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: b936046371197530985a2ffc6d662d50
 @|com\joarez\mathmod\gui\MathShopGUI.java|8|30|com.joarez.mathmod.gui|package|com.joarez.mathmod.gui|(file)
 Class Start: com.joarez.mathmod.gui.MathShopGUI
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1007|1018|MathShopGUI|class|com.joarez.mathmod.gui.MathShopGUI
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1027|1036|GuiScreen|class|net.minecraft.client.gui.GuiScreen
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1040|1056|ResourceLocation|class|net.minecraft.util.ResourceLocation
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1040|1056|ResourceLocation|class|net.minecraft.util.ResourceLocation
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1057|1067|bg_texture|field|com.joarez.mathmod.gui.MathShopGUI|bg_texture|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1074|1090|ResourceLocation|class|net.minecraft.util.ResourceLocation
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1091|1098|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1099|1105|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1136|1152|ResourceLocation|class|net.minecraft.util.ResourceLocation
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1136|1152|ResourceLocation|class|net.minecraft.util.ResourceLocation
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1153|1161|mod_logo|field|com.joarez.mathmod.gui.MathShopGUI|mod_logo|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1168|1184|ResourceLocation|class|net.minecraft.util.ResourceLocation
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1185|1192|MathMod|class|com.joarez.mathmod.MathMod
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1193|1199|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1240|1243|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1244|1247|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1248|1251|bgX|field|com.joarez.mathmod.gui.MathShopGUI|bgX|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1252|1255|bgY|field|com.joarez.mathmod.gui.MathShopGUI|bgY|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1262|1267|logoW|field|com.joarez.mathmod.gui.MathShopGUI|logoW|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1268|1273|logoH|field|com.joarez.mathmod.gui.MathShopGUI|logoH|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1274|1279|logoX|field|com.joarez.mathmod.gui.MathShopGUI|logoX|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1280|1285|logoY|field|com.joarez.mathmod.gui.MathShopGUI|logoY|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1293|1304|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1316|1325|ItemStack|class|net.minecraft.item.ItemStack
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1311|1315|List|class|java.util.List
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1311|1315|List|class|java.util.List
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1316|1325|ItemStack|class|net.minecraft.item.ItemStack
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1327|1332|items|field|com.joarez.mathmod.gui.MathShopGUI|items|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1335|1353|ElementListHandler|class|com.joarez.mathmod.util.ElementListHandler
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1354|1365|getElements|method|com.joarez.mathmod.util.ElementListHandler|getElements|()Ljava/util/List;
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1376|1385|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1391|1400|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1406|1418|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1425|1434|GuiButton|class|net.minecraft.client.gui.GuiButton
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1425|1434|GuiButton|class|net.minecraft.client.gui.GuiButton
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1435|1446|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1448|1455|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1458|1467|ItemStack|class|net.minecraft.item.ItemStack
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1458|1467|ItemStack|class|net.minecraft.item.ItemStack
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1468|1483|hoovering_stack|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_stack|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1490|1510|hoovering_item_index|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_item_index|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1521|1528|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1534|1541|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1552|1561|item_size|field|com.joarez.mathmod.gui.MathShopGUI|item_size|
-   @|com\joarez\mathmod\gui\MathShopGUI.java|1573|1584|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|877|888|MathShopGUI|class|com.joarez.mathmod.gui.MathShopGUI
+   @|com\joarez\mathmod\gui\MathShopGUI.java|897|906|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+   @|com\joarez\mathmod\gui\MathShopGUI.java|910|926|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\mathmod\gui\MathShopGUI.java|910|926|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\mathmod\gui\MathShopGUI.java|927|937|bg_texture|field|com.joarez.mathmod.gui.MathShopGUI|bg_texture|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|944|960|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\mathmod\gui\MathShopGUI.java|961|968|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\gui\MathShopGUI.java|969|975|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1006|1022|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1006|1022|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1023|1031|mod_logo|field|com.joarez.mathmod.gui.MathShopGUI|mod_logo|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1038|1054|ResourceLocation|class|net.minecraft.util.ResourceLocation
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1055|1062|MathMod|class|com.joarez.mathmod.MathMod
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1063|1069|MOD_ID|field|com.joarez.mathmod.MathMod|MOD_ID
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1110|1113|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1114|1117|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1118|1121|bgX|field|com.joarez.mathmod.gui.MathShopGUI|bgX|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1122|1125|bgY|field|com.joarez.mathmod.gui.MathShopGUI|bgY|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1132|1137|logoW|field|com.joarez.mathmod.gui.MathShopGUI|logoW|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1138|1143|logoH|field|com.joarez.mathmod.gui.MathShopGUI|logoH|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1144|1149|logoX|field|com.joarez.mathmod.gui.MathShopGUI|logoX|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1150|1155|logoY|field|com.joarez.mathmod.gui.MathShopGUI|logoY|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1163|1174|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1186|1195|ItemStack|class|net.minecraft.item.ItemStack
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1181|1185|List|class|java.util.List
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1181|1185|List|class|java.util.List
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1186|1195|ItemStack|class|net.minecraft.item.ItemStack
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1197|1202|items|field|com.joarez.mathmod.gui.MathShopGUI|items|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1211|1220|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1226|1235|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1241|1253|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1260|1269|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1260|1269|GuiButton|class|net.minecraft.client.gui.GuiButton
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1270|1281|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1283|1290|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1293|1302|ItemStack|class|net.minecraft.item.ItemStack
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1293|1302|ItemStack|class|net.minecraft.item.ItemStack
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1303|1318|hoovering_stack|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_stack|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1325|1345|hoovering_item_index|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_item_index|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1356|1363|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1369|1376|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1387|1396|item_size|field|com.joarez.mathmod.gui.MathShopGUI|item_size|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1408|1419|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1430|1442|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1430|1442|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1443|1452|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1461|1468|searchX|field|com.joarez.mathmod.gui.MathShopGUI|searchX|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1469|1476|searchY|field|com.joarez.mathmod.gui.MathShopGUI|searchY|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1477|1484|searchW|field|com.joarez.mathmod.gui.MathShopGUI|searchW|
+   @|com\joarez\mathmod\gui\MathShopGUI.java|1485|1492|searchH|field|com.joarez.mathmod.gui.MathShopGUI|searchH|
    Method Start: drawScreen(IIF)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1638|1644|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1650|1656|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1664|1676|partialTicks|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|partialTicks|2
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1601|1609|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1623|1633|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1710|1731|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1739|1748|Minecraft|class|net.minecraft.client.Minecraft
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1749|1761|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1764|1776|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1777|1788|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1789|1799|bg_texture|field|com.joarez.mathmod.gui.MathShopGUI|bg_texture
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1809|1830|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1831|1834|bgX|field|com.joarez.mathmod.gui.MathShopGUI|bgX
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1836|1839|bgY|field|com.joarez.mathmod.gui.MathShopGUI|bgY
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1847|1850|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1852|1855|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1932|1937|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1940|1943|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1971|1977|height|field|net.minecraft.client.gui.GuiScreen|height
-      @|com\joarez\mathmod\gui\MathShopGUI.java|1980|1983|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2003|2013|itemRender|field|net.minecraft.client.gui.GuiScreen|itemRender
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2014|2031|renderItemIntoGUI|method|net.minecraft.client.renderer.RenderItem|renderItemIntoGUI|(Lnet/minecraft/item/ItemStack;II)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2036|2045|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2046|2054|ModItems|class|com.joarez.mathmod.init.ModItems
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2055|2064|math_coin|field|com.joarez.mathmod.init.ModItems|math_coin
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2124|2139|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2140|2154|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2155|2161|String|class|java.lang.String
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2162|2169|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2170|2181|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2201|2216|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2217|2228|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2293|2308|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2309|2319|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2320|2326|String|class|java.lang.String
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2327|2334|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2335|2346|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2397|2403|String|class|java.lang.String
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2412|2428|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2429|2449|getLocalizedResource|method|com.joarez.mathmod.util.ResourceLanguage|getLocalizedResource|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2450|2466|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2467|2479|RP_MATH_SHOP|field|com.joarez.mathmod.util.ResourceLanguage|RP_MATH_SHOP
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2503|2518|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2519|2533|setUnicodeFlag|method|net.minecraft.client.gui.FontRenderer|setUnicodeFlag|(Z)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2577|2592|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2593|2607|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2636|2651|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2652|2663|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2685|2690|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2722|2728|height|field|net.minecraft.client.gui.GuiScreen|height
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2733|2736|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2754|2768|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2769|2779|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2790|2804|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2805|2814|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2838|2852|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2853|2858|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2881|2896|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2897|2907|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2942|2957|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2958|2972|setUnicodeFlag|method|net.minecraft.client.gui.FontRenderer|setUnicodeFlag|(Z)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|2987|3001|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3002|3011|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3039|3050|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3051|3058|enabled|field|net.minecraft.client.gui.GuiButton|enabled
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3063|3072|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3084|3091|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3092|3099|enabled|field|net.minecraft.client.gui.GuiButton|enabled
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3104|3113|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3117|3126|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3293|3298|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3303|3306|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3361|3376|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3377|3388|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3431|3440|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3460|3471|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3487|3493|String|class|java.lang.String
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3506|3511|items|field|com.joarez.mathmod.gui.MathShopGUI|items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3512|3515|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3521|3529|toString|method|java.lang.Object|toString|()Ljava/lang/String;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3540|3544|Item|class|net.minecraft.item.Item
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3552|3556|Item|class|net.minecraft.item.Item
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3557|3570|getByNameOrId|method|net.minecraft.item.Item|getByNameOrId|(Ljava/lang/String;)Lnet/minecraft/item/Item;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3646|3655|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3664|3669|items|field|com.joarez.mathmod.gui.MathShopGUI|items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3670|3673|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3690|3696|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3705|3711|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3725|3731|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3740|3746|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3778|3785|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3799|3806|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3829|3841|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3842|3868|enableStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|enableStandardItemLighting|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3946|3950|List|class|java.util.List
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3951|3957|String|class|java.lang.String
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3975|3984|ArrayList|class|java.util.ArrayList
-      @|com\joarez\mathmod\gui\MathShopGUI.java|3985|3991|String|class|java.lang.String
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4015|4018|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4025|4039|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4053|4069|drawHoveringText|method|net.minecraft.client.gui.GuiScreen|drawHoveringText|(Ljava/util/List;II)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4081|4087|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4089|4095|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4116|4128|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4129|4156|disableStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|disableStandardItemLighting|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4168|4183|hoovering_stack|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_stack
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4201|4221|hoovering_item_index|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_item_index
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4266|4278|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4279|4308|enableGUIStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|enableGUIStandardItemLighting|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4331|4341|itemRender|field|net.minecraft.client.gui.GuiScreen|itemRender
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4342|4368|renderItemAndEffectIntoGUI|method|net.minecraft.client.renderer.RenderItem|renderItemAndEffectIntoGUI|(Lnet/minecraft/item/ItemStack;II)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4391|4403|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4404|4431|disableStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|disableStandardItemLighting|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4485|4495|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4496|4502|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4504|4510|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4512|4524|partialTicks|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|partialTicks|2
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1536|1542|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1548|1554|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1562|1574|partialTicks|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|partialTicks|2
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1499|1507|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1521|1531|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1608|1629|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1637|1646|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1647|1659|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1662|1674|renderEngine|field|net.minecraft.client.Minecraft|renderEngine
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1675|1686|bindTexture|method|net.minecraft.client.renderer.texture.TextureManager|bindTexture|(Lnet/minecraft/util/ResourceLocation;)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1687|1697|bg_texture|field|com.joarez.mathmod.gui.MathShopGUI|bg_texture
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1707|1728|drawTexturedModalRect|method|net.minecraft.client.gui.Gui|drawTexturedModalRect|(IIIIII)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1729|1732|bgX|field|com.joarez.mathmod.gui.MathShopGUI|bgX
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1734|1737|bgY|field|com.joarez.mathmod.gui.MathShopGUI|bgY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1745|1748|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1750|1753|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1832|1837|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1840|1843|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1867|1873|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1876|1879|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1895|1905|itemRender|field|net.minecraft.client.gui.GuiScreen|itemRender
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1906|1923|renderItemIntoGUI|method|net.minecraft.client.renderer.RenderItem|renderItemIntoGUI|(Lnet/minecraft/item/ItemStack;II)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1928|1937|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1938|1946|ModItems|class|com.joarez.mathmod.init.ModItems
+      @|com\joarez\mathmod\gui\MathShopGUI.java|1947|1956|math_coin|field|com.joarez.mathmod.init.ModItems|math_coin
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2016|2031|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2032|2046|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2047|2053|String|class|java.lang.String
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2054|2061|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2062|2073|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2093|2108|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2109|2120|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2194|2209|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2210|2220|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2221|2227|String|class|java.lang.String
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2228|2235|valueOf|method|java.lang.String|valueOf|(I)Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2236|2247|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2298|2304|String|class|java.lang.String
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2313|2329|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2330|2350|getLocalizedResource|method|com.joarez.mathmod.util.ResourceLanguage|getLocalizedResource|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2351|2367|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2368|2380|RP_MATH_SHOP|field|com.joarez.mathmod.util.ResourceLanguage|RP_MATH_SHOP
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2404|2419|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2420|2434|setUnicodeFlag|method|net.minecraft.client.gui.FontRenderer|setUnicodeFlag|(Z)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2478|2493|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2494|2508|getStringWidth|method|net.minecraft.client.gui.FontRenderer|getStringWidth|(Ljava/lang/String;)I
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2537|2552|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2553|2564|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2586|2591|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2619|2624|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2629|2632|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2669|2675|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2680|2683|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2707|2713|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2718|2721|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2727|2741|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2742|2752|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2763|2777|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2778|2787|translate|method|net.minecraft.client.renderer.GlStateManager|translate|(FFF)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2811|2825|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2826|2831|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2854|2869|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2870|2880|drawString|method|net.minecraft.client.gui.FontRenderer|drawString|(Ljava/lang/String;III)I
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2915|2930|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2931|2945|setUnicodeFlag|method|net.minecraft.client.gui.FontRenderer|setUnicodeFlag|(Z)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2960|2974|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\joarez\mathmod\gui\MathShopGUI.java|2975|2984|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3014|3023|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3024|3035|drawTextBox|method|net.minecraft.client.gui.GuiTextField|drawTextBox|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3043|3052|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3053|3062|xPosition|field|net.minecraft.client.gui.GuiTextField|xPosition
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3065|3070|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3075|3082|searchW|field|com.joarez.mathmod.gui.MathShopGUI|searchW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3090|3099|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3100|3109|yPosition|field|net.minecraft.client.gui.GuiTextField|yPosition
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3128|3143|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3144|3155|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3182|3193|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3194|3201|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3206|3215|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3227|3234|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3235|3242|enabled|field|net.minecraft.client.gui.GuiButton|enabled
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3247|3256|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3260|3269|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3304|3313|drawItems|method|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3314|3320|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3321|3327|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3356|3366|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3367|3373|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3375|3381|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3383|3395|partialTicks|param|com.joarez.mathmod.gui.MathShopGUI|drawScreen|(IIF)V|partialTicks|2
    Method End: drawScreen(IIF)V
+   Method Start: drawItems(III)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3432|3438|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3443|3449|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3455|3456|k|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|k|2
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3418|3427|drawItems|method|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3462|3467|items|field|com.joarez.mathmod.gui.MathShopGUI|items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3470|3488|ElementListHandler|class|com.joarez.mathmod.util.ElementListHandler
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3489|3500|getElements|method|com.joarez.mathmod.util.ElementListHandler|getElements|(Ljava/lang/String;)Ljava/util/List;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3501|3510|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3511|3518|getText|method|net.minecraft.client.gui.GuiTextField|getText|()Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3525|3540|countTotalItems|method|com.joarez.mathmod.gui.MathShopGUI|countTotalItems|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3676|3681|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3686|3689|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3729|3736|searchY|field|com.joarez.mathmod.gui.MathShopGUI|searchY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3744|3759|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3760|3771|FONT_HEIGHT|field|net.minecraft.client.gui.FontRenderer|FONT_HEIGHT
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3772|3773|k|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|k|2
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3815|3824|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3843|3854|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3869|3875|String|class|java.lang.String
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3888|3893|items|field|com.joarez.mathmod.gui.MathShopGUI|items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3894|3897|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3903|3911|toString|method|java.lang.Object|toString|()Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3921|3925|Item|class|net.minecraft.item.Item
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3933|3937|Item|class|net.minecraft.item.Item
+      @|com\joarez\mathmod\gui\MathShopGUI.java|3938|3951|getByNameOrId|method|net.minecraft.item.Item|getByNameOrId|(Ljava/lang/String;)Lnet/minecraft/item/Item;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4024|4033|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4042|4047|items|field|com.joarez.mathmod.gui.MathShopGUI|items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4048|4051|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4067|4073|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4082|4088|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4102|4108|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4117|4123|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4154|4161|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4174|4181|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4202|4214|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4215|4241|enableStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|enableStandardItemLighting|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4316|4320|List|class|java.util.List
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4321|4327|String|class|java.lang.String
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4345|4354|ArrayList|class|java.util.ArrayList
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4355|4361|String|class|java.lang.String
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4384|4387|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4394|4408|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4421|4437|drawHoveringText|method|net.minecraft.client.gui.GuiScreen|drawHoveringText|(Ljava/util/List;II)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4449|4455|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4457|4463|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|drawItems|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4482|4494|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4495|4522|disableStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|disableStandardItemLighting|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4533|4548|hoovering_stack|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_stack
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4565|4585|hoovering_item_index|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_item_index
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4627|4639|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4640|4669|enableGUIStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|enableGUIStandardItemLighting|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4691|4701|itemRender|field|net.minecraft.client.gui.GuiScreen|itemRender
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4702|4728|renderItemAndEffectIntoGUI|method|net.minecraft.client.renderer.RenderItem|renderItemAndEffectIntoGUI|(Lnet/minecraft/item/ItemStack;II)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4750|4762|RenderHelper|class|net.minecraft.client.renderer.RenderHelper
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4763|4790|disableStandardItemLighting|method|net.minecraft.client.renderer.RenderHelper|disableStandardItemLighting|()V
+   Method End: drawItems(III)V
+   Method Start: countTotalItems()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4841|4856|countTotalItems|method|com.joarez.mathmod.gui.MathShopGUI|countTotalItems|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4863|4874|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4877|4882|items|field|com.joarez.mathmod.gui.MathShopGUI|items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4883|4887|size|method|java.util.Collection|size|()I
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4893|4905|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4908|4919|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4939|4950|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4953|4965|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|4976|4988|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5014|5023|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal
+   Method End: countTotalItems()V
    Method Start: mouseClicked(III)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4578|4584|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4590|4596|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4602|4613|mouseButton|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseButton|2
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4536|4544|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4561|4573|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4622|4633|IOException|class|java.io.IOException
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4641|4647|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4651|4658|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4662|4668|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4672|4679|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4682|4691|item_size|field|com.joarez.mathmod.gui.MathShopGUI|item_size
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4695|4701|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4705|4712|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4716|4722|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4726|4733|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4736|4745|item_size|field|com.joarez.mathmod.gui.MathShopGUI|item_size
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4755|4766|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4784|4795|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4828|4848|hoovering_item_index|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_item_index
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4857|4877|SimpleNetworkWrapper|class|com.joarez.mathmod.network.SimpleNetworkWrapper
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4878|4886|INSTANCE|field|com.joarez.mathmod.network.SimpleNetworkWrapper|INSTANCE
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4887|4899|sendToServer|method|net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper|sendToServer|(Lnet/minecraftforge/fml/common/network/simpleimpl/IMessage;)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4904|4919|GiveItemMessage|class|com.joarez.mathmod.network.GiveItemMessage
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4968|4980|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4981|4987|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4989|4995|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
-      @|com\joarez\mathmod\gui\MathShopGUI.java|4997|5008|mouseButton|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseButton|2
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5080|5086|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5092|5098|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5104|5115|mouseButton|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseButton|2
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5038|5046|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5063|5075|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5124|5135|IOException|class|java.io.IOException
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5140|5149|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5150|5162|mouseClicked|method|net.minecraft.client.gui.GuiTextField|mouseClicked|(III)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5163|5169|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5171|5177|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5179|5190|mouseButton|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseButton|2
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5198|5204|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5208|5215|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5219|5225|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5229|5236|hooverX|field|com.joarez.mathmod.gui.MathShopGUI|hooverX
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5239|5248|item_size|field|com.joarez.mathmod.gui.MathShopGUI|item_size
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5252|5258|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5262|5269|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5273|5279|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5283|5290|hooverY|field|com.joarez.mathmod.gui.MathShopGUI|hooverY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5293|5302|item_size|field|com.joarez.mathmod.gui.MathShopGUI|item_size
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5312|5323|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5341|5352|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5385|5405|hoovering_item_index|field|com.joarez.mathmod.gui.MathShopGUI|hoovering_item_index
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5413|5419|String|class|java.lang.String
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5457|5466|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5467|5474|getText|method|net.minecraft.client.gui.GuiTextField|getText|()Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5489|5498|Exception|class|java.lang.Exception
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5532|5552|SimpleNetworkWrapper|class|com.joarez.mathmod.network.SimpleNetworkWrapper
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5553|5561|INSTANCE|field|com.joarez.mathmod.network.SimpleNetworkWrapper|INSTANCE
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5562|5574|sendToServer|method|net.minecraftforge.fml.common.network.simpleimpl.SimpleNetworkWrapper|sendToServer|(Lnet/minecraftforge/fml/common/network/simpleimpl/IMessage;)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5579|5594|GiveItemMessage|class|com.joarez.mathmod.network.GiveItemMessage
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5650|5662|mouseClicked|method|net.minecraft.client.gui.GuiScreen|mouseClicked|(III)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5663|5669|mouseX|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseX|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5671|5677|mouseY|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseY|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5679|5690|mouseButton|param|com.joarez.mathmod.gui.MathShopGUI|mouseClicked|(III)V|mouseButton|2
    Method End: mouseClicked(III)V
    Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5072|5078|button|param|com.joarez.mathmod.gui.MathShopGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5021|5029|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5046|5061|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5062|5071|GuiButton|class|net.minecraft.client.gui.GuiButton
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5087|5098|IOException|class|java.io.IOException
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5110|5116|button|param|com.joarez.mathmod.gui.MathShopGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5117|5119|id|field|net.minecraft.client.gui.GuiButton|id
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5139|5148|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5160|5169|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5204|5213|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5216|5225|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5233|5242|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5273|5288|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5289|5295|button|param|com.joarez.mathmod.gui.MathShopGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5754|5760|button|param|com.joarez.mathmod.gui.MathShopGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5703|5711|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5728|5743|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5744|5753|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5769|5780|IOException|class|java.io.IOException
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5792|5798|button|param|com.joarez.mathmod.gui.MathShopGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5799|5801|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5821|5830|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5842|5851|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5886|5895|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5898|5907|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5915|5924|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5955|5970|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5971|5977|button|param|com.joarez.mathmod.gui.MathShopGUI|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
    Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
    Method Start: initGui()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5304|5312|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5326|5333|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5344|5355|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5358|5371|InventoryUtil|class|com.joarez.mathmod.util.InventoryUtil
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5372|5388|countCoinsPlayer|method|com.joarez.mathmod.util.InventoryUtil|countCoinsPlayer|()I
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5396|5407|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5410|5415|items|field|com.joarez.mathmod.gui.MathShopGUI|items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5416|5420|size|method|java.util.Collection|size|()I
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5426|5438|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5441|5452|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5472|5483|total_items|field|com.joarez.mathmod.gui.MathShopGUI|total_items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5486|5498|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5509|5521|offset_items|field|com.joarez.mathmod.gui.MathShopGUI|offset_items
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5547|5556|pageTotal|field|com.joarez.mathmod.gui.MathShopGUI|pageTotal
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5587|5590|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5602|5605|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5617|5620|bgX|field|com.joarez.mathmod.gui.MathShopGUI|bgX
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5624|5629|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5632|5635|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5644|5647|bgY|field|com.joarez.mathmod.gui.MathShopGUI|bgY
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5651|5657|height|field|net.minecraft.client.gui.GuiScreen|height
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5660|5663|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5710|5713|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5750|5755|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5760|5763|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5783|5789|height|field|net.minecraft.client.gui.GuiScreen|height
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5794|5797|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5812|5823|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5830|5839|GuiButton|class|net.minecraft.client.gui.GuiButton
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5858|5874|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5875|5895|getLocalizedResource|method|com.joarez.mathmod.util.ResourceLanguage|getLocalizedResource|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5896|5912|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5913|5925|RP_MATH_SHOP|field|com.joarez.mathmod.util.ResourceLanguage|RP_MATH_SHOP
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5978|5983|width|field|net.minecraft.client.gui.GuiScreen|width
-      @|com\joarez\mathmod\gui\MathShopGUI.java|5988|5991|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6009|6016|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6023|6032|GuiButton|class|net.minecraft.client.gui.GuiButton
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6051|6067|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6068|6088|getLocalizedResource|method|com.joarez.mathmod.util.ResourceLanguage|getLocalizedResource|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6089|6105|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6106|6118|RP_MATH_SHOP|field|com.joarez.mathmod.util.ResourceLanguage|RP_MATH_SHOP
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6165|6175|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6176|6181|clear|method|java.util.Collection|clear|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6217|6227|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6228|6231|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6232|6243|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6253|6263|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6264|6267|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6268|6275|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6296|6303|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|5986|5994|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6008|6015|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6026|6037|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6040|6053|InventoryUtil|class|com.joarez.mathmod.util.InventoryUtil
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6054|6070|countCoinsPlayer|method|com.joarez.mathmod.util.InventoryUtil|countCoinsPlayer|()I
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6103|6106|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6118|6121|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6133|6136|bgX|field|com.joarez.mathmod.gui.MathShopGUI|bgX
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6140|6145|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6148|6151|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6160|6163|bgY|field|com.joarez.mathmod.gui.MathShopGUI|bgY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6167|6173|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6176|6179|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6226|6229|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6266|6271|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6276|6279|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6299|6305|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6310|6313|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6328|6339|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6346|6355|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6374|6390|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6391|6411|getLocalizedResource|method|com.joarez.mathmod.util.ResourceLanguage|getLocalizedResource|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6412|6428|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6429|6441|RP_MATH_SHOP|field|com.joarez.mathmod.util.ResourceLanguage|RP_MATH_SHOP
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6494|6499|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6504|6507|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6525|6532|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6539|6548|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6567|6583|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6584|6604|getLocalizedResource|method|com.joarez.mathmod.util.ResourceLanguage|getLocalizedResource|(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6605|6621|ResourceLanguage|class|com.joarez.mathmod.util.ResourceLanguage
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6622|6634|RP_MATH_SHOP|field|com.joarez.mathmod.util.ResourceLanguage|RP_MATH_SHOP
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6681|6691|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6692|6697|clear|method|java.util.Collection|clear|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6733|6743|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6744|6747|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6748|6759|bt_previous|field|com.joarez.mathmod.gui.MathShopGUI|bt_previous
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6769|6779|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6780|6783|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6784|6791|bt_next|field|com.joarez.mathmod.gui.MathShopGUI|bt_next
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6824|6831|searchW|field|com.joarez.mathmod.gui.MathShopGUI|searchW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6834|6837|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6846|6853|searchH|field|com.joarez.mathmod.gui.MathShopGUI|searchH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6862|6869|searchX|field|com.joarez.mathmod.gui.MathShopGUI|searchX
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6872|6877|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6882|6885|bgW|field|com.joarez.mathmod.gui.MathShopGUI|bgW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6890|6897|searchW|field|com.joarez.mathmod.gui.MathShopGUI|searchW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6903|6910|searchY|field|com.joarez.mathmod.gui.MathShopGUI|searchY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6913|6919|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6924|6927|bgH|field|com.joarez.mathmod.gui.MathShopGUI|bgH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6935|6944|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6951|6963|GuiTextField|class|net.minecraft.client.gui.GuiTextField
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6971|6986|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6987|6994|searchX|field|com.joarez.mathmod.gui.MathShopGUI|searchX
+      @|com\joarez\mathmod\gui\MathShopGUI.java|6995|7002|searchY|field|com.joarez.mathmod.gui.MathShopGUI|searchY
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7003|7010|searchW|field|com.joarez.mathmod.gui.MathShopGUI|searchW
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7011|7018|searchH|field|com.joarez.mathmod.gui.MathShopGUI|searchH
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7023|7032|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7033|7045|setTextColor|method|net.minecraft.client.gui.GuiTextField|setTextColor|(I)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7075|7082|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
    Method End: initGui()V
+   Method Start: keyTyped(CI)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7132|7141|typedChar|param|com.joarez.mathmod.gui.MathShopGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7147|7154|keyCode|param|com.joarez.mathmod.gui.MathShopGUI|keyTyped|(CI)V|keyCode|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7093|7101|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7118|7126|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7163|7174|IOException|class|java.io.IOException
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7179|7188|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7189|7204|textboxKeyTyped|method|net.minecraft.client.gui.GuiTextField|textboxKeyTyped|(CI)Z
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7205|7214|typedChar|param|com.joarez.mathmod.gui.MathShopGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7216|7223|keyCode|param|com.joarez.mathmod.gui.MathShopGUI|keyTyped|(CI)V|keyCode|1
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7228|7237|pageAtual|field|com.joarez.mathmod.gui.MathShopGUI|pageAtual
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7251|7259|keyTyped|method|net.minecraft.client.gui.GuiScreen|keyTyped|(CI)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7260|7269|typedChar|param|com.joarez.mathmod.gui.MathShopGUI|keyTyped|(CI)V|typedChar|0
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7271|7278|keyCode|param|com.joarez.mathmod.gui.MathShopGUI|keyTyped|(CI)V|keyCode|1
+   Method End: keyTyped(CI)V
+   Method Start: updateScreen()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7292|7300|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7314|7326|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7333|7342|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7343|7362|updateCursorCounter|method|net.minecraft.client.gui.GuiTextField|updateCursorCounter|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7374|7386|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
+   Method End: updateScreen()V
    Method Start: onGuiClosed()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6326|6334|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6348|6359|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6366|6379|InventoryUtil|class|com.joarez.mathmod.util.InventoryUtil
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6380|6397|returnCoinsPlayer|method|com.joarez.mathmod.util.InventoryUtil|returnCoinsPlayer|(I)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6398|6409|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6422|6433|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7398|7406|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7420|7431|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7438|7451|InventoryUtil|class|com.joarez.mathmod.util.InventoryUtil
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7452|7469|returnCoinsPlayer|method|com.joarez.mathmod.util.InventoryUtil|returnCoinsPlayer|(I)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7470|7481|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7494|7505|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
    Method End: onGuiClosed()V
    Method Start: doesGuiPauseGame()Z
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6447|6455|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|6472|6488|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7519|7527|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7544|7560|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
    Method End: doesGuiPauseGame()Z
 Class End  : com.joarez.mathmod.gui.MathShopGUI
 endProcessing "com\joarez\mathmod\gui\MathShopGUI.java"
@@ -1852,6 +1940,7 @@ Class End  : com.joarez.mathmod.gui.ShopGUIHandler
 endProcessing "com\joarez\mathmod\gui\ShopGUIHandler.java"
 
 startProcessing "com\joarez\mathmod\gui\SuccessorGUI.java" md5: 0571fe79fcdfd0e1ceb4151519e33aa7
+Cache Hit!
 @|com\joarez\mathmod\gui\SuccessorGUI.java|8|30|com.joarez.mathmod.gui|package|com.joarez.mathmod.gui|(file)
 Class Start: com.joarez.mathmod.gui.SuccessorGUI
    @|com\joarez\mathmod\gui\SuccessorGUI.java|650|662|SuccessorGUI|class|com.joarez.mathmod.gui.SuccessorGUI
@@ -3016,76 +3105,96 @@ Class Start: com.joarez.mathmod.network.DeleteItemMessageHandler
 Class End  : com.joarez.mathmod.network.DeleteItemMessageHandler
 endProcessing "com\joarez\mathmod\network\DeleteItemMessageHandler.java"
 
-startProcessing "com\joarez\mathmod\network\GiveItemMessage.java" md5: 014e8bb489dfe21cd3ea25a5e63fa844
+startProcessing "com\joarez\mathmod\network\GiveItemMessage.java" md5: 442504b3b661f63d60a6e033a1a67412
 Cache Hit!
 @|com\joarez\mathmod\network\GiveItemMessage.java|8|34|com.joarez.mathmod.network|package|com.joarez.mathmod.network|(file)
 Class Start: com.joarez.mathmod.network.GiveItemMessage
-   @|com\joarez\mathmod\network\GiveItemMessage.java|149|164|GiveItemMessage|class|com.joarez.mathmod.network.GiveItemMessage
-   @|com\joarez\mathmod\network\GiveItemMessage.java|176|184|IMessage|class|net.minecraftforge.fml.common.network.simpleimpl.IMessage
+   @|com\joarez\mathmod\network\GiveItemMessage.java|208|223|GiveItemMessage|class|com.joarez.mathmod.network.GiveItemMessage
+   @|com\joarez\mathmod\network\GiveItemMessage.java|235|243|IMessage|class|net.minecraftforge.fml.common.network.simpleimpl.IMessage
    Method Start: GiveItemMessage()V
-      @|com\joarez\mathmod\network\GiveItemMessage.java|196|211|GiveItemMessage|method|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|()V
+      @|com\joarez\mathmod\network\GiveItemMessage.java|255|270|GiveItemMessage|method|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|()V
    Method End: GiveItemMessage()V
-   @|com\joarez\mathmod\network\GiveItemMessage.java|230|241|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount|
-   @|com\joarez\mathmod\network\GiveItemMessage.java|256|263|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id|
-   @|com\joarez\mathmod\network\GiveItemMessage.java|282|293|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex|
-   Method Start: GiveItemMessage(IIZ)V
-      @|com\joarez\mathmod\network\GiveItemMessage.java|323|329|amount|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZ)V|amount|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|335|337|id|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZ)V|id|1
-      @|com\joarez\mathmod\network\GiveItemMessage.java|346|357|isListIndex|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZ)V|isListIndex|2
-      @|com\joarez\mathmod\network\GiveItemMessage.java|303|318|GiveItemMessage|method|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZ)V
-      @|com\joarez\mathmod\network\GiveItemMessage.java|368|379|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
-      @|com\joarez\mathmod\network\GiveItemMessage.java|382|388|amount|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZ)V|amount|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|397|404|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
-      @|com\joarez\mathmod\network\GiveItemMessage.java|407|409|id|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZ)V|id|1
-      @|com\joarez\mathmod\network\GiveItemMessage.java|418|429|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
-      @|com\joarez\mathmod\network\GiveItemMessage.java|432|443|isListIndex|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZ)V|isListIndex|2
-   Method End: GiveItemMessage(IIZ)V
+   @|com\joarez\mathmod\network\GiveItemMessage.java|289|300|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount|
+   @|com\joarez\mathmod\network\GiveItemMessage.java|315|322|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id|
+   @|com\joarez\mathmod\network\GiveItemMessage.java|341|352|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex|
+   @|com\joarez\mathmod\network\GiveItemMessage.java|363|369|String|class|java.lang.String
+   @|com\joarez\mathmod\network\GiveItemMessage.java|363|369|String|class|java.lang.String
+   @|com\joarez\mathmod\network\GiveItemMessage.java|370|376|filter|field|com.joarez.mathmod.network.GiveItemMessage|filter|
+   Method Start: GiveItemMessage(IIZLjava/lang/String;)V
+      @|com\joarez\mathmod\network\GiveItemMessage.java|406|412|amount|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|amount|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|418|420|id|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|id|1
+      @|com\joarez\mathmod\network\GiveItemMessage.java|429|440|isListIndex|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|isListIndex|2
+      @|com\joarez\mathmod\network\GiveItemMessage.java|448|454|filter|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|filter|3
+      @|com\joarez\mathmod\network\GiveItemMessage.java|386|401|GiveItemMessage|method|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V
+      @|com\joarez\mathmod\network\GiveItemMessage.java|441|447|String|class|java.lang.String
+      @|com\joarez\mathmod\network\GiveItemMessage.java|465|476|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
+      @|com\joarez\mathmod\network\GiveItemMessage.java|479|485|amount|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|amount|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|494|501|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
+      @|com\joarez\mathmod\network\GiveItemMessage.java|504|506|id|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|id|1
+      @|com\joarez\mathmod\network\GiveItemMessage.java|515|526|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
+      @|com\joarez\mathmod\network\GiveItemMessage.java|529|540|isListIndex|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|isListIndex|2
+      @|com\joarez\mathmod\network\GiveItemMessage.java|549|555|filter|field|com.joarez.mathmod.network.GiveItemMessage|filter
+      @|com\joarez\mathmod\network\GiveItemMessage.java|558|564|filter|param|com.joarez.mathmod.network.GiveItemMessage|GiveItemMessage|(IIZLjava/lang/String;)V|filter|3
+   Method End: GiveItemMessage(IIZLjava/lang/String;)V
    Method Start: fromBytes(Lio/netty/buffer/ByteBuf;)V
-      @|com\joarez\mathmod\network\GiveItemMessage.java|492|495|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|452|460|Override|class|java.lang.Override
-      @|com\joarez\mathmod\network\GiveItemMessage.java|474|483|fromBytes|method|net.minecraftforge.fml.common.network.simpleimpl.IMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V
-      @|com\joarez\mathmod\network\GiveItemMessage.java|484|491|ByteBuf|class|io.netty.buffer.ByteBuf
-      @|com\joarez\mathmod\network\GiveItemMessage.java|501|512|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
-      @|com\joarez\mathmod\network\GiveItemMessage.java|515|518|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|519|526|readInt|method|io.netty.buffer.ByteBuf|readInt|()I
-      @|com\joarez\mathmod\network\GiveItemMessage.java|532|539|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
-      @|com\joarez\mathmod\network\GiveItemMessage.java|542|545|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|546|553|readInt|method|io.netty.buffer.ByteBuf|readInt|()I
-      @|com\joarez\mathmod\network\GiveItemMessage.java|559|570|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
-      @|com\joarez\mathmod\network\GiveItemMessage.java|573|576|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|577|588|readBoolean|method|io.netty.buffer.ByteBuf|readBoolean|()Z
+      @|com\joarez\mathmod\network\GiveItemMessage.java|613|616|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|573|581|Override|class|java.lang.Override
+      @|com\joarez\mathmod\network\GiveItemMessage.java|595|604|fromBytes|method|net.minecraftforge.fml.common.network.simpleimpl.IMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V
+      @|com\joarez\mathmod\network\GiveItemMessage.java|605|612|ByteBuf|class|io.netty.buffer.ByteBuf
+      @|com\joarez\mathmod\network\GiveItemMessage.java|622|633|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
+      @|com\joarez\mathmod\network\GiveItemMessage.java|636|639|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|640|647|readInt|method|io.netty.buffer.ByteBuf|readInt|()I
+      @|com\joarez\mathmod\network\GiveItemMessage.java|653|660|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
+      @|com\joarez\mathmod\network\GiveItemMessage.java|663|666|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|667|674|readInt|method|io.netty.buffer.ByteBuf|readInt|()I
+      @|com\joarez\mathmod\network\GiveItemMessage.java|680|691|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
+      @|com\joarez\mathmod\network\GiveItemMessage.java|694|697|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|698|709|readBoolean|method|io.netty.buffer.ByteBuf|readBoolean|()Z
+      @|com\joarez\mathmod\network\GiveItemMessage.java|715|721|filter|field|com.joarez.mathmod.network.GiveItemMessage|filter
+      @|com\joarez\mathmod\network\GiveItemMessage.java|724|736|ByteBufUtils|class|net.minecraftforge.fml.common.network.ByteBufUtils
+      @|com\joarez\mathmod\network\GiveItemMessage.java|737|751|readUTF8String|method|net.minecraftforge.fml.common.network.ByteBufUtils|readUTF8String|(Lio/netty/buffer/ByteBuf;)Ljava/lang/String;
+      @|com\joarez\mathmod\network\GiveItemMessage.java|752|755|buf|param|com.joarez.mathmod.network.GiveItemMessage|fromBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
    Method End: fromBytes(Lio/netty/buffer/ByteBuf;)V
    Method Start: toBytes(Lio/netty/buffer/ByteBuf;)V
-      @|com\joarez\mathmod\network\GiveItemMessage.java|636|639|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|598|606|Override|class|java.lang.Override
-      @|com\joarez\mathmod\network\GiveItemMessage.java|620|627|toBytes|method|net.minecraftforge.fml.common.network.simpleimpl.IMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V
-      @|com\joarez\mathmod\network\GiveItemMessage.java|628|635|ByteBuf|class|io.netty.buffer.ByteBuf
-      @|com\joarez\mathmod\network\GiveItemMessage.java|645|648|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|649|657|writeInt|method|io.netty.buffer.ByteBuf|writeInt|(I)Lio/netty/buffer/ByteBuf;
-      @|com\joarez\mathmod\network\GiveItemMessage.java|658|669|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
-      @|com\joarez\mathmod\network\GiveItemMessage.java|674|677|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|678|686|writeInt|method|io.netty.buffer.ByteBuf|writeInt|(I)Lio/netty/buffer/ByteBuf;
-      @|com\joarez\mathmod\network\GiveItemMessage.java|687|694|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
-      @|com\joarez\mathmod\network\GiveItemMessage.java|699|702|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
-      @|com\joarez\mathmod\network\GiveItemMessage.java|703|715|writeBoolean|method|io.netty.buffer.ByteBuf|writeBoolean|(Z)Lio/netty/buffer/ByteBuf;
-      @|com\joarez\mathmod\network\GiveItemMessage.java|716|727|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
+      @|com\joarez\mathmod\network\GiveItemMessage.java|802|805|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|764|772|Override|class|java.lang.Override
+      @|com\joarez\mathmod\network\GiveItemMessage.java|786|793|toBytes|method|net.minecraftforge.fml.common.network.simpleimpl.IMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V
+      @|com\joarez\mathmod\network\GiveItemMessage.java|794|801|ByteBuf|class|io.netty.buffer.ByteBuf
+      @|com\joarez\mathmod\network\GiveItemMessage.java|811|814|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|815|823|writeInt|method|io.netty.buffer.ByteBuf|writeInt|(I)Lio/netty/buffer/ByteBuf;
+      @|com\joarez\mathmod\network\GiveItemMessage.java|824|835|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
+      @|com\joarez\mathmod\network\GiveItemMessage.java|840|843|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|844|852|writeInt|method|io.netty.buffer.ByteBuf|writeInt|(I)Lio/netty/buffer/ByteBuf;
+      @|com\joarez\mathmod\network\GiveItemMessage.java|853|860|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
+      @|com\joarez\mathmod\network\GiveItemMessage.java|865|868|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|869|881|writeBoolean|method|io.netty.buffer.ByteBuf|writeBoolean|(Z)Lio/netty/buffer/ByteBuf;
+      @|com\joarez\mathmod\network\GiveItemMessage.java|882|893|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
+      @|com\joarez\mathmod\network\GiveItemMessage.java|898|910|ByteBufUtils|class|net.minecraftforge.fml.common.network.ByteBufUtils
+      @|com\joarez\mathmod\network\GiveItemMessage.java|911|926|writeUTF8String|method|net.minecraftforge.fml.common.network.ByteBufUtils|writeUTF8String|(Lio/netty/buffer/ByteBuf;Ljava/lang/String;)V
+      @|com\joarez\mathmod\network\GiveItemMessage.java|927|930|buf|param|com.joarez.mathmod.network.GiveItemMessage|toBytes|(Lio/netty/buffer/ByteBuf;)V|buf|0
+      @|com\joarez\mathmod\network\GiveItemMessage.java|932|938|filter|field|com.joarez.mathmod.network.GiveItemMessage|filter
    Method End: toBytes(Lio/netty/buffer/ByteBuf;)V
+   Method Start: getFilter()Ljava/lang/String;
+      @|com\joarez\mathmod\network\GiveItemMessage.java|957|963|String|class|java.lang.String
+      @|com\joarez\mathmod\network\GiveItemMessage.java|964|973|getFilter|method|com.joarez.mathmod.network.GiveItemMessage|getFilter|()Ljava/lang/String;
+      @|com\joarez\mathmod\network\GiveItemMessage.java|992|998|filter|field|com.joarez.mathmod.network.GiveItemMessage|filter
+   Method End: getFilter()Ljava/lang/String;
    Method Start: getItemAmount()I
-      @|com\joarez\mathmod\network\GiveItemMessage.java|750|763|getItemAmount|method|com.joarez.mathmod.network.GiveItemMessage|getItemAmount|()I
-      @|com\joarez\mathmod\network\GiveItemMessage.java|782|793|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
+      @|com\joarez\mathmod\network\GiveItemMessage.java|1015|1028|getItemAmount|method|com.joarez.mathmod.network.GiveItemMessage|getItemAmount|()I
+      @|com\joarez\mathmod\network\GiveItemMessage.java|1047|1058|item_amount|field|com.joarez.mathmod.network.GiveItemMessage|item_amount
    Method End: getItemAmount()I
    Method Start: getItemID()I
-      @|com\joarez\mathmod\network\GiveItemMessage.java|812|821|getItemID|method|com.joarez.mathmod.network.GiveItemMessage|getItemID|()I
-      @|com\joarez\mathmod\network\GiveItemMessage.java|840|847|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
+      @|com\joarez\mathmod\network\GiveItemMessage.java|1077|1086|getItemID|method|com.joarez.mathmod.network.GiveItemMessage|getItemID|()I
+      @|com\joarez\mathmod\network\GiveItemMessage.java|1105|1112|item_id|field|com.joarez.mathmod.network.GiveItemMessage|item_id
    Method End: getItemID()I
    Method Start: IsListIndex()Z
-      @|com\joarez\mathmod\network\GiveItemMessage.java|870|881|IsListIndex|method|com.joarez.mathmod.network.GiveItemMessage|IsListIndex|()Z
-      @|com\joarez\mathmod\network\GiveItemMessage.java|895|906|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
+      @|com\joarez\mathmod\network\GiveItemMessage.java|1135|1146|IsListIndex|method|com.joarez.mathmod.network.GiveItemMessage|IsListIndex|()Z
+      @|com\joarez\mathmod\network\GiveItemMessage.java|1160|1171|isListIndex|field|com.joarez.mathmod.network.GiveItemMessage|isListIndex
    Method End: IsListIndex()Z
 Class End  : com.joarez.mathmod.network.GiveItemMessage
 endProcessing "com\joarez\mathmod\network\GiveItemMessage.java"
 
-startProcessing "com\joarez\mathmod\network\GiveItemMessageHandler.java" md5: edfe87a7423257541157dd2b379822dd
+startProcessing "com\joarez\mathmod\network\GiveItemMessageHandler.java" md5: ccc8eb621b07a8185a3d5db7e7c12bcb
 Cache Hit!
     Compile Error! Pb(645) Lambda expressions are allowed only at source level 1.8 or above
     Compile Error! Pb(25) Cannot refer to the non-final local variable serverPlayer defined in an enclosing scope
@@ -3112,19 +3221,22 @@ Class Start: com.joarez.mathmod.network.GiveItemMessageHandler
       @|com\joarez\mathmod\network\GiveItemMessageHandler.java|692|705|getItemAmount|method|com.joarez.mathmod.network.GiveItemMessage|getItemAmount|()I
       @|com\joarez\mathmod\network\GiveItemMessageHandler.java|720|727|message|param|com.joarez.mathmod.network.GiveItemMessageHandler|onMessage|(Lcom/joarez/mathmod/network/GiveItemMessage;Lnet/minecraftforge/fml/common/network/simpleimpl/MessageContext;)Lnet/minecraftforge/fml/common/network/simpleimpl/IMessage;|message|0
       @|com\joarez\mathmod\network\GiveItemMessageHandler.java|728|737|getItemID|method|com.joarez.mathmod.network.GiveItemMessage|getItemID|()I
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|743|752|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|765|772|message|param|com.joarez.mathmod.network.GiveItemMessageHandler|onMessage|(Lcom/joarez/mathmod/network/GiveItemMessage;Lnet/minecraftforge/fml/common/network/simpleimpl/MessageContext;)Lnet/minecraftforge/fml/common/network/simpleimpl/IMessage;|message|0
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|773|784|IsListIndex|method|com.joarez.mathmod.network.GiveItemMessage|IsListIndex|()Z
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|801|819|ElementListHandler|class|com.joarez.mathmod.util.ElementListHandler
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|820|831|getElements|method|com.joarez.mathmod.util.ElementListHandler|getElements|()Ljava/util/List;
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|834|837|get|method|java.util.List|get|(I)Ljava/lang/Object;
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|869|878|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|879|883|Item|class|net.minecraft.item.Item
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|884|895|getItemById|method|net.minecraft.item.Item|getItemById|(I)Lnet/minecraft/item/Item;
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|939|953|getServerWorld|method|net.minecraft.entity.player.EntityPlayerMP|getServerWorld|()Lnet/minecraft/world/WorldServer;
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|956|972|addScheduledTask|method|net.minecraft.util.IThreadListener|addScheduledTask|(Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|1158|1167|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
-      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|1168|1191|addItemStackToInventory|method|net.minecraft.entity.player.InventoryPlayer|addItemStackToInventory|(Lnet/minecraft/item/ItemStack;)Z
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|743|749|String|class|java.lang.String
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|759|766|message|param|com.joarez.mathmod.network.GiveItemMessageHandler|onMessage|(Lcom/joarez/mathmod/network/GiveItemMessage;Lnet/minecraftforge/fml/common/network/simpleimpl/MessageContext;)Lnet/minecraftforge/fml/common/network/simpleimpl/IMessage;|message|0
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|767|776|getFilter|method|com.joarez.mathmod.network.GiveItemMessage|getFilter|()Ljava/lang/String;
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|782|791|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|804|811|message|param|com.joarez.mathmod.network.GiveItemMessageHandler|onMessage|(Lcom/joarez/mathmod/network/GiveItemMessage;Lnet/minecraftforge/fml/common/network/simpleimpl/MessageContext;)Lnet/minecraftforge/fml/common/network/simpleimpl/IMessage;|message|0
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|812|823|IsListIndex|method|com.joarez.mathmod.network.GiveItemMessage|IsListIndex|()Z
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|840|858|ElementListHandler|class|com.joarez.mathmod.util.ElementListHandler
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|859|870|getElements|method|com.joarez.mathmod.util.ElementListHandler|getElements|(Ljava/lang/String;)Ljava/util/List;
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|879|882|get|method|java.util.List|get|(I)Ljava/lang/Object;
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|914|923|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|924|928|Item|class|net.minecraft.item.Item
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|929|940|getItemById|method|net.minecraft.item.Item|getItemById|(I)Lnet/minecraft/item/Item;
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|984|998|getServerWorld|method|net.minecraft.entity.player.EntityPlayerMP|getServerWorld|()Lnet/minecraft/world/WorldServer;
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|1001|1017|addScheduledTask|method|net.minecraft.util.IThreadListener|addScheduledTask|(Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|1203|1212|inventory|field|net.minecraft.entity.player.EntityPlayer|inventory
+      @|com\joarez\mathmod\network\GiveItemMessageHandler.java|1213|1236|addItemStackToInventory|method|net.minecraft.entity.player.InventoryPlayer|addItemStackToInventory|(Lnet/minecraft/item/ItemStack;)Z
    Method End: onMessage(Lcom/joarez/mathmod/network/GiveItemMessage;Lnet/minecraftforge/fml/common/network/simpleimpl/MessageContext;)Lnet/minecraftforge/fml/common/network/simpleimpl/IMessage;
 Class End  : com.joarez.mathmod.network.GiveItemMessageHandler
 endProcessing "com\joarez\mathmod\network\GiveItemMessageHandler.java"
@@ -3338,7 +3450,7 @@ Class Start: com.joarez.mathmod.util.CommandUtilServer
 Class End  : com.joarez.mathmod.util.CommandUtilServer
 endProcessing "com\joarez\mathmod\util\CommandUtilServer.java"
 
-startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: 7b66bbef56c44967a37439e32cbb68f8
+startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: c61d14892614a4174320e1b077d88a59
 Cache Hit!
 @|com\joarez\mathmod\util\ElementListHandler.java|8|31|com.joarez.mathmod.util|package|com.joarez.mathmod.util|(file)
 Class Start: com.joarez.mathmod.util.ElementListHandler
@@ -3364,10 +3476,40 @@ Class Start: com.joarez.mathmod.util.ElementListHandler
       @|com\joarez\mathmod\util\ElementListHandler.java|666|677|NonNullList|class|net.minecraft.util.NonNullList
       @|com\joarez\mathmod\util\ElementListHandler.java|678|687|ItemStack|class|net.minecraft.item.ItemStack
    Method End: getElements()Ljava/util/List;
+   Method Start: getElements(Ljava/lang/String;)Ljava/util/List;
+      @|com\joarez\mathmod\util\ElementListHandler.java|798|804|filter|param|com.joarez.mathmod.util.ElementListHandler|getElements|(Ljava/lang/String;)Ljava/util/List;|filter|0
+      @|com\joarez\mathmod\util\ElementListHandler.java|763|767|List|class|java.util.List
+      @|com\joarez\mathmod\util\ElementListHandler.java|768|777|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|779|790|getElements|method|com.joarez.mathmod.util.ElementListHandler|getElements|(Ljava/lang/String;)Ljava/util/List;
+      @|com\joarez\mathmod\util\ElementListHandler.java|791|797|String|class|java.lang.String
+      @|com\joarez\mathmod\util\ElementListHandler.java|810|814|List|class|java.util.List
+      @|com\joarez\mathmod\util\ElementListHandler.java|815|824|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|834|845|NonNullList|class|net.minecraft.util.NonNullList
+      @|com\joarez\mathmod\util\ElementListHandler.java|847|856|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|857|863|create|method|net.minecraft.util.NonNullList|create|()Lnet/minecraft/util/NonNullList;
+      @|com\joarez\mathmod\util\ElementListHandler.java|873|877|Item|class|net.minecraft.item.Item
+      @|com\joarez\mathmod\util\ElementListHandler.java|885|889|Item|class|net.minecraft.item.Item
+      @|com\joarez\mathmod\util\ElementListHandler.java|890|898|REGISTRY|field|net.minecraft.item.Item|REGISTRY
+      @|com\joarez\mathmod\util\ElementListHandler.java|930|944|getCreativeTab|method|net.minecraft.item.Item|getCreativeTab|()Lnet/minecraft/creativetab/CreativeTabs;
+      @|com\joarez\mathmod\util\ElementListHandler.java|970|984|getCreativeTab|method|net.minecraft.item.Item|getCreativeTab|()Lnet/minecraft/creativetab/CreativeTabs;
+      @|com\joarez\mathmod\util\ElementListHandler.java|990|997|MathMod|class|com.joarez.mathmod.MathMod
+      @|com\joarez\mathmod\util\ElementListHandler.java|998|1004|tabMod|field|com.joarez.mathmod.MathMod|tabMod
+      @|com\joarez\mathmod\util\ElementListHandler.java|1013|1022|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|1035|1044|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|1066|1080|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\joarez\mathmod\util\ElementListHandler.java|1083|1094|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\joarez\mathmod\util\ElementListHandler.java|1097|1105|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\joarez\mathmod\util\ElementListHandler.java|1106|1112|filter|param|com.joarez.mathmod.util.ElementListHandler|getElements|(Ljava/lang/String;)Ljava/util/List;|filter|0
+      @|com\joarez\mathmod\util\ElementListHandler.java|1113|1124|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\joarez\mathmod\util\ElementListHandler.java|1142|1153|getSubItems|method|net.minecraft.item.Item|getSubItems|(Lnet/minecraft/item/Item;Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/util/NonNullList;)V
+      @|com\joarez\mathmod\util\ElementListHandler.java|1161|1173|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+      @|com\joarez\mathmod\util\ElementListHandler.java|1181|1192|NonNullList|class|net.minecraft.util.NonNullList
+      @|com\joarez\mathmod\util\ElementListHandler.java|1193|1202|ItemStack|class|net.minecraft.item.ItemStack
+   Method End: getElements(Ljava/lang/String;)Ljava/util/List;
 Class End  : com.joarez.mathmod.util.ElementListHandler
 endProcessing "com\joarez\mathmod\util\ElementListHandler.java"
 
-startProcessing "com\joarez\mathmod\util\InventoryUtil.java" md5: 5077bd9f697d67a91f0a74d07bb150be
+startProcessing "com\joarez\mathmod\util\InventoryUtil.java" md5: 689fe7197ff7aadabcf78a18535acce5
 Cache Hit!
 @|com\joarez\mathmod\util\InventoryUtil.java|8|31|com.joarez.mathmod.util|package|com.joarez.mathmod.util|(file)
 Class Start: com.joarez.mathmod.util.InventoryUtil

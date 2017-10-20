@@ -28,4 +28,22 @@ public class ElementListHandler {
 		}
 		return items;
 	}
+	public static List<ItemStack> getElements(String filter) {
+		List<ItemStack> items = NonNullList.<ItemStack>create();
+		for(Item item : Item.REGISTRY) {
+			if(item != null &&  item.getCreativeTab() != null) {
+				if(item.getCreativeTab() != MathMod.tabMod) {
+					ItemStack stack = new ItemStack(item);
+					if(stack.getDisplayName().toLowerCase().contains(filter.toLowerCase())) {
+						item.getSubItems(item, (CreativeTabs)null, (NonNullList<ItemStack>) items);
+					}
+					
+				}
+					
+				
+				
+			}
+		}
+		return items;
+	}
 }

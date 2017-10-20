@@ -33,7 +33,7 @@ public class InventoryUtil {
 			}
 			if(total_coins > 0) {
 				int id = Item.getIdFromItem(ModItems.math_coin);
-				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(total_coins,id,false));
+				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(total_coins,id,false,""));
 			}
 		}
 		

@@ -54,18 +54,18 @@ public class MathShopGUI extends GuiScreen{
 				
 
 		//DRAW MATH ICON
-		int iconW = 4;
-		int iconH = 4;
-		int iconX = (width - bgW)/2 + iconW;
-		int iconY = (height - bgH)/2 + iconH;
+		int iconW = 16;
+		int iconH = 16;
+		int iconX = (width - bgW)/2 + 5;
+		int iconY = (height - bgH)/2 + 5;
 		this.itemRender.renderItemIntoGUI(new ItemStack(ModItems.math_coin), iconX, iconY);
 		
 		//DRAW ITEM COUNT
 		
 		int cW = this.fontRendererObj.getStringWidth(String.valueOf(total_coins));
 		int cH = this.fontRendererObj.FONT_HEIGHT;
-		int cX = iconX + iconW+cW -2;
-		int cY = iconY + cH/2 + 1;
+		int cX = iconX + iconW + 2;
+		int cY = iconY + iconH/2 - cH/2;
 		this.fontRendererObj.drawString(String.valueOf(total_coins), cX, cY, 0xff000000);
 		
 		//DRAW SHOP TITLE		
@@ -168,8 +168,14 @@ public class MathShopGUI extends GuiScreen{
 		if(mouseX >= hooverX && mouseX <= hooverX + item_size && mouseY >= hooverY && mouseY <= hooverY + item_size) {
 			if(total_coins>0) {								
 				total_coins --;						 								
-				int id = hoovering_item_index;			
-				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,id,true));												
+				int id = hoovering_item_index;		
+				String filter = "";
+				try {
+					filter = searchbar.getText();
+				}catch(Exception e) {
+					filter = "";
+				}
+				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,id,true,filter));												
 			}
 			
 		}		
@@ -240,13 +246,9 @@ public class MathShopGUI extends GuiScreen{
 	@Override
 	protected void keyTyped(char typedChar, int keyCode) throws IOException {
 		searchbar.textboxKeyTyped(typedChar, keyCode);
-		
+		pageAtual = 1;
 		super.keyTyped(typedChar, keyCode);
 	}
-
-
-
-
 
 
 	@Override

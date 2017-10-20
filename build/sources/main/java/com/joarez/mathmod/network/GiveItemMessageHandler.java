@@ -16,9 +16,10 @@ public class GiveItemMessageHandler implements IMessageHandler<GiveItemMessage,I
 		EntityPlayerMP serverPlayer = ctx.getServerHandler().playerEntity;		
 		int amount = message.getItemAmount();
 		int id = message.getItemID();
+		String filter = message.getFilter();
 		ItemStack stack;
 		if(message.IsListIndex()) {
-			stack = ElementListHandler.getElements().get(id);	
+			stack = ElementListHandler.getElements(filter).get(id);	
 		}else {
 			stack = new ItemStack(Item.getItemById(id),amount);	
 		}

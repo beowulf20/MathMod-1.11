@@ -1,13 +1,11 @@
 package com.joarez.mathmod.gui;
 
-import java.awt.TextComponent;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.init.ModItems;
-import com.joarez.mathmod.network.DeleteItemMessage;
 import com.joarez.mathmod.network.GiveItemMessage;
 import com.joarez.mathmod.network.SimpleNetworkWrapper;
 import com.joarez.mathmod.util.ElementListHandler;
@@ -17,14 +15,13 @@ import com.joarez.mathmod.util.ResourceLanguage;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
+import net.minecraft.client.gui.GuiTextField;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.renderer.RenderHelper;
-import net.minecraft.client.resources.I18n;
-import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.text.ITextComponent;
 public class MathShopGUI extends GuiScreen{
 
 	ResourceLocation bg_texture = new ResourceLocation(MathMod.MOD_ID,"textures/gui/shop_bg.png");
@@ -32,7 +29,7 @@ public class MathShopGUI extends GuiScreen{
 	int bgW,bgH,bgX,bgY;
 	int logoW,logoH,logoX,logoY;
 	int  total_coins = 0;
-	List<ItemStack> items = ElementListHandler.getElements();
+	List<ItemStack> items;
 	
 	int pageAtual = 1, pageTotal = 0, offset_items = 0;
 	GuiButton bt_previous, bt_next;
@@ -42,7 +39,8 @@ public class MathShopGUI extends GuiScreen{
 	int item_size = 16;
 	int total_items = 398;
 	
-	
+	GuiTextField searchbar;  
+	int searchX,searchY,searchW,searchH;
 	
 
 	@Override
@@ -56,18 +54,18 @@ public class MathShopGUI extends GuiScreen{
 				
 
 		//DRAW MATH ICON
-		int iconW = 4;
-		int iconH = 4;
-		int iconX = (width - bgW)/2 + iconW;
-		int iconY = (height - bgH)/2 + iconH;
+		int iconW = 16;
+		int iconH = 16;
+		int iconX = (width - bgW)/2 + 5;
+		int iconY = (height - bgH)/2 + 5;
 		this.itemRender.renderItemIntoGUI(new ItemStack(ModItems.math_coin), iconX, iconY);
 		
 		//DRAW ITEM COUNT
 		
 		int cW = this.fontRendererObj.getStringWidth(String.valueOf(total_coins));
 		int cH = this.fontRendererObj.FONT_HEIGHT;
-		int cX = iconX + 3*iconW+cW;
-		int cY = iconY + cH/2;
+		int cX = iconX + iconW + 2;
+		int cY = iconY + iconH/2 - cH/2;
 		this.fontRendererObj.drawString(String.valueOf(total_coins), cX, cY, 0xff000000);
 		
 		//DRAW SHOP TITLE		
@@ -78,8 +76,10 @@ public class MathShopGUI extends GuiScreen{
 		int titleW = this.fontRendererObj.getStringWidth(title);
 		int titleH = this.fontRendererObj.FONT_HEIGHT + 10;
 		int titleX = width/2 - k*titleW/2;
-		int titleY = height/2 - bgH/2 + titleH;
+		titleX = width/2 + bgW/2 - k*titleW - 3;
 		
+		int titleY = height/2 - bgH/2 + titleH;
+		titleY = height/2 - bgH/2;
 		GlStateManager.pushMatrix();
 		{
 			GlStateManager.translate(titleX, titleY, 0);
@@ -90,66 +90,92 @@ public class MathShopGUI extends GuiScreen{
 		}
 		GlStateManager.popMatrix();
 		
+		//DRAW SEARCHBAR
+				searchbar.drawTextBox();
+				searchbar.xPosition = width/2 - searchW/2;
+				searchbar.yPosition = titleY + k*this.fontRendererObj.FONT_HEIGHT;
+				
 
-			//SET STATES
+		//SET STATES
 				bt_previous.enabled = !(pageAtual == 1);
 				bt_next.enabled = !(pageAtual == pageTotal);
 
 		
 		//DRAW SLOTS & ITEMS
 		
-		int offset = 5;
-			for(int t=0;t<2;t++) {
-				for(int j=0;j<4;j++) {
-					for(int i=0;i<5;i++) {
-						int size = 16;
-						int x = width/2 - bgW/2 + size + 30*i + offset;
-						int y = titleY + this.fontRendererObj.FONT_HEIGHT + 30 + 35*j;
-						int pos = i +5*j + 20*(pageAtual-1);
-						if(pos < total_items) {					
-							String item_name = items.get(pos).toString();
-							Item item = Item.getByNameOrId(item_name);
-							
-							//ItemStack stack = new ItemStack(item);
-							ItemStack stack = items.get(pos);
-							if(mouseX >= x && mouseX <= x+size && mouseY >= y && mouseY <= y+size && t == 1) {
-								hooverX = x;
-								hooverY = y;
-								
-								RenderHelper.enableStandardItemLighting();
-								{
-									//this.renderToolTip(stack, mouseX, mouseY);	
-									List<String> textLines = new ArrayList<String>();
-									textLines.add(stack.getDisplayName());
-									drawHoveringText(textLines, mouseX, mouseY);
-								}
-								RenderHelper.disableStandardItemLighting();
-								hoovering_stack = stack;
-								hoovering_item_index = pos;
-							}
-							if(t == 0) {
-								RenderHelper.enableGUIStandardItemLighting();						
-								this.itemRender.renderItemAndEffectIntoGUI(stack, x, y);
-								RenderHelper.disableStandardItemLighting();
-								
-								
-							}}}}}
+		drawItems(mouseX,mouseY,k);
 		
 		
-
+		
+		
 			
 		super.drawScreen(mouseX, mouseY, partialTicks);
 	}
 
-
-	
+	protected void drawItems(int mouseX,int mouseY, int k) {
+		items = ElementListHandler.getElements(searchbar.getText());
+		countTotalItems();
+		int offset = 5;
+		
+		for(int t=0;t<2;t++) {
+			for(int j=0;j<4;j++) {
+				for(int i=0;i<5;i++) {
+					int size = 16;
+					int x = width/2 - bgW/2 + size + 30*i + offset;
+					int y = searchY + this.fontRendererObj.FONT_HEIGHT*k + 25 + 35*j;
+					int pos = i +5*j + 20*(pageAtual-1);
+					if(pos < total_items) {					
+						String item_name = items.get(pos).toString();
+						Item item = Item.getByNameOrId(item_name);
+						
+						//ItemStack stack = new ItemStack(item);
+						ItemStack stack = items.get(pos);
+						if(mouseX >= x && mouseX <= x+size && mouseY >= y && mouseY <= y+size && t == 1) {
+							hooverX = x;
+							hooverY = y;
+							
+							RenderHelper.enableStandardItemLighting();
+							{
+								//this.renderToolTip(stack, mouseX, mouseY);	
+								List<String> textLines = new ArrayList<String>();
+								textLines.add(stack.getDisplayName());
+								drawHoveringText(textLines, mouseX, mouseY);
+							}
+							RenderHelper.disableStandardItemLighting();
+							hoovering_stack = stack;
+							hoovering_item_index = pos;
+						}
+						if(t == 0) {
+							RenderHelper.enableGUIStandardItemLighting();						
+							this.itemRender.renderItemAndEffectIntoGUI(stack, x, y);
+							RenderHelper.disableStandardItemLighting();
+							
+							
+						}}}}}
+	}
+	protected void countTotalItems() {
+		total_items = items.size();
+		offset_items = total_items%20;
+		int total = (total_items - offset_items)/20;
+		if(offset_items > 0) {
+			total++;
+		}
+		pageTotal = total;
+	}
 	@Override
 	protected void mouseClicked(int mouseX, int mouseY, int mouseButton) throws IOException {
+		searchbar.mouseClicked(mouseX, mouseY, mouseButton);
 		if(mouseX >= hooverX && mouseX <= hooverX + item_size && mouseY >= hooverY && mouseY <= hooverY + item_size) {
 			if(total_coins>0) {								
 				total_coins --;						 								
-				int id = hoovering_item_index;			
-				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,id,true));												
+				int id = hoovering_item_index;		
+				String filter = "";
+				try {
+					filter = searchbar.getText();
+				}catch(Exception e) {
+					filter = "";
+				}
+				SimpleNetworkWrapper.INSTANCE.sendToServer(new GiveItemMessage(1,id,true,filter));												
 			}
 			
 		}		
@@ -178,13 +204,8 @@ public class MathShopGUI extends GuiScreen{
 	@Override
 	public void initGui() {				
 		total_coins = InventoryUtil.countCoinsPlayer();		
-		total_items = items.size();
-		offset_items = total_items%20;
-		int total = (total_items - offset_items)/20;
-		if(offset_items > 0) {
-			total++;
-		}
-		pageTotal = total;
+		
+		
 		
 		//CONSTANTS
 				bgW = 180;
@@ -208,16 +229,37 @@ public class MathShopGUI extends GuiScreen{
 		//ADD LIST TO BUTTON
 		this.buttonList.add(bt_previous);
 		this.buttonList.add(bt_next);	
-								
+						
+		//INIT SEARCH BAR
+		searchW = bgW - 30;
+		searchH = 20;
+		searchX = width/2 + bgW/2 - searchW/2;
+		searchY = height/2 - bgH/2;		
+		searchbar = new GuiTextField(1,this.fontRendererObj,searchX,searchY,searchW,searchH);
+		searchbar.setTextColor(0xffffffff);		
+		
+		
 		super.initGui();
 	}
 
 
-	
-		
+	@Override
+	protected void keyTyped(char typedChar, int keyCode) throws IOException {
+		searchbar.textboxKeyTyped(typedChar, keyCode);
+		pageAtual = 1;
+		super.keyTyped(typedChar, keyCode);
+	}
 
 
-	
+
+
+
+
+	@Override
+	public void updateScreen() {
+		searchbar.updateCursorCounter();
+		super.updateScreen();
+	}
 
 
 

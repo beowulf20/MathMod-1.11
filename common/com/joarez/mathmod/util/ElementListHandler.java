@@ -34,8 +34,15 @@ public class ElementListHandler {
 			if(item != null &&  item.getCreativeTab() != null) {
 				if(item.getCreativeTab() != MathMod.tabMod) {
 					ItemStack stack = new ItemStack(item);
-					if(stack.getDisplayName().toLowerCase().contains(filter.toLowerCase())) {
-						item.getSubItems(item, (CreativeTabs)null, (NonNullList<ItemStack>) items);
+					
+					List<ItemStack> sub_items = NonNullList.<ItemStack>create();
+					
+					item.getSubItems(item, (CreativeTabs)null, (NonNullList<ItemStack>) sub_items);
+					for(ItemStack sub_item: sub_items) {
+						String sub_item_name = sub_item.getDisplayName();
+						if(sub_item_name.toLowerCase().contains(filter.toLowerCase())) {
+							items.add(sub_item);
+						}
 					}
 					
 				}
