@@ -33,10 +33,8 @@ public class ElementListHandler {
 		for(Item item : Item.REGISTRY) {
 			if(item != null &&  item.getCreativeTab() != null) {
 				if(item.getCreativeTab() != MathMod.tabMod) {
-					ItemStack stack = new ItemStack(item);
-					
-					List<ItemStack> sub_items = NonNullList.<ItemStack>create();
-					
+					ItemStack stack = new ItemStack(item);					
+					List<ItemStack> sub_items = NonNullList.<ItemStack>create();					
 					item.getSubItems(item, (CreativeTabs)null, (NonNullList<ItemStack>) sub_items);
 					for(ItemStack sub_item: sub_items) {
 						String sub_item_name = sub_item.getDisplayName();

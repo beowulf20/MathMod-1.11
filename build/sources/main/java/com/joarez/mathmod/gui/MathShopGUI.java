@@ -251,10 +251,6 @@ public class MathShopGUI extends GuiScreen{
 	}
 
 
-
-
-
-
 	@Override
 	public void updateScreen() {
 		searchbar.updateCursorCounter();

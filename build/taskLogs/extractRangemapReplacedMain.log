@@ -64,7 +64,7 @@ startProcessing "com\joarez\mathmod\gui\GuiOverlay.java" md5: 423f58adad99f3c806
 Cache Hit!
 endProcessing "com\joarez\mathmod\gui\GuiOverlay.java"
 
-startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: b936046371197530985a2ffc6d662d50
+startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: e77011f3fab048ba2a149a6c7ff8b972
 endProcessing "com\joarez\mathmod\gui\MathShopGUI.java"
 
 startProcessing "com\joarez\mathmod\gui\OddGUI.java" md5: a1af5f78573e71cd7dd038b32a602344
@@ -155,8 +155,7 @@ startProcessing "com\joarez\mathmod\util\CommandUtilServer.java" md5: c7b17ffeaf
 Cache Hit!
 endProcessing "com\joarez\mathmod\util\CommandUtilServer.java"
 
-startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: c61d14892614a4174320e1b077d88a59
-Cache Hit!
+startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: 5f37492c3329d5ad1005bf5f39f44788
 endProcessing "com\joarez\mathmod\util\ElementListHandler.java"
 
 startProcessing "com\joarez\mathmod\util\InventoryUtil.java" md5: 689fe7197ff7aadabcf78a18535acce5

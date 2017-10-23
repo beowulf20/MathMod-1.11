@@ -1012,7 +1012,7 @@ Class Start: com.joarez.mathmod.gui.GuiOverlay
 Class End  : com.joarez.mathmod.gui.GuiOverlay
 endProcessing "com\joarez\mathmod\gui\GuiOverlay.java"
 
-startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: b936046371197530985a2ffc6d662d50
+startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: e77011f3fab048ba2a149a6c7ff8b972
 @|com\joarez\mathmod\gui\MathShopGUI.java|8|30|com.joarez.mathmod.gui|package|com.joarez.mathmod.gui|(file)
 Class Start: com.joarez.mathmod.gui.MathShopGUI
    @|com\joarez\mathmod\gui\MathShopGUI.java|877|888|MathShopGUI|class|com.joarez.mathmod.gui.MathShopGUI
@@ -1359,23 +1359,23 @@ Class Start: com.joarez.mathmod.gui.MathShopGUI
       @|com\joarez\mathmod\gui\MathShopGUI.java|7271|7278|keyCode|param|com.joarez.mathmod.gui.MathShopGUI|keyTyped|(CI)V|keyCode|1
    Method End: keyTyped(CI)V
    Method Start: updateScreen()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7292|7300|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7314|7326|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7333|7342|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7343|7362|updateCursorCounter|method|net.minecraft.client.gui.GuiTextField|updateCursorCounter|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7374|7386|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7288|7296|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7310|7322|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7329|7338|searchbar|field|com.joarez.mathmod.gui.MathShopGUI|searchbar
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7339|7358|updateCursorCounter|method|net.minecraft.client.gui.GuiTextField|updateCursorCounter|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7370|7382|updateScreen|method|net.minecraft.client.gui.GuiScreen|updateScreen|()V
    Method End: updateScreen()V
    Method Start: onGuiClosed()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7398|7406|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7420|7431|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7438|7451|InventoryUtil|class|com.joarez.mathmod.util.InventoryUtil
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7452|7469|returnCoinsPlayer|method|com.joarez.mathmod.util.InventoryUtil|returnCoinsPlayer|(I)V
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7470|7481|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7494|7505|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7394|7402|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7416|7427|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7434|7447|InventoryUtil|class|com.joarez.mathmod.util.InventoryUtil
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7448|7465|returnCoinsPlayer|method|com.joarez.mathmod.util.InventoryUtil|returnCoinsPlayer|(I)V
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7466|7477|total_coins|field|com.joarez.mathmod.gui.MathShopGUI|total_coins
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7490|7501|onGuiClosed|method|net.minecraft.client.gui.GuiScreen|onGuiClosed|()V
    Method End: onGuiClosed()V
    Method Start: doesGuiPauseGame()Z
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7519|7527|Override|class|java.lang.Override
-      @|com\joarez\mathmod\gui\MathShopGUI.java|7544|7560|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7515|7523|Override|class|java.lang.Override
+      @|com\joarez\mathmod\gui\MathShopGUI.java|7540|7556|doesGuiPauseGame|method|net.minecraft.client.gui.GuiScreen|doesGuiPauseGame|()Z
    Method End: doesGuiPauseGame()Z
 Class End  : com.joarez.mathmod.gui.MathShopGUI
 endProcessing "com\joarez\mathmod\gui\MathShopGUI.java"
@@ -3450,8 +3450,7 @@ Class Start: com.joarez.mathmod.util.CommandUtilServer
 Class End  : com.joarez.mathmod.util.CommandUtilServer
 endProcessing "com\joarez\mathmod\util\CommandUtilServer.java"
 
-startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: c61d14892614a4174320e1b077d88a59
-Cache Hit!
+startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: 5f37492c3329d5ad1005bf5f39f44788
 @|com\joarez\mathmod\util\ElementListHandler.java|8|31|com.joarez.mathmod.util|package|com.joarez.mathmod.util|(file)
 Class Start: com.joarez.mathmod.util.ElementListHandler
    @|com\joarez\mathmod\util\ElementListHandler.java|347|365|ElementListHandler|class|com.joarez.mathmod.util.ElementListHandler
@@ -3496,15 +3495,23 @@ Class Start: com.joarez.mathmod.util.ElementListHandler
       @|com\joarez\mathmod\util\ElementListHandler.java|998|1004|tabMod|field|com.joarez.mathmod.MathMod|tabMod
       @|com\joarez\mathmod\util\ElementListHandler.java|1013|1022|ItemStack|class|net.minecraft.item.ItemStack
       @|com\joarez\mathmod\util\ElementListHandler.java|1035|1044|ItemStack|class|net.minecraft.item.ItemStack
-      @|com\joarez\mathmod\util\ElementListHandler.java|1066|1080|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
-      @|com\joarez\mathmod\util\ElementListHandler.java|1083|1094|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
-      @|com\joarez\mathmod\util\ElementListHandler.java|1097|1105|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
-      @|com\joarez\mathmod\util\ElementListHandler.java|1106|1112|filter|param|com.joarez.mathmod.util.ElementListHandler|getElements|(Ljava/lang/String;)Ljava/util/List;|filter|0
-      @|com\joarez\mathmod\util\ElementListHandler.java|1113|1124|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
-      @|com\joarez\mathmod\util\ElementListHandler.java|1142|1153|getSubItems|method|net.minecraft.item.Item|getSubItems|(Lnet/minecraft/item/Item;Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/util/NonNullList;)V
-      @|com\joarez\mathmod\util\ElementListHandler.java|1161|1173|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
-      @|com\joarez\mathmod\util\ElementListHandler.java|1181|1192|NonNullList|class|net.minecraft.util.NonNullList
-      @|com\joarez\mathmod\util\ElementListHandler.java|1193|1202|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|1062|1066|List|class|java.util.List
+      @|com\joarez\mathmod\util\ElementListHandler.java|1067|1076|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|1090|1101|NonNullList|class|net.minecraft.util.NonNullList
+      @|com\joarez\mathmod\util\ElementListHandler.java|1103|1112|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|1113|1119|create|method|net.minecraft.util.NonNullList|create|()Lnet/minecraft/util/NonNullList;
+      @|com\joarez\mathmod\util\ElementListHandler.java|1138|1149|getSubItems|method|net.minecraft.item.Item|getSubItems|(Lnet/minecraft/item/Item;Lnet/minecraft/creativetab/CreativeTabs;Lnet/minecraft/util/NonNullList;)V
+      @|com\joarez\mathmod\util\ElementListHandler.java|1157|1169|CreativeTabs|class|net.minecraft.creativetab.CreativeTabs
+      @|com\joarez\mathmod\util\ElementListHandler.java|1177|1188|NonNullList|class|net.minecraft.util.NonNullList
+      @|com\joarez\mathmod\util\ElementListHandler.java|1189|1198|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|1222|1231|ItemStack|class|net.minecraft.item.ItemStack
+      @|com\joarez\mathmod\util\ElementListHandler.java|1261|1267|String|class|java.lang.String
+      @|com\joarez\mathmod\util\ElementListHandler.java|1293|1307|getDisplayName|method|net.minecraft.item.ItemStack|getDisplayName|()Ljava/lang/String;
+      @|com\joarez\mathmod\util\ElementListHandler.java|1334|1345|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\joarez\mathmod\util\ElementListHandler.java|1348|1356|contains|method|java.lang.String|contains|(Ljava/lang/CharSequence;)Z
+      @|com\joarez\mathmod\util\ElementListHandler.java|1357|1363|filter|param|com.joarez.mathmod.util.ElementListHandler|getElements|(Ljava/lang/String;)Ljava/util/List;|filter|0
+      @|com\joarez\mathmod\util\ElementListHandler.java|1364|1375|toLowerCase|method|java.lang.String|toLowerCase|()Ljava/lang/String;
+      @|com\joarez\mathmod\util\ElementListHandler.java|1395|1398|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
    Method End: getElements(Ljava/lang/String;)Ljava/util/List;
 Class End  : com.joarez.mathmod.util.ElementListHandler
 endProcessing "com\joarez\mathmod\util\ElementListHandler.java"
