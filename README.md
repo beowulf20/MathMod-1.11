@@ -27,6 +27,7 @@ Blocks Available
 ![Roman Numerals Block](https://i.imgur.com/i9finZ4.png) Roman Numerals Block <br />
 ![Shop Block](https://i.imgur.com/x4pqFit.png) Shop Block <br />
 ![Successor Predecessor Block](https://i.imgur.com/mBSA7WR.png) Successor Predecessor Block <br />
+![Greater Less Block](https://i.imgur.com/KBL99ob.png) Greater Less Block <br />
 
 ----------
 
@@ -39,9 +40,10 @@ Items Available
 
 TODO
 ----
-Add a **searchbar** for the "**Shop Block**"   <br />
-Add a **recipe** for each **block** <br />
-
+Add a **searchbar** for the "**Shop Block**"    ![DONE](https://cdn-site.aptoide.com/imgs/v.1/icon-flagged-trusted.svg) <br />
+Add a **recipe** for each **block**  <br />
+Add new **blocks** <br />
 
 ----------
+
 
