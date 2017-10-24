@@ -1,16 +1,16 @@
 #BLOCKS
 tile.mathmod:tutorial_block.name=Tutorial Block
-tile.mathmod:pc_block.name=Operações Básicas
-tile.mathmod:shop_block.name=Loja Matemática
+tile.mathmod:pc_block.name=Operacoes Basicas
+tile.mathmod:shop_block.name=Loja Matematica
 tile.mathmod:roman_block.name=Numerais Romanos
-tile.mathmod:odd_block.name=Ímpar/Par
+tile.mathmod:odd_block.name=Impar/Par
 tile.mathmod:suc_block.name=Sucessor/Antecessor
 #
 
 #ITEMS
 item.mathmod:tutorial_item.name=Tutorial Item
 item.mathmod:tutorial_pickaxe.name=Tutorial Pickaxe
-item.mathmod:math_coin.name=Moeda Matemática
+item.mathmod:math_coin.name=Moeda Matematica
 #
 
 #GENERAL
@@ -53,6 +53,10 @@ suc.mathmod:title=SUCESSOR/ANTECESSOR
 suc.mathmod:suc=SUCESSOR
 suc.mathmod:pred=ANTECESSOR
 
+#GREATER/LESS
+great.mathmod:title=MAIOR OU MENOR
+great.mathmod:bt_great=>
+great.mathmod:bt_less=<
 
 #KEYBINDING
 key.openyear_key=SELECAO ANO

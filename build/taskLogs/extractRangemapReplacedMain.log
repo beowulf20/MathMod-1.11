@@ -1,5 +1,5 @@
 Symbol range map extraction starting
-Processing 45 files
+Processing 47 files
 startProcessing "com\joarez\mathmod\ClientProxy.java" md5: 27937638610529977381538de788c81e
 Cache Hit!
 endProcessing "com\joarez\mathmod\ClientProxy.java"
@@ -12,17 +12,18 @@ startProcessing "com\joarez\mathmod\MathMod.java" md5: 7eb96434058217254ffc1b194
 Cache Hit!
 endProcessing "com\joarez\mathmod\MathMod.java"
 
-startProcessing "com\joarez\mathmod\Names.java" md5: 570ad9ae0dd85308a2b91ff85398f9bc
-Cache Hit!
+startProcessing "com\joarez\mathmod\Names.java" md5: 1b0dfbadf2b974e454483366b7b24207
 endProcessing "com\joarez\mathmod\Names.java"
 
-startProcessing "com\joarez\mathmod\blocks\BasicMathBlock.java" md5: a3248c965c3e3f9694b393fa0b19031c
-Cache Hit!
+startProcessing "com\joarez\mathmod\blocks\BasicMathBlock.java" md5: 5e5c4a7156526f2cf3defb4eeaeb92d0
 endProcessing "com\joarez\mathmod\blocks\BasicMathBlock.java"
 
 startProcessing "com\joarez\mathmod\blocks\BlockTutorial.java" md5: 7aae9d3d8eefe9341dd66a95fd267305
 Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\BlockTutorial.java"
+
+startProcessing "com\joarez\mathmod\blocks\LessGreaterBlock.java" md5: 9510bac4f89c5003cb19e0cf7e52df42
+endProcessing "com\joarez\mathmod\blocks\LessGreaterBlock.java"
 
 startProcessing "com\joarez\mathmod\blocks\OddBlock.java" md5: 9fb46331e360ecc29a2d5d6885dd4e0a
 Cache Hit!
@@ -56,6 +57,9 @@ startProcessing "com\joarez\mathmod\gui\DoMathGUI.java" md5: 5f68fa82fc8d7235847
 Cache Hit!
 endProcessing "com\joarez\mathmod\gui\DoMathGUI.java"
 
+startProcessing "com\joarez\mathmod\gui\GreatGui.java" md5: 6df9dca6c519f7baea31ed8ef788e43c
+endProcessing "com\joarez\mathmod\gui\GreatGui.java"
+
 startProcessing "com\joarez\mathmod\gui\GuiButtonTutorial.java" md5: ffc023b505d5f9ff094141328a9cc2ec
 Cache Hit!
 endProcessing "com\joarez\mathmod\gui\GuiButtonTutorial.java"
@@ -65,6 +69,7 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\gui\GuiOverlay.java"
 
 startProcessing "com\joarez\mathmod\gui\MathShopGUI.java" md5: e77011f3fab048ba2a149a6c7ff8b972
+Cache Hit!
 endProcessing "com\joarez\mathmod\gui\MathShopGUI.java"
 
 startProcessing "com\joarez\mathmod\gui\OddGUI.java" md5: a1af5f78573e71cd7dd038b32a602344
@@ -95,8 +100,7 @@ startProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java" md5: 786d020d9c8b
 Cache Hit!
 endProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java"
 
-startProcessing "com\joarez\mathmod\init\ModBlocks.java" md5: 4ac71e0660c270453cbbb4e6f0ac1b32
-Cache Hit!
+startProcessing "com\joarez\mathmod\init\ModBlocks.java" md5: 59f15cd379512e5c1b1e512a75439025
 endProcessing "com\joarez\mathmod\init\ModBlocks.java"
 
 startProcessing "com\joarez\mathmod\init\ModItems.java" md5: e63563dcb9337f1d4a650537914bb1f5
@@ -156,6 +160,7 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\util\CommandUtilServer.java"
 
 startProcessing "com\joarez\mathmod\util\ElementListHandler.java" md5: 5f37492c3329d5ad1005bf5f39f44788
+Cache Hit!
 endProcessing "com\joarez\mathmod\util\ElementListHandler.java"
 
 startProcessing "com\joarez\mathmod\util\InventoryUtil.java" md5: 689fe7197ff7aadabcf78a18535acce5
@@ -166,8 +171,7 @@ startProcessing "com\joarez\mathmod\util\MathMethods.java" md5: a5917207d1aea692
 Cache Hit!
 endProcessing "com\joarez\mathmod\util\MathMethods.java"
 
-startProcessing "com\joarez\mathmod\util\ResourceLanguage.java" md5: 14b8982e542f824abbe46719f02a53c4
-Cache Hit!
+startProcessing "com\joarez\mathmod\util\ResourceLanguage.java" md5: ce06ae4004d1b41ca47ed76b0bb2a2e4
 endProcessing "com\joarez\mathmod\util\ResourceLanguage.java"
 
 startProcessing "com\joarez\mathmod\util\RomanNumbersUtil.java" md5: ebb81958d6dcf973577c1420fa70440f

@@ -10,4 +10,5 @@ public class Names {
 	public static final String ROMAN_BLOCK = "roman_block";
 	public static final String ODD_BLOCK = "odd_block";
 	public static final String SUCCESSOR_BLOCK = "suc_block";
+	public static final String LESSGREATER_BLOCK = "great_block";
 }

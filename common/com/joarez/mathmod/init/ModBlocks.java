@@ -4,6 +4,7 @@ import com.joarez.mathmod.MathMod;
 import com.joarez.mathmod.Names;
 import com.joarez.mathmod.blocks.BasicMathBlock;
 import com.joarez.mathmod.blocks.BlockTutorial;
+import com.joarez.mathmod.blocks.LessGreaterBlock;
 import com.joarez.mathmod.blocks.OddBlock;
 import com.joarez.mathmod.blocks.RomanBlock;
 import com.joarez.mathmod.blocks.ShopBlock;
@@ -28,6 +29,7 @@ public class ModBlocks {
 	public static RomanBlock roman_block;
 	public static OddBlock odd_block;
 	public static SuccessorBlock suc_block;
+	public static LessGreaterBlock great_block;
 	
 	public static void init() {		
 		tutorial_block = new BlockTutorial();		
@@ -47,6 +49,9 @@ public class ModBlocks {
 		
 		suc_block = new SuccessorBlock();
 		registerInitBlock(suc_block,Names.SUCCESSOR_BLOCK);
+		
+		great_block = new LessGreaterBlock();
+		registerInitBlock(great_block,Names.LESSGREATER_BLOCK);
 	}
 	
 	public static void initRecipes() {
@@ -61,6 +66,7 @@ public class ModBlocks {
 		registerClientBlock(roman_block,mesher,Names.ROMAN_BLOCK);
 		registerClientBlock(odd_block,mesher,Names.ODD_BLOCK);
 		registerClientBlock(suc_block,mesher,Names.SUCCESSOR_BLOCK);
+		registerClientBlock(great_block,mesher,Names.LESSGREATER_BLOCK);
 	}
 	
 	

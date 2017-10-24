@@ -14,7 +14,7 @@ public class ResourceLanguage {
 	public static final String RP_YEAR_SELECTION = "years.";
 	public static final String RP_SUCESSOR = "suc.";
 	public static final String RP_GENERAL = "gen.";
-	
+	public static final String RP_GREAT = "great.";
 	
 	public static String getLocalizedResource(String prefix, String name) {
 		String unloc = prefix + MathMod.RESOURCE_PREFIX + name;

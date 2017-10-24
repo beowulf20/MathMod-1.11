@@ -20,8 +20,9 @@ public class BasicMathBlock extends Block {
 		super(Material.IRON);		
 		this.setBlockUnbreakable();
 		this.setSoundType(SoundType.METAL);
-		setCreativeTab(MathMod.tabMod);
+		this.setCreativeTab(MathMod.tabMod);
 		this.setUnlocalizedName(this.getUnlocalizedName());
+		
 	}
 
 	@Override

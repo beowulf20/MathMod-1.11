@@ -1,0 +1,9 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+		"particle": "mathmod:blocks/great_block_side",
+        "top": "mathmod:blocks/great_block_side",
+        "front": "mathmod:blocks/great_block_front",
+        "side": "mathmod:blocks/great_block_side"
+  }
+}

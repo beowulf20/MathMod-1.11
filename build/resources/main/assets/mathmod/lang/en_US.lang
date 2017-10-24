@@ -53,6 +53,11 @@ suc.mathmod:title=SUCCESSOR/PREDECESSOR
 suc.mathmod:suc=SUCCESSOR
 suc.mathmod:pred=PREDECESSOR
 
+#GREATER/LESS
+great.mathmod:title=GREATER OR LESS
+great.mathmod:bt_great=>
+great.mathmod:bt_less=<
+
 
 #KEYBINDING
 key.openyear_key=Open Year Selection
