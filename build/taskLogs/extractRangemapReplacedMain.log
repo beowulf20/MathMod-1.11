@@ -13,9 +13,11 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\MathMod.java"
 
 startProcessing "com\joarez\mathmod\Names.java" md5: 1b0dfbadf2b974e454483366b7b24207
+Cache Hit!
 endProcessing "com\joarez\mathmod\Names.java"
 
 startProcessing "com\joarez\mathmod\blocks\BasicMathBlock.java" md5: 5e5c4a7156526f2cf3defb4eeaeb92d0
+Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\BasicMathBlock.java"
 
 startProcessing "com\joarez\mathmod\blocks\BlockTutorial.java" md5: 7aae9d3d8eefe9341dd66a95fd267305
@@ -23,6 +25,7 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\BlockTutorial.java"
 
 startProcessing "com\joarez\mathmod\blocks\LessGreaterBlock.java" md5: 9510bac4f89c5003cb19e0cf7e52df42
+Cache Hit!
 endProcessing "com\joarez\mathmod\blocks\LessGreaterBlock.java"
 
 startProcessing "com\joarez\mathmod\blocks\OddBlock.java" md5: 9fb46331e360ecc29a2d5d6885dd4e0a
@@ -58,6 +61,7 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\gui\DoMathGUI.java"
 
 startProcessing "com\joarez\mathmod\gui\GreatGui.java" md5: 6df9dca6c519f7baea31ed8ef788e43c
+Cache Hit!
 endProcessing "com\joarez\mathmod\gui\GreatGui.java"
 
 startProcessing "com\joarez\mathmod\gui\GuiButtonTutorial.java" md5: ffc023b505d5f9ff094141328a9cc2ec
@@ -101,6 +105,7 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\gui\YearSelectionGUI.java"
 
 startProcessing "com\joarez\mathmod\init\ModBlocks.java" md5: 59f15cd379512e5c1b1e512a75439025
+Cache Hit!
 endProcessing "com\joarez\mathmod\init\ModBlocks.java"
 
 startProcessing "com\joarez\mathmod\init\ModItems.java" md5: e63563dcb9337f1d4a650537914bb1f5
@@ -172,6 +177,7 @@ Cache Hit!
 endProcessing "com\joarez\mathmod\util\MathMethods.java"
 
 startProcessing "com\joarez\mathmod\util\ResourceLanguage.java" md5: ce06ae4004d1b41ca47ed76b0bb2a2e4
+Cache Hit!
 endProcessing "com\joarez\mathmod\util\ResourceLanguage.java"
 
 startProcessing "com\joarez\mathmod\util\RomanNumbersUtil.java" md5: ebb81958d6dcf973577c1420fa70440f

@@ -5,6 +5,8 @@ tile.mathmod:shop_block.name=Loja Matematica
 tile.mathmod:roman_block.name=Numerais Romanos
 tile.mathmod:odd_block.name=Impar/Par
 tile.mathmod:suc_block.name=Sucessor/Antecessor
+tile.mathmod:great_block.name=Maior ou Menor
+
 #
 
 #ITEMS

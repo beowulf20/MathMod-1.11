@@ -5,6 +5,7 @@ tile.mathmod:shop_block.name=Math Shop Block
 tile.mathmod:roman_block.name=Roman Block
 tile.mathmod:odd_block.name=Odd/Even Block
 tile.mathmod:suc_block.name=Successor/Predecessor Block
+tile.mathmod:great_block.name=Great/Less Block
 #
 
 #ITEMS
