@@ -4,7 +4,7 @@
 Why?
 ----
 
-*I've created this mod because I've starting working as a math teacher in a public school and I felt the need to use Minecraft simply because it is what kids like nowadays.* <br />**The results so far:** they are loving it and are paying much more attention
+*I've created this mod because I worked as a math teacher in a public school in Brazil in 2017 and I felt the need to use Minecraft simply because it is what kids liked at the time.* <br />**The results so far:** both parents and children are loving it.
 
 
 ----------
